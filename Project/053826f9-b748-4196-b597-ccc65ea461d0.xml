@@ -1,6 +1,6 @@
 <StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(*&#xD;
 Encoder Position. &#xD;
-Rev 1:	Initial version		2019.09.20 PMO&#xD;
+Rev 1:	Initial version		2019.09.20 PMO ""ls&#xD;
 *)&#xD;
 &#xD;
 Real_EncValue:=DINT_TO_REAL(Enc_Value);&#xD;

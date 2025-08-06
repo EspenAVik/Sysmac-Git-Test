@@ -5,6 +5,7 @@ Sub openScreenSaver&#xD;
 	showPage("ScreenSaver") &#xD;
 	_HMI_isScreenSaverActive =  False&#xD;
 	&#xD;
-    _HMI_Brightness = 150&#xD;
+    _HMI_Brightness = 149&#xD;
+	&#xD;
 	&#xD;
 End Sub </Text></CodeEditorModel>

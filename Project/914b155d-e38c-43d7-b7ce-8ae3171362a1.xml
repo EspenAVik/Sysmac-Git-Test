@@ -5,9 +5,9 @@
 <Revision>65537</Revision>
 <TypeName>3G3AX-MX2-ECT</TypeName>
 <DeviceName>U10_MX2</DeviceName>
-<Family />
-<Model />
-<Firmware />
+<Family>3G3MX2</Family>
+<Model>3G3MX2-A2/B007-E</Model>
+<Firmware>42294309</Firmware>
 <IODeviceID>b5cc2029-ee05-43a4-934a-5ec3388e1dab</IODeviceID>
 <Address Value="10" />
 <Drive Version="3.1" Address="10" Firmware="42294309" CaseNum="0" CaseVer="0" ConnectionID="30" GatewayIP="http://172.24.0.10" ConfigString="[DEV]DEV:SDRV;OPBOARDT:12;TONLINE:1000;TONLINETRESH:1050;[GDEV]DEV:NEX;[ADDRESS]SUNIT:1;DA2:0;MUNIT:0;" CreationZoneId="1" CreationZoneCaption="Europe">
@@ -415,7 +415,7 @@
       <Parameter Index="H022" Value="16.29" />
       <Parameter Index="H023" Value="2.1" />
       <Parameter Index="H024" Value="0.007" />
-      <Parameter Index="H030" Value="2.905" />
+      <Parameter Index="H030" Value="2.903" />
       <Parameter Index="H031" Value="2.075" />
       <Parameter Index="H032" Value="29.79" />
       <Parameter Index="H033" Value="2.28" />
