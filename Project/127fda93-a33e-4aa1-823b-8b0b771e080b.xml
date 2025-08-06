@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=FB_Initialized	IV=False	G=VAR	Com=this function block is initialized
+++D=USINT	N=FB_Number	G=VAR	Com=initialization number of this function block
+++D=R_TRIG	N=R_TRIG_Execute	G=VAR	Com=trigger to rising edge of Execute
+++D=BOOL	N=DispatchNewMotionJob	G=VAR	Com=new motion job should be dispatch
+++D=BOOL	N=ContinuousUpdateActive	G=VAR	Com=if input ContinuousUpdate is true during rising edge of Execute, continuous update functionality will be activated
+++D=REAL	N=TorqLastRun	G=VAR	Com=value of the force at the motor shaft in previous cycle
+++D=REAL	N=TorqRampLastRun	G=VAR	Com=maximum time derivative of the set value of the force in previous cycle
+++D=REAL	N=VeloLastRun	G=VAR	Com=absolute value of the maximum velocity in previous cycle
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=starts motion with rising edge
+++D=BOOL	N=ContinuousUpdate	Ord=2	G=VAR_INPUT	Com=if input is true during rising edge of Execute, changes at input variables will start a new movement immediately
+++D=REAL	N=Torque	Ord=3	G=VAR_INPUT	Com=value of the force at the motor shaft (in Nm)
+++D=REAL	N=TorqueRamp	Ord=4	G=VAR_INPUT	Com=maximum time derivative of the set value of the force (in Nm/s)
+++D=REAL	N=Velocity	Ord=5	G=VAR_INPUT	Com=absolute value of the maximum velocity (in user unit)
+++D=PTP_MC_BUFFER_MODE	N=BufferMode	Ord=6	G=VAR_INPUT	Com=defines the chronological sequence of the FB (aborting vs. buffered)
+++D=BOOL	N=InTorque	Ord=7	G=VAR_OUTPUT	Com=setpoint value of the force equals the commanded value
+++D=BOOL	N=Busy	Ord=8	G=VAR_OUTPUT	Com=FB is not finished and new output values aer to be expected
+++D=BOOL	N=Active	Ord=9	G=VAR_OUTPUT	Com=indicates that FB has control on the axis
+++D=BOOL	N=CommandAborted	Ord=10	G=VAR_OUTPUT	Com="Command" is aborted by another command
+++D=BOOL	N=Error	Ord=11	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=12	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=13	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

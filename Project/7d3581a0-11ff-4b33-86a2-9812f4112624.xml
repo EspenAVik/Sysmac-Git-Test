@@ -1,0 +1,26 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>// Coil Data 0 to internal uWORD_BOOL_MX2 data type&#xD;
+tmp_Coil_Data_0.ch:=Coil_Data_0;&#xD;
+&#xD;
+//Intelligent input terminal (OUT)&#xD;
+IF Enable THEN&#xD;
+Intelligent_input_terminal_1:=tmp_Coil_Data_0.bit[7];&#xD;
+Intelligent_input_terminal_2:=tmp_Coil_Data_0.bit[8];&#xD;
+Intelligent_input_terminal_3:=tmp_Coil_Data_0.bit[9];&#xD;
+Intelligent_input_terminal_4:=tmp_Coil_Data_0.bit[10];&#xD;
+Intelligent_input_terminal_5:=tmp_Coil_Data_0.bit[11];&#xD;
+Intelligent_input_terminal_6:=tmp_Coil_Data_0.bit[12];&#xD;
+Intelligent_input_terminal_7:=tmp_Coil_Data_0.bit[13];&#xD;
+ENO:=TRUE;&#xD;
+&#xD;
+Else;&#xD;
+Intelligent_input_terminal_1:=FALSE;&#xD;
+Intelligent_input_terminal_2:=FALSE;&#xD;
+Intelligent_input_terminal_3:=FALSE;&#xD;
+Intelligent_input_terminal_4:=FALSE;&#xD;
+Intelligent_input_terminal_5:=FALSE;&#xD;
+Intelligent_input_terminal_6:=FALSE;&#xD;
+Intelligent_input_terminal_7:=FALSE;&#xD;
+ENO:=FALSE;&#xD;
+&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

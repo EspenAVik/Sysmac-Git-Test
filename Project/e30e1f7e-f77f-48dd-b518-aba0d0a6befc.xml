@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types3" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sAdept_IO_EIP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="150" OffsetType="User">
+      <DataType Name="eplcio_real" BaseType="ARRAY[1..64] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="eplcio_int" BaseType="ARRAY[1..24] OF INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="256" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="String1Length" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="304" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="eplcio_str1" BaseType="STRING[82]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="308" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="String2Length" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="392" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="eplcio_str2" BaseType="STRING[82]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="396" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="eplcio_signal" BaseType="ARRAY[1..64] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="480" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sEIP_Errors" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="31" OffsetType="NJ">
+      <DataType Name="Observation_04" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MinorFault_05" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PartialFault_06" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MajorFault_07" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SlaveFault_14" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SlaveError_15" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sEIP_Network" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="149" OffsetType="NJ">
+      <DataType Name="Status" BaseType="OEN\EIP\s\sEIP_Status" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cmd" BaseType="OEN\General\sNetw_Command" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_EICStatus" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="148" OffsetType="User">
+      <DataType Name="Observation" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MinorFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PartialFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MajorFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorDetection" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="1" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IORefresh" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="1" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_DA2x0x" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="147" OffsetType="NJ">
+      <DataType Name="AO1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AO2" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_AD260x" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="146" OffsetType="NJ">
+      <DataType Name="AI1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AI2" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_TS2xxx" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="145" OffsetType="NJ">
+      <DataType Name="T1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_TS3xxx" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="144" OffsetType="NJ">
+      <DataType Name="T1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T3" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T4" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_EC01xxStatus" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="84" OffsetType="User">
+      <DataType Name="EncoderCounterStatus" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetExternalInputStatus" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="1" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EncoderPresentPosition" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PulsePeriodMeasurementStatus" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LatchStatus" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="7" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LatchInput1Data" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="9" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LatchInput2Data" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="13" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="InternalLatchData" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="17" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PulseRate" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="21" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PulsePeriodMeasuredValue" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="25" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TimeStamp" BaseType="ULINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="29" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_EC01xx" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="143" OffsetType="NJ">
+      <DataType Name="ACT" BaseType="OEN\EIP\sNX_EC01xxStatus" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CMD" BaseType="OEN\EIP\sNX_EC01xxCommand" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNX_EC01xxCommand" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="83" OffsetType="User">
+      <DataType Name="EncoderCounterOperationCommand" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PulsePeriodMeasurementFunction" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LatchFunction" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PresetCommandValue" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sOS32C_In_EIP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="142" OffsetType="NJ">
+      <DataType Name="Machine_State" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Machine_Stop_Reasons" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Zone_Set" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Zone_Inputs" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Detection_Zone_Status" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Output_Status" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Input_Status" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Seven_Segment_Display" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Non_Safety_Config_CRC_Value" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Safety_Config_CRC_Value" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Future_Use_1" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Future_Use_2" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Future_Use_3" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Future_Use_4" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Future_Use_5" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Future_Use_6" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sOS32C_Out_EIP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="141" OffsetType="NJ">
+      <DataType Name="Future_Use_out" BaseType="ARRAY[0..15] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sS8VK" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="140" OffsetType="NJ">
+      <DataType Name="MemoryError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Overheated" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CurrentMeasuringError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VoltageMeasuringError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OverheatAlarm" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FUL" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="HLF" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DC_Voltage" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;V" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DC_Current" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;A" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current_Peak" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;A" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReplaceDate" BaseType="DATE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;yyyy-mm-dd" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PercentLeft" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;%" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TotalHours" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ContinuousMinutes" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;min" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sS8VK_EIP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="139" OffsetType="CJ">
+      <DataType Name="MemoryError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Overheated" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="1" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CurrentMeasuringError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VoltageMeasuringError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="3" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OverheatAlarm" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reserved_05" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reserved_06" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reserved_07" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FUL" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="8" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="HLF" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="9" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DC_Voltage" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DC_Current" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current_Peak" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="YearsLeft" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PercentLeft" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="10" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TotalHours" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="12" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ContinuousMinutes" BaseType="UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSX_In_36" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="138" OffsetType="User">
+      <DataType Name="In_Byte" BaseType="ARRAY[1..4] OF USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="In_Signal" BaseType="ARRAY[9..16] OF UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSX_In_40Ext" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="137" OffsetType="User">
+      <DataType Name="In_Byte" BaseType="ARRAY[1..4] OF USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="In_Word2" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Address(RW) or ErrorCode(E)" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="In_Word3" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Data(RW) or Address(E)" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="In_Signal" BaseType="ARRAY[9..16] OF UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSX_Out_36" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="136" OffsetType="User">
+      <DataType Name="Out_Byte" BaseType="ARRAY[1..4] OF USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Out_Signal" BaseType="ARRAY[1..8] OF UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSX_Out_40Ext" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="135" OffsetType="User">
+      <DataType Name="Out_Byte" BaseType="ARRAY[1..4] OF USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Out_Word2" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="#FFFFh(R) or Address(W)" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Out_Word3" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Address(R) or Data(W)" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Out_Signal" BaseType="ARRAY[1..8] OF UDINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sUR_In_EIP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;Data From UR" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="134" OffsetType="User">
+      <DataType Name="Version" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Mode" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Seconds" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="5" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Milliseconds" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Minutes" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Hours" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="9" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Days" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="10" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="12" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PW" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PR" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="1" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TB" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PB" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="3" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SpeedSlider" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="20" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SafetyMode" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="24" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Safety" BaseType="ARRAY[0..10] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="28" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IOs" BaseType="ARRAY[0..3] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="32" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AnalogIOTypes" BaseType="ARRAY[0..3] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="36" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AnalogIO" BaseType="ARRAY[0..3] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="40" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IOCurrent" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="56" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Euromap67_Input" BaseType="ARRAY[0..31] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="60" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Euromap67_Output" BaseType="ARRAY[0..31] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="64" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Euromap67_Voltage" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="68" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Euromap67_Current" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="72" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ToolMode" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="76" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TDI" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="80" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TDO" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="81" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TAIT" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="82" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ToolAnalogIO" BaseType="ARRAY[0..1] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="84" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ToolOutputVoltage" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="92" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ToolOutputCurrent" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="96" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PositionJoint" BaseType="ARRAY[0..5] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="100" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VelocityJoint" BaseType="ARRAY[0..5] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="124" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CurrentJoint" BaseType="ARRAY[0..5] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="148" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TemperatureJoint" BaseType="ARRAY[0..5] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="172" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ModeJoint" BaseType="ARRAY[0..5] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="196" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TCPPosition" BaseType="ARRAY[0..5] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="204" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TCPVelocity" BaseType="ARRAY[0..5] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="228" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TCPForce" BaseType="ARRAY[0..2] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="252" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TCPTorque" BaseType="ARRAY[0..2] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="264" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TCPForceScalar" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="276" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OutputBit" BaseType="ARRAY[0..63] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="280" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IntOutput" BaseType="ARRAY[0..23] OF DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="288" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FloatOutput" BaseType="ARRAY[0..23] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="384" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sUR_Out_EIP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="&#x9;Data to UR" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="133" OffsetType="User">
+      <DataType Name="SSM" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SpeedSlider" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OutputMask" BaseType="ARRAY[0..1] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Outputs" BaseType="ARRAY[0..1] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="10" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AOM" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="12" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AOT" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="13" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TDOM" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="14" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TDO" BaseType="ARRAY[0..1] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="15" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AnalogOut" BaseType="ARRAY[0..1] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="InputBit" BaseType="ARRAY[0..63] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="24" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IntInput" BaseType="ARRAY[0..23] OF DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="32" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FloatInput" BaseType="ARRAY[0..23] OF REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="128" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

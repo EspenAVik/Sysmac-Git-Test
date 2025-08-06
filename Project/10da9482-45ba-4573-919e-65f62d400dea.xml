@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=PTP_CIA402_STATUSWORD	N=Statusword	Ord=1	G=VAR_INPUT
+++D=PTP_CIA402_CONTROLWORD	N=Controlword	Ord=2	G=VAR_INPUT
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperationDisplay	Ord=3	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=PTP_AXIS_STATE	N=StateMachinePLCopen	G=RETURN

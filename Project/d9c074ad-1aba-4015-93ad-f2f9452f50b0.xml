@@ -1,0 +1,9 @@
+﻿{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"ST","Ix":1,"Var":"SX_Control","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Forward"},{"__type":"LD","Ix":1,"Not":true,"Var":"Reverse","X":1},{"__type":"ST","Ix":2,"Var":"Drive.CMD.Run_FWD","X":2}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Not":true,"Var":"Forward"},{"__type":"LD","Ix":1,"Var":"Reverse","X":1},{"__type":"ST","Ix":2,"Var":"Drive.CMD.Run_REV","X":2}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Reset"},{"__type":"ST","Ix":1,"Var":"Drive.CMD.Reset","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In","Type":"ANY","Var":"Speed"}],"Ix":2,"Name":"MOVE","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"Out","Ix":1,"Type":"ANY","Var":"Drive.CMD.Speed"}]}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Drive.ACT.Running_FWD"},{"__type":"ST","Ix":1,"Var":"Running_FWD","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Drive.ACT.Running_REV"},{"__type":"ST","Ix":1,"Var":"Running_REV","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In","Type":"ANY","Var":"Drive.ACT.Speed"}],"Ix":2,"Name":"MOVE","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"Out","Ix":1,"Type":"ANY","Var":"ActualSpeed"}]}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Drive.ACT.Trip"},{"__type":"ST","Ix":1,"Var":"Trip","X":1}],"LRI":2,"RRI":3,"VLs":[]}

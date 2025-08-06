@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Folla_RevH11_Maskin_012" id="8d15cb9c-fa5b-42bb-b3a6-8f2774dfc14c" trackingId="f99a989d-fd00-4f8f-a733-6e2d444cda9d" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-9W001☐-V1Version:1.16" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="SetUnit NJ101-9000 Ver. 1.20" />
+      <ApplicationFeature name="SetFunc Library Ver. 1.0" />
+      <ApplicationFeature name="NexLibraryInternalUsed" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

@@ -1,0 +1,1543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PC21ConfigurationData>
+  <Header>
+    <Name>NexPC21Configuration.PC21ConfigurationSubstance</Name>
+    <CreateDateTime>Thu, 14 Mar 2024 16:17:39 GMT</CreateDateTime>
+    <Version>1.00</Version>
+  </Header>
+  <ClassInfo>
+    <Type>NexPC21Configuration</Type>
+    <SubType>PC21ConfigurationSubstance</SubType>
+  </ClassInfo>
+  <Data>
+    <BusNetwork BusNetworkID="0112e586-01a9-4cdc-8276-4ca71b8b764d" />
+    <CPUUnit UnitType="CPUUnit" MdlNm="NJ101-9000" MajorVer="1" MinorVer="20" UnitName="" UtNum="65535" RkNum="11" StNum="0" ProfileID="NJ101-9000_Ver1_20" IODeviceID="8e7851f6-c5c8-4e2b-bfa3-b7e7b5cec614" TrackingID="" />
+    <UnitList>
+      <Rack Type="CUPRack" RackNum="0" IODeviceID="3d15d5b6-dd1e-43a2-9bf4-12b0ffd87141" TrackingID="36ffd4d6-09a0-4ea3-8156-0f171d359aaa">
+        <Slot UnitType="PSUnit" MdlNm="NJ-Px3001" MajorVer="1" MinorVer="0" UnitName="" UtNum="65535" RkNum="0" StNum="0" ProfileID="NJ-Px3001_Ver0_0" IODeviceID="" TrackingID="653554e0-cfd1-4307-aa24-aacd561421ed" />
+        <Slot UnitType="EndCover" MdlNm="CJ1W-TER01" MajorVer="1" MinorVer="0" UnitName="" UtNum="65535" RkNum="0" StNum="0" ProfileID="CJ1W-TER01_Ver0_0" IODeviceID="" TrackingID="" />
+        <Slot UnitType="Base_IOUnit" MdlNm="CJ1W-ID211" MajorVer="0" MinorVer="0" UnitName="J01" UtNum="65535" RkNum="0" StNum="0" ProfileID="CJ1W-ID211_Ver0_0" IODeviceID="4b0e7808-c907-4802-8b36-7a50f36f3dd2" TrackingID="56e76388-12e9-4b73-8ea9-65d5517d81b4" InputFilter="0" />
+        <Slot UnitType="Base_IOUnit" MdlNm="CJ1W-ID211" MajorVer="0" MinorVer="0" UnitName="J02" UtNum="65535" RkNum="0" StNum="1" ProfileID="CJ1W-ID211_Ver0_0" IODeviceID="bec99ab2-0406-4cad-985c-42a3921aea92" TrackingID="3b95c347-391d-4322-9fbd-ae3f9d1df96b" InputFilter="0" />
+        <Slot UnitType="Base_IOUnit" MdlNm="CJ1W-OD212" MajorVer="0" MinorVer="0" UnitName="J03" UtNum="65535" RkNum="0" StNum="2" ProfileID="CJ1W-OD212_Ver0_0" IODeviceID="cbb53d08-3643-43b6-97c9-b538957cfac1" TrackingID="e392f60e-cc6b-42f1-8cae-f4f0b7ef9717" />
+        <Slot UnitType="SIOU_IOUnit" MdlNm="CJ1W-AD081-V1" MajorVer="0" MinorVer="0" UnitName="J04" UtNum="3" RkNum="0" StNum="3" ProfileID="CJ1W-AD081-V1_Ver0_0" IODeviceID="3ef5086a-b372-42b0-ad6b-d5e0edfcf48a" TrackingID="9d911acf-2956-4104-b3cc-d8e80087117f" />
+        <Slot UnitType="SIOU_IOUnit" MdlNm="CJ1W-CTL41-E" MajorVer="0" MinorVer="0" UnitName="J07" UtNum="4" RkNum="0" StNum="4" ProfileID="CJ1W-CTL41-E_Ver0_0" IODeviceID="9a3bfcdb-2535-4647-85ce-65a48351f874" TrackingID="d46644ea-d8b2-461c-a29e-491a444021f1" />
+        <Slot UnitType="Base_IOUnit" MdlNm="CJ1W-OD212" MajorVer="0" MinorVer="0" UnitName="J08" UtNum="65535" RkNum="0" StNum="5" ProfileID="CJ1W-OD212_Ver0_0" IODeviceID="818502fa-b40f-4f0d-8703-fb198bce876e" TrackingID="caa9e4c2-992f-46b7-8e8e-cc496af6a395" />
+      </Rack>
+    </UnitList>
+    <UnitParameters>
+      <Parameters MdlNm="CJ1W-ID211" RackNum="0" StNum="0" ProfileID="CJ1W-ID211_Ver0_0" />
+      <Parameters MdlNm="CJ1W-ID211" RackNum="0" StNum="1" ProfileID="CJ1W-ID211_Ver0_0" />
+      <Parameters MdlNm="CJ1W-OD212" RackNum="0" StNum="2" ProfileID="CJ1W-OD212_Ver0_0" />
+      <Parameters MdlNm="CJ1W-AD081-V1" RackNum="0" StNum="3" ProfileID="CJ1W-AD081-V1_Ver0_0">
+        <Param Name="P_Input1InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input2InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input3InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input4InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input5InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input6InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input7InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input8InputSignalUseSetting" Value="0x1" />
+        <Param Name="P_Input1InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input2InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input3InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input4InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input5InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input6InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input7InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input8InputRangeSetting" Value="0x3" />
+        <Param Name="P_Input1MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input2MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input3MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input4MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input5MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input6MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input7MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_Input8MeanValueProcessingSetting" Value="0x0" />
+        <Param Name="P_OperationModeSetting" Value="0x0" />
+        <Param Name="P_ConversionTimeResolutionSetting" Value="0x0" />
+        <Param Name="P_Input1PeakValueHold" Value="0x0" />
+        <Param Name="P_Input2PeakValueHold" Value="0x0" />
+        <Param Name="P_Input3PeakValueHold" Value="0x0" />
+        <Param Name="P_Input4PeakValueHold" Value="0x0" />
+        <Param Name="P_Input5PeakValueHold" Value="0x0" />
+        <Param Name="P_Input6PeakValueHold" Value="0x0" />
+        <Param Name="P_Input7PeakValueHold" Value="0x0" />
+        <Param Name="P_Input8PeakValueHold" Value="0x0" />
+        <Param Name="P_Input1ConversionValue" Value="0x329" />
+        <Param Name="P_Input2ConversionValue" Value="0x756" />
+        <Param Name="P_Input3ConversionValue" Value="0x93" />
+        <Param Name="P_Input4ConversionValue" Value="0x9BE" />
+        <Param Name="P_Input5ConversionValue" Value="0x9CE" />
+        <Param Name="P_Input6ConversionValue" Value="0x31C" />
+        <Param Name="P_Input7ConversionValue" Value="0x8D" />
+        <Param Name="P_Input8ConversionValue" Value="0xA2B" />
+        <Param Name="P_Input1DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input2DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input3DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input4DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input5DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input6DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input7DisconnectionDetection" Value="0x0" />
+        <Param Name="P_Input8DisconnectionDetection" Value="0x0" />
+        <Param Name="P_MeanValueProcessingSettingError" Value="0x0" />
+        <Param Name="P_OperatingInAdjustmentMode" Value="0x0" />
+      </Parameters>
+      <Parameters MdlNm="CJ1W-CTL41-E" RackNum="0" StNum="4" ProfileID="CJ1W-CTL41-E_Ver0_0">
+        <Param Name="P_ReadNextError" Value="0x0" />
+        <Param Name="P_Counter1OpenGate" Value="0x0" />
+        <Param Name="P_Counter1CloseGate" Value="0x0" />
+        <Param Name="P_Counter1Preset" Value="0x0" />
+        <Param Name="P_Counter1Reset" Value="0x0" />
+        <Param Name="P_Counter1CaptureCounterValue" Value="0x0" />
+        <Param Name="P_Counter1ResetEnable" Value="0x0" />
+        <Param Name="P_Counter1PresetValue" Value="0x0" />
+        <Param Name="P_Counter2OpenGate" Value="0x0" />
+        <Param Name="P_Counter2CloseGate" Value="0x0" />
+        <Param Name="P_Counter2Preset" Value="0x0" />
+        <Param Name="P_Counter2Reset" Value="0x0" />
+        <Param Name="P_Counter2CaptureCounterValue" Value="0x0" />
+        <Param Name="P_Counter2ResetEnable" Value="0x0" />
+        <Param Name="P_Counter2PresetValue" Value="0x0" />
+        <Param Name="P_Counter3OpenGate" Value="0x0" />
+        <Param Name="P_Counter3CloseGate" Value="0x0" />
+        <Param Name="P_Counter3Preset" Value="0x0" />
+        <Param Name="P_Counter3Reset" Value="0x0" />
+        <Param Name="P_Counter3CaptureCounterValue" Value="0x0" />
+        <Param Name="P_Counter3ResetEnable" Value="0x0" />
+        <Param Name="P_Counter3PresetValue" Value="0x0" />
+        <Param Name="P_Counter4OpenGate" Value="0x0" />
+        <Param Name="P_Counter4CloseGate" Value="0x0" />
+        <Param Name="P_Counter4Preset" Value="0x0" />
+        <Param Name="P_Counter4Reset" Value="0x0" />
+        <Param Name="P_Counter4CaptureCounterValue" Value="0x0" />
+        <Param Name="P_Counter4ResetEnable" Value="0x0" />
+        <Param Name="P_Counter4PresetValue" Value="0x0" />
+        <Param Name="P_SoftOutput0Status" Value="0x0" />
+        <Param Name="P_SoftOutput1Status" Value="0x0" />
+        <Param Name="P_SoftOutput2Status" Value="0x0" />
+        <Param Name="P_SoftOutput3Status" Value="0x0" />
+        <Param Name="P_SoftOutput4Status" Value="0x0" />
+        <Param Name="P_SoftOutput5Status" Value="0x0" />
+        <Param Name="P_SoftOutput6Status" Value="0x0" />
+        <Param Name="P_SoftOutput7Status" Value="0x0" />
+        <Param Name="P_SoftOutput8Status" Value="0x0" />
+        <Param Name="P_SoftOutput9Status" Value="0x0" />
+        <Param Name="P_SoftOutput10Status" Value="0x0" />
+        <Param Name="P_SoftOutput11Status" Value="0x0" />
+        <Param Name="P_SoftOutput12Status" Value="0x0" />
+        <Param Name="P_SoftOutput13Status" Value="0x0" />
+        <Param Name="P_SoftOutput14Status" Value="0x0" />
+        <Param Name="P_SoftOutput15Status" Value="0x0" />
+        <Param Name="P_SoftOutput16Status" Value="0x0" />
+        <Param Name="P_SoftOutput17Status" Value="0x0" />
+        <Param Name="P_SoftOutput18Status" Value="0x0" />
+        <Param Name="P_SoftOutput19Status" Value="0x0" />
+        <Param Name="P_SoftOutput20Status" Value="0x0" />
+        <Param Name="P_SoftOutput21Status" Value="0x0" />
+        <Param Name="P_SoftOutput22Status" Value="0x0" />
+        <Param Name="P_SoftOutput23Status" Value="0x0" />
+        <Param Name="P_SoftOutput24Status" Value="0x0" />
+        <Param Name="P_SoftOutput25Status" Value="0x0" />
+        <Param Name="P_SoftOutput26Status" Value="0x0" />
+        <Param Name="P_SoftOutput27Status" Value="0x0" />
+        <Param Name="P_SoftOutput28Status" Value="0x0" />
+        <Param Name="P_SoftOutput29Status" Value="0x0" />
+        <Param Name="P_SoftOutput30Status" Value="0x0" />
+        <Param Name="P_SoftOutput31Status" Value="0x0" />
+        <Param Name="P_ErrorCode1" Value="0x0" />
+        <Param Name="P_ErrorCode2" Value="0x0" />
+        <Param Name="P_GlobalError" Value="0x0" />
+        <Param Name="P_InterruptPending" Value="0x0" />
+        <Param Name="P_DataTransferBusy" Value="0x0" />
+        <Param Name="P_DataTransferCompleted" Value="0x0" />
+        <Param Name="P_IABlockOverlap" Value="0x0" />
+        <Param Name="P_Counter1ComparisonValuesActive" Value="0x0" />
+        <Param Name="P_Counter1CounterValue" Value="0x0" />
+        <Param Name="P_Counter1CounterOverflow" Value="0x0" />
+        <Param Name="P_Counter1CounterUnderflow" Value="0x0" />
+        <Param Name="P_Counter1CounterRunning" Value="0x0" />
+        <Param Name="P_Counter1CountingDirection" Value="0x0" />
+        <Param Name="P_Counter1PresetActivated" Value="0x0" />
+        <Param Name="P_Counter1ResetActivated" Value="0x0" />
+        <Param Name="P_Counter1CaptureActivated" Value="0x0" />
+        <Param Name="P_Counter1ZSignalActivated" Value="0x0" />
+        <Param Name="P_Counter2ComparisonValuesActive" Value="0x0" />
+        <Param Name="P_Counter2CounterValue" Value="0x0" />
+        <Param Name="P_Counter2CounterOverflow" Value="0x0" />
+        <Param Name="P_Counter2CounterUnderflow" Value="0x0" />
+        <Param Name="P_Counter2CounterRunning" Value="0x0" />
+        <Param Name="P_Counter2CountingDirection" Value="0x0" />
+        <Param Name="P_Counter2PresetActivated" Value="0x0" />
+        <Param Name="P_Counter2ResetActivated" Value="0x0" />
+        <Param Name="P_Counter2CaptureActivated" Value="0x0" />
+        <Param Name="P_Counter2ZSignalActivated" Value="0x0" />
+        <Param Name="P_Counter3ComparisonValuesActive" Value="0x0" />
+        <Param Name="P_Counter3CounterValue" Value="0x0" />
+        <Param Name="P_Counter3CounterOverflow" Value="0x0" />
+        <Param Name="P_Counter3CounterUnderflow" Value="0x0" />
+        <Param Name="P_Counter3CounterRunning" Value="0x0" />
+        <Param Name="P_Counter3CountingDirection" Value="0x0" />
+        <Param Name="P_Counter3PresetActivated" Value="0x0" />
+        <Param Name="P_Counter3ResetActivated" Value="0x0" />
+        <Param Name="P_Counter3CaptureActivated" Value="0x0" />
+        <Param Name="P_Counter3ZSignalActivated" Value="0x0" />
+        <Param Name="P_Counter4ComparisonValuesActive" Value="0x0" />
+        <Param Name="P_Counter4CounterValue" Value="0x0" />
+        <Param Name="P_Counter4CounterOverflow" Value="0x0" />
+        <Param Name="P_Counter4CounterUnderflow" Value="0x0" />
+        <Param Name="P_Counter4CounterRunning" Value="0x0" />
+        <Param Name="P_Counter4CountingDirection" Value="0x0" />
+        <Param Name="P_Counter4PresetActivated" Value="0x0" />
+        <Param Name="P_Counter4ResetActivated" Value="0x0" />
+        <Param Name="P_Counter4CaptureActivated" Value="0x0" />
+        <Param Name="P_Counter4ZSignalActivated" Value="0x0" />
+        <Param Name="P_OutputControlMode" Value="0x0" />
+        <Param Name="P_AndOrCounterOutputPattern" Value="0x0" />
+        <Param Name="P_InterruptTaskOffset" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput0" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput1" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput2" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput3" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput4" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput5" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput6" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput7" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput8" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput9" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput10" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput11" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput12" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput13" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput14" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput15" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput16" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput17" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput18" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput19" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput20" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput21" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput22" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput23" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput24" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput25" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput26" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput27" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput28" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput29" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput30" Value="0x0" />
+        <Param Name="P_InterruptEnableDataOutput31" Value="0x0" />
+        <Param Name="P_Counter1CounterType" Value="0x0" />
+        <Param Name="P_Counter1SignalType" Value="0x0" />
+        <Param Name="P_Counter1ZResetMode" Value="0x0" />
+        <Param Name="P_Counter1ErrorCodeGeneration" Value="0x0" />
+        <Param Name="P_Counter1UpLimit" Value="0x99999999" />
+        <Param Name="P_Counter1DownLimit" Value="0x0" />
+        <Param Name="P_Counter1InitialCountValue" Value="0x0" />
+        <Param Name="P_Counter1Rang_ComparisionEnableData" Value="0x0" />
+        <Param Name="P_Counter1Output0SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output1SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output2SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output3SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output4SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output5SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output6SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output7SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output8SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output9SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output10SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output11SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output12SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output13SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output14SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output15SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output16SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output17SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output18SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output19SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output20SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output21SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output22SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output23SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output24SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output25SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output26SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output27SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output28SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output29SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output30SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output31SetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output0ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output1ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output2ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output3ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output4ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output5ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output6ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output7ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output8ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output9ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output10ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output11ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output12ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output13ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output14ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output15ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output16ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output17ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output18ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output19ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output20ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output21ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output22ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output23ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output24ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output25ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output26ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output27ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output28ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output29ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output30ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Output31ResetPattern" Value="0x0" />
+        <Param Name="P_Counter1Hysteresis" Value="0x0" />
+        <Param Name="P_Counter1Ranges_ComparisionValues" Value="0x0" />
+        <Param Name="P_Counter1MemoryArea" Value="0x0" />
+        <Param Name="P_Counter1MemoryAddress" Value="0x0" />
+        <Param Name="P_Counter2CounterType" Value="0x0" />
+        <Param Name="P_Counter2SignalType" Value="0x0" />
+        <Param Name="P_Counter2ZResetMode" Value="0x0" />
+        <Param Name="P_Counter2ErrorCodeGeneration" Value="0x0" />
+        <Param Name="P_Counter2UpLimit" Value="0x99999999" />
+        <Param Name="P_Counter2DownLimit" Value="0x0" />
+        <Param Name="P_Counter2InitialCountValue" Value="0x0" />
+        <Param Name="P_Counter2Rang_ComparisionEnableData" Value="0x0" />
+        <Param Name="P_Counter2Output0SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output1SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output2SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output3SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output4SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output5SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output6SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output7SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output8SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output9SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output10SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output11SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output12SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output13SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output14SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output15SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output16SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output17SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output18SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output19SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output20SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output21SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output22SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output23SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output24SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output25SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output26SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output27SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output28SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output29SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output30SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output31SetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output0ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output1ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output2ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output3ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output4ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output5ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output6ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output7ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output8ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output9ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output10ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output11ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output12ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output13ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output14ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output15ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output16ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output17ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output18ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output19ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output20ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output21ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output22ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output23ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output24ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output25ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output26ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output27ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output28ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output29ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output30ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Output31ResetPattern" Value="0x0" />
+        <Param Name="P_Counter2Hysteresis" Value="0x0" />
+        <Param Name="P_Counter2Ranges_ComparisionValues" Value="0x0" />
+        <Param Name="P_Counter2MemoryArea" Value="0x0" />
+        <Param Name="P_Counter2MemoryAddress" Value="0x0" />
+        <Param Name="P_Counter3CounterType" Value="0x0" />
+        <Param Name="P_Counter3SignalType" Value="0x0" />
+        <Param Name="P_Counter3ZResetMode" Value="0x0" />
+        <Param Name="P_Counter3ErrorCodeGeneration" Value="0x0" />
+        <Param Name="P_Counter3UpLimit" Value="0x99999999" />
+        <Param Name="P_Counter3DownLimit" Value="0x0" />
+        <Param Name="P_Counter3InitialCountValue" Value="0x0" />
+        <Param Name="P_Counter3Rang_ComparisionEnableData" Value="0x0" />
+        <Param Name="P_Counter3Output0SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output1SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output2SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output3SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output4SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output5SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output6SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output7SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output8SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output9SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output10SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output11SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output12SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output13SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output14SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output15SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output16SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output17SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output18SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output19SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output20SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output21SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output22SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output23SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output24SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output25SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output26SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output27SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output28SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output29SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output30SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output31SetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output0ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output1ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output2ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output3ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output4ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output5ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output6ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output7ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output8ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output9ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output10ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output11ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output12ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output13ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output14ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output15ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output16ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output17ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output18ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output19ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output20ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output21ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output22ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output23ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output24ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output25ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output26ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output27ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output28ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output29ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output30ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Output31ResetPattern" Value="0x0" />
+        <Param Name="P_Counter3Hysteresis" Value="0x0" />
+        <Param Name="P_Counter3Ranges_ComparisionValues" Value="0x0" />
+        <Param Name="P_Counter3MemoryArea" Value="0x0" />
+        <Param Name="P_Counter3MemoryAddress" Value="0x0" />
+        <Param Name="P_Counter4CounterType" Value="0x0" />
+        <Param Name="P_Counter4SignalType" Value="0x0" />
+        <Param Name="P_Counter4ZResetMode" Value="0x0" />
+        <Param Name="P_Counter4ErrorCodeGeneration" Value="0x0" />
+        <Param Name="P_Counter4UpLimit" Value="0x0" />
+        <Param Name="P_Counter4DownLimit" Value="0x0" />
+        <Param Name="P_Counter4InitialCountValue" Value="0x0" />
+        <Param Name="P_Counter4Rang_ComparisionEnableData" Value="0x0" />
+        <Param Name="P_Counter4Output0SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output1SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output2SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output3SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output4SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output5SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output6SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output7SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output8SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output9SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output10SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output11SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output12SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output13SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output14SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output15SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output16SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output17SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output18SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output19SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output20SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output21SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output22SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output23SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output24SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output25SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output26SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output27SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output28SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output29SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output30SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output31SetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output0ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output1ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output2ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output3ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output4ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output5ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output6ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output7ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output8ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output9ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output10ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output11ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output12ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output13ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output14ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output15ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output16ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output17ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output18ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output19ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output20ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output21ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output22ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output23ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output24ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output25ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output26ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output27ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output28ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output29ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output30ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Output31ResetPattern" Value="0x0" />
+        <Param Name="P_Counter4Hysteresis" Value="0x0" />
+        <Param Name="P_Counter4Ranges_ComparisionValues" Value="0x0" />
+        <Param Name="P_Counter4MemoryArea" Value="0x0" />
+        <Param Name="P_Counter4MemoryAddress" Value="0x0" />
+      </Parameters>
+      <Parameters MdlNm="CJ1W-OD212" RackNum="0" StNum="5" ProfileID="CJ1W-OD212_Ver0_0" />
+    </UnitParameters>
+    <UnitIOPorts>
+      <IOPorts MdlNm="CJ1W-ID211" RackNum="0" StNum="0">
+        <Port Name="Ch1_In" ID="6fff4bac-7256-4f7a-94c8-ab8a8a69e60e">
+          <SubPort>
+            <Port Name="Ch1_In/Ch1_In00" ID="001f506b-5eaf-4c76-a832-21208aa819b3">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In01" ID="16528039-c70a-4ce7-a14f-47db28d039e0">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In02" ID="76860f6d-3bc3-4c6e-9799-3ff14dc6b997">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In03" ID="4dd677a0-afd8-4b67-b1f6-8b17acd79531">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In04" ID="0fdc823b-d806-4175-87a9-bf8cd3999361">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In05" ID="b48aa832-1a0f-4cae-b168-eda71f916d04">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In06" ID="e8fef626-b773-4dd8-a3d6-a756de6a5a0e">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In07" ID="a325d8bd-f3df-418a-b0f8-98f26d66648f">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In08" ID="f32feff7-785e-4f79-9fa2-5840a168fda1">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In09" ID="1cc3701b-6ccd-4272-bf25-44e517b9db07">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In10" ID="c482f14f-2a51-49ce-9214-04a0fa730569">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In11" ID="9d6d4ef1-5ae1-4cc4-8279-55c8c6250bf5">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In12" ID="b05e7fd3-a805-408c-a02b-6b6b8719b99b">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In13" ID="e8cd9739-8df4-4b54-9ffd-13fb32da5b25">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In14" ID="ce56f1d4-a7f3-4872-9b1b-1c8b671057f7">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In15" ID="b5a9bb40-5c62-43b0-89d6-bc1a10edaadb">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+      </IOPorts>
+      <IOPorts MdlNm="CJ1W-ID211" RackNum="0" StNum="1">
+        <Port Name="Ch1_In" ID="2d16f496-7c23-43d9-ab82-b84c040ef20b">
+          <SubPort>
+            <Port Name="Ch1_In/Ch1_In00" ID="c59b6cfe-1eeb-482d-b227-c4d63655447a">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In01" ID="9de1cddd-1263-49e2-b309-756b03eaf49e">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In02" ID="db250e97-910d-4fb8-9f2d-cc40b318950f">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In03" ID="89d90ce8-da90-4bc5-b257-fff4df0a0e21">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In04" ID="380ab3b4-248a-4d96-971b-9fb07d6df278">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In05" ID="984f9351-6bc8-4427-b97e-09c0b9b3a3a9">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In06" ID="34d9e1a1-5d77-4295-8363-306cc5a942a0">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In07" ID="7a4fd875-2e0f-4df3-b084-da2c99def058">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In08" ID="1d157349-feb7-448b-8bc7-9da612788059">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In09" ID="38920c07-5971-4524-aa3a-aeb68652c7d6">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In10" ID="45dc473a-7d9e-49ef-baa0-d12a1af31c72">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In11" ID="38c6083f-40be-40b2-a52a-301d0a57ded3">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In12" ID="d58a13e1-4881-4faf-ad46-f1d8b1e3aaa3">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In13" ID="98f89723-4c37-46f8-b953-699bb24219f5">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In14" ID="1ac83bd1-ec54-49fc-ad1d-be9800dfe41c">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_In/Ch1_In15" ID="4af49e08-4514-4d61-86a3-07692afdc657">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+      </IOPorts>
+      <IOPorts MdlNm="CJ1W-OD212" RackNum="0" StNum="2">
+        <Port Name="Ch1_Out" ID="6ae44452-07ed-4d4c-ab32-da524cce645f">
+          <SubPort>
+            <Port Name="Ch1_Out/Ch1_Out00" ID="d295697a-a405-45d8-93cf-92538e2c5354">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out01" ID="caa1f8d7-0c66-43d1-b19c-351e2139da58">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out02" ID="fd87e02c-16a8-4b50-94ba-fcbb8e2706f8">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out03" ID="5578d10c-fced-4ca5-9b90-5fde2681149b">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out04" ID="cee08aac-30bd-4267-8a8a-09813159dcd2">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out05" ID="2ca021a8-8cf1-4a13-9df1-12ecaf5b1ec6">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out06" ID="90634d84-2304-4883-b8fe-02fefcb24703">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out07" ID="c032ba8b-d5d1-4c6f-83f2-a735e08ebaa0">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out08" ID="ae76bb8f-90f8-48a3-b241-da1fe559de98">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out09" ID="b8fc4428-b9ee-40bb-b10e-b47b46e04f13">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out10" ID="72667be4-5635-4a14-a4ce-3250f62567be">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out11" ID="3df2188c-f170-4f73-829a-01f88b5ce457">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out12" ID="57cb1453-e242-461f-a5fc-2575b262122b">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out13" ID="75aff0c1-a20c-469e-bf8f-93e283865edc">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out14" ID="e07b18ec-efd9-4452-a0fd-9d8eae95150a">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out15" ID="e4e1cdf7-9db3-4a95-9ab2-0727a3704902">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+      </IOPorts>
+      <IOPorts MdlNm="CJ1W-AD081-V1" RackNum="0" StNum="3">
+        <Port Name="Ch1_RdAI" ID="c3015a0f-933c-4839-a720-f9888de3a6c5">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_RdAI" ID="0b04728f-32da-4c38-9dbd-cec32d696587">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_RdAI" ID="44ed6056-0b6b-424f-bdd2-9b5048d79ba8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_RdAI" ID="efb8b274-85f9-41f6-a470-cdec361f1d96">
+          <SubPort />
+        </Port>
+        <Port Name="Ch5_RdAI" ID="208c18d3-21a7-4cd5-9743-bbda1b64249d">
+          <SubPort />
+        </Port>
+        <Port Name="Ch6_RdAI" ID="d7d00015-456d-4e27-8b58-be45ebb8b5b6">
+          <SubPort />
+        </Port>
+        <Port Name="Ch7_RdAI" ID="2b1fa5fe-7480-4694-93d7-2552ac79d996">
+          <SubPort />
+        </Port>
+        <Port Name="Ch8_RdAI" ID="1195c8f8-9062-4288-bfdd-e386415a1021">
+          <SubPort />
+        </Port>
+        <Port Name="PkHdCmd" ID="6939b710-95fc-4184-9b5c-032f1c96b9e7">
+          <SubPort>
+            <Port Name="PkHdCmd/Ch1_PkHdCmd" ID="9e5c8319-49f2-43ee-bf67-34ba0db2231f">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch2_PkHdCmd" ID="eac08d11-b4aa-43b1-9242-742eeeb4cf63">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch3_PkHdCmd" ID="50dc2ff8-64f6-4f0d-8a59-3c7bf3b0d741">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch4_PkHdCmd" ID="10fe7965-dce5-43c1-93c8-eedbc8df9fc5">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch5_PkHdCmd" ID="c71fff89-ef5f-4b44-9a11-02f555ee1378">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch6_PkHdCmd" ID="9466168c-76e7-426b-a3fb-52315a6f79cd">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch7_PkHdCmd" ID="72798e8d-ef28-495a-bf84-ff66db2ad131">
+              <SubPort />
+            </Port>
+            <Port Name="PkHdCmd/Ch8_PkHdCmd" ID="b7c322cb-d53a-4b3e-b658-e8f19c33fdbf">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="SensErr" ID="f473c15c-a22a-4732-b97e-b98ec7830027">
+          <SubPort>
+            <Port Name="SensErr/Ch1_SensErr" ID="f29f0041-ef1f-46e8-ad57-903a3b6db2f8">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch2_SensErr" ID="2e66cb77-f2e3-4649-995b-138a329a40cb">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch3_SensErr" ID="9a95990c-a9c2-44e4-bd99-02e67c7c20dd">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch4_SensErr" ID="d504feb8-f349-4564-8fec-95a15d54458d">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch5_SensErr" ID="fd77ab04-26a5-485f-8a82-f6da56c246dc">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch6_SensErr" ID="61ef29ca-53b6-43f0-ac46-72b6b928b520">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch7_SensErr" ID="bbc5407b-f917-4299-b06f-bc0bc1c619c1">
+              <SubPort />
+            </Port>
+            <Port Name="SensErr/Ch8_SensErr" ID="8c40165c-9df9-4d7c-9970-449a52121ba2">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="UnitErr" ID="ae916e95-f901-4b26-8c53-3cea6ea36806">
+          <SubPort>
+            <Port Name="UnitErr/AveErr" ID="9227e9e3-a1cf-4a8d-be16-fec2f40ca211">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="AdjCh" ID="3b38a2a8-a720-493e-9949-02a18bad0215">
+          <SubPort />
+        </Port>
+        <Port Name="AdjOfs" ID="e25c73e3-5ff7-4be4-99d5-a0a3e301cb4a">
+          <SubPort />
+        </Port>
+        <Port Name="AdjGain" ID="71a97fd8-236a-455a-be23-0408542059bc">
+          <SubPort />
+        </Port>
+        <Port Name="AdjDwn" ID="b4d0a977-a6bb-4c7c-9764-c467d784fdf9">
+          <SubPort />
+        </Port>
+        <Port Name="AdjUp" ID="14d007e0-5573-46dd-b4e2-c1360bfbc834">
+          <SubPort />
+        </Port>
+        <Port Name="AdjSet" ID="f8958d36-83e7-44d8-80a8-eae5caa02f39">
+          <SubPort />
+        </Port>
+        <Port Name="AdjClr" ID="1d4cc10c-f120-43d9-aa18-096fa6e212f2">
+          <SubPort />
+        </Port>
+        <Port Name="AdjPV" ID="8cefcdf5-6af3-479b-af6a-8bcb74bbb618">
+          <SubPort />
+        </Port>
+        <Port Name="AdjUnitErr" ID="62c1c16f-c3b1-4442-972b-341e7dbe9c07">
+          <SubPort>
+            <Port Name="AdjUnitErr/AdjAveErr" ID="d1d1de90-4f86-4246-ae30-f5c5bf8bb209">
+              <SubPort />
+            </Port>
+            <Port Name="AdjUnitErr/AdjInErr" ID="1d779630-c7de-4bef-9dde-f9b57c3066e3">
+              <SubPort />
+            </Port>
+            <Port Name="AdjUnitErr/AdjInNoErr" ID="b25e159e-cce3-41d2-88a9-66e85bc8f757">
+              <SubPort />
+            </Port>
+            <Port Name="AdjUnitErr/AdjMemErr" ID="efe3167a-a0ef-46bd-87d3-b3a17b9402c6">
+              <SubPort />
+            </Port>
+            <Port Name="AdjUnitErr/AdjMd" ID="02eac154-e3e7-4d3b-a63a-de59665cb5f5">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="InChUseCfg" ID="3df98ae8-7cdb-48e5-85b5-740957ce91f8">
+          <SubPort>
+            <Port Name="InChUseCfg/Ch1_InChUseCfg" ID="a587d588-80bf-481b-af3a-b1d9dfeb69c6">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch2_InChUseCfg" ID="b7ba9d74-17f7-475e-9e4d-1400cd2ccde7">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch3_InChUseCfg" ID="4d74d499-c9e6-42fb-8a71-c88f5d276358">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch4_InChUseCfg" ID="9321df8e-5a5f-49b5-9f11-217dfdd78bf0">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch5_InChUseCfg" ID="0a540324-4b67-4752-81a8-79583a8a786f">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch6_InChUseCfg" ID="625d5546-3f3a-479f-b33d-92ac7321c167">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch7_InChUseCfg" ID="ed9ce4a9-abea-443b-b400-19ddc1852665">
+              <SubPort />
+            </Port>
+            <Port Name="InChUseCfg/Ch8_InChUseCfg" ID="35d48153-f9b3-4871-92dd-fa23499f0fd5">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="InRngCfg" ID="8a7df85e-369d-41d5-af94-57cd2078947c">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_AveCfg" ID="9eba4407-1b87-4a3c-934e-406cfdae9984">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_AveCfg" ID="cd2fdd9a-ef23-4dcd-b6f6-ae83a410415b">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_AveCfg" ID="7aa848c2-1e91-4f61-ba54-6fca0d2693ca">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_AveCfg" ID="364e2ecb-7967-40c5-967f-10d41529feb3">
+          <SubPort />
+        </Port>
+        <Port Name="Ch5_AveCfg" ID="e9c1c364-d941-4151-aa39-3aca5907fdde">
+          <SubPort />
+        </Port>
+        <Port Name="Ch6_AveCfg" ID="98c1792d-301c-4d9d-9e17-6abc806f49e3">
+          <SubPort />
+        </Port>
+        <Port Name="Ch7_AveCfg" ID="6a99ade5-00d5-44e7-8ab3-1f50d5ec1971">
+          <SubPort />
+        </Port>
+        <Port Name="Ch8_AveCfg" ID="a564d894-99f1-4bc7-8617-7a5e565d4b99">
+          <SubPort />
+        </Port>
+        <Port Name="MdCfg" ID="dd2c9bf6-191c-49f4-9c31-bae09657a590">
+          <SubPort />
+        </Port>
+        <Port Name="ResolutionCfg" ID="113c5bc2-b16e-4b4c-8ac8-561c3b4ab8b5">
+          <SubPort />
+        </Port>
+      </IOPorts>
+      <IOPorts MdlNm="CJ1W-CTL41-E" RackNum="0" StNum="4">
+        <Port Name="RdNxtErr" ID="fdf7d6a3-3d2c-40c0-8ee2-9c9792d6a757">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_Enbl" ID="2d9112f9-d8df-4cae-86fe-5ecb029e8f1c">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_Dsbl" ID="d5a35d72-17ba-4049-9fd2-451393a45bfe">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_Prst" ID="c4a22bf8-7c7c-4ec9-a4dd-ec41c3a4d26b">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_Rst" ID="b3478605-cf2b-426e-b261-6bb173696c9c">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_RstEnbl" ID="e17ea8a2-9fc3-4661-8915-60c40c4ef912">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_PrstLinCtVal" ID="d897ffc1-eec3-4082-b1ca-bd93d6217575">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_PrstRingCtVal" ID="dd947744-d703-45df-8635-cbc08b3032c4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_Enbl" ID="cd8196f5-511d-4228-813f-7510fc9b52b7">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_Dsbl" ID="86eaf08d-8750-4480-9f45-319aa07fedf1">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_Prst" ID="48c079df-0e3d-4c1f-95b8-8c4bf698268a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_Rst" ID="8e57bff4-dc82-4f64-902f-35960a3a4a6e">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_RstEnbl" ID="fe03124d-14e0-492d-a26c-2be62e511252">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_PrstLinCtVal" ID="23fde60a-e269-46c9-966a-0c01f6552be5">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_PrstRingCtVal" ID="da3a1229-1118-4ce4-ab12-889a083fd431">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_Enbl" ID="5c4029c5-18e1-48a0-9e29-c278f31d38eb">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_Dsbl" ID="da68e2d9-5241-4f84-a6cb-7fcc6f95cbae">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_Prst" ID="b8adbca8-30c8-4367-9816-df00f68b0848">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_Rst" ID="e5f5a6a9-6a2d-414b-afea-0a7f771c30c9">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_RstEnbl" ID="775698aa-0273-44bf-b3c5-0028b4b80c31">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_PrstLinCtVal" ID="facdede6-92bb-4a9c-b8b4-5dd23cd231eb">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_PrstRingCtVal" ID="9dfaecb3-e985-46a7-9bd9-f8c3134d8189">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_Enbl" ID="2b71667a-3d0b-44fc-a19c-6c7aafd0a1b2">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_Dsbl" ID="f277cbea-153c-4bf0-aec0-ebbc123c4181">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_Prst" ID="84fde55a-6541-4e09-8ef3-a62de9e3d135">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_Rst" ID="f5e783c8-e26d-4f87-8112-7bb93b9933f8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_RstEnbl" ID="1ae66690-cbe3-4a98-8f68-f14315dd8e3f">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_PrstLinCtVal" ID="2a1048a9-768f-49e0-b59f-238fc6112bbf">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_PrstRingCtVal" ID="87a3dead-1052-4f6d-be85-38931a18a425">
+          <SubPort />
+        </Port>
+        <Port Name="OutStaDat" ID="ca7f7047-f189-497f-8708-a69f99984811">
+          <SubPort>
+            <Port Name="OutStaDat/OutSta0" ID="a68ee7bb-13a8-4157-8b27-6dd53de5a290">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta1" ID="47292ac6-1eb3-4367-933b-f54a2301d7e8">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta2" ID="fd98fb73-c35a-425a-838f-54e7965e1a21">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta3" ID="1c9eaf06-16f6-477d-bac3-15208aa1c2ba">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta4" ID="232a765f-f38f-41a3-87af-9a30c00ca8e2">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta5" ID="d075ec5a-70a6-44aa-b5af-4dbd641e3063">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta6" ID="413345bc-ef85-4fbc-ad8c-ffcb43dea603">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta7" ID="3f26345c-8981-4d97-8266-637563ab97c4">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta8" ID="c5d07304-2a4c-4010-b84c-bf2d7c495d55">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta9" ID="ee04f241-f08a-414f-b682-7d75a8f55452">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta10" ID="cc75ec4a-0fca-49be-aac0-5569042afb06">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta11" ID="f777c6ff-f1b5-475a-9145-3b9fcfd197dd">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta12" ID="36ed66e5-d5d2-4df5-8ad8-4b02febb7a67">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta13" ID="ed30df43-be39-4d03-937f-738792ae59f2">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta14" ID="7abdaa2b-901c-46ab-af52-24d3685b8426">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta15" ID="66ecc2f7-3346-46e4-bca5-e8c6e7001689">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta16" ID="93e0ddbf-ab40-4082-a907-d2305c58dba5">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta17" ID="d144924a-a220-4003-8b02-7677d748515e">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta18" ID="5337848e-0b53-4566-8f3c-5167e9698d24">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta19" ID="f47fb6d5-6ad6-4986-805a-c3246689c3f4">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta20" ID="71a7fa16-e174-4824-8f51-f3ad259b472b">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta21" ID="e537b46e-5fb0-421e-b0e4-5d53b3ef6f6c">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta22" ID="7e62f928-4dff-46f9-8540-e356adb55bae">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta23" ID="48b04afb-50fe-4ee6-a10d-354bbcb1a8c1">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta24" ID="bb105f8d-42b5-4b64-8c1f-5692685cbbed">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta25" ID="0e03ce9c-f19b-42c2-b63c-03bd147670e5">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta26" ID="c76000cd-d11c-4792-975e-eb61a5239d81">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta27" ID="aa9475e5-be9c-485d-9769-d5372e5ee004">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta28" ID="b7854b7a-3376-4342-beca-5b9836786ee5">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta29" ID="8579d8e1-9759-4338-9733-eabd46e6c6d2">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta30" ID="7fc7611e-d5a0-4695-95a6-b11876367782">
+              <SubPort />
+            </Port>
+            <Port Name="OutStaDat/OutSta31" ID="7530cf1d-2fc7-4efd-8181-3296d99ab2a3">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="ErrCode1" ID="1c0efd87-dee9-4724-a089-3559345ad188">
+          <SubPort />
+        </Port>
+        <Port Name="ErrCode2" ID="5a503168-5587-4fec-bd86-19b84bace147">
+          <SubPort />
+        </Port>
+        <Port Name="GlblErr" ID="425a4035-be18-4c99-b352-8b66c7f2d091">
+          <SubPort />
+        </Port>
+        <Port Name="UnitInitSta" ID="1dce5aae-03f5-48e8-bb83-f71da108d128">
+          <SubPort />
+        </Port>
+        <Port Name="IABlkOverlapSta" ID="b4d0f497-8c02-4704-8302-35b56f4ab14a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_RngCmpDatSta" ID="93eae933-26b1-4695-96a7-2d09cae13bab">
+          <SubPort>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta0" ID="e0f0879e-4da7-432a-84e4-75490e6aa86a">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta1" ID="cf506798-8ba0-410b-97c2-05a7a380caef">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta2" ID="f8b5530e-8c00-45cc-9e06-1e6d9f8a8e63">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta3" ID="95b6d52c-1bf3-44ee-afea-74896a2a3185">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta4" ID="dc942580-9fa0-4a56-9c9c-46dd45cd7b79">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta5" ID="852cd4a0-f0df-4dbb-96fa-60f4c4c7b2d5">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta6" ID="446da3a7-d61e-4af3-9a2a-c5690504e1b1">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_RngCmpDatSta/Ch1_RngCmpSta7" ID="456eaefc-0307-43ed-bdc2-f2b73b16a67c">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="Ch1_LinCtVal" ID="39f3ab0e-192b-4406-b727-64e2d2ce8154">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_RingCtVal" ID="faf4fcb5-3a97-499b-98d7-7a98478eaa13">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_CtOvf" ID="f3b430dd-9bba-482c-8c3e-7022f2b59a11">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_CtUdf" ID="13b08582-72e6-40c0-8055-7dfb4b7d8466">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_CtRun" ID="a315fce5-1342-4bbf-976b-6523d1d21d80">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_CntDir" ID="d6955bf7-91da-4562-9c3c-63404c831ade">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_PrstSta" ID="a0a8e7ea-c5f5-415e-890e-97a73742e622">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_RstSta" ID="e43a628a-862b-40a3-a594-f6d92193b12c">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_ZSig" ID="767971c0-0f98-427f-acaf-7a659dca41b4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_RngCmpDatSta" ID="28eea417-23be-4299-8b63-89dd61f11928">
+          <SubPort>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta0" ID="0187edda-75db-4fa5-a9da-6d2680f802ef">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta1" ID="63829dd0-c219-4535-9530-88648b564256">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta2" ID="82b91202-4eeb-4dea-b7fb-7dd760b5b542">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta3" ID="11bc30fd-04d3-4f9b-8819-12d4b44e54fa">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta4" ID="76934ce9-ba3e-40f5-b636-7ecda97ab7c4">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta5" ID="7b55f00c-0604-460d-8d08-27c6d4ad88ff">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta6" ID="1ffdb44c-7ce0-4a70-8240-2b0fc2d2e49a">
+              <SubPort />
+            </Port>
+            <Port Name="Ch2_RngCmpDatSta/Ch2_RngCmpSta7" ID="f9ac6750-031e-4529-ada2-6d662ff39bfc">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="Ch2_LinCtVal" ID="194c4ad8-0541-4466-bb11-7cec6cbe53be">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_RingCtVal" ID="1aaba6fb-d86e-4da2-8eef-62a85eb3eb7a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_CtOvf" ID="d447e9ef-132a-4af5-97fa-c4b2f69fa5e4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_CtUdf" ID="850b10ad-feb1-420b-a32f-b1db3eb14e09">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_CtRun" ID="4fe29959-a741-4885-bc40-4d570a68f2cc">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_CntDir" ID="d89f40ea-9158-4203-a243-ca1f7d34e184">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_PrstSta" ID="2aa1fef0-ea7d-4c64-9657-9ffdeb85954b">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_RstSta" ID="7b518e81-e26e-473b-9788-290952233eed">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_ZSig" ID="965dd210-de3e-40a8-ba7d-9aa8f623b773">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_RngCmpDatSta" ID="d79d777a-6de1-4b63-8623-e69b0596bb79">
+          <SubPort>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta0" ID="ef93cce1-4cb8-45ac-9929-4f2a035ada1a">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta1" ID="4e86f766-23cd-42e2-a6a5-e7ad3cd15229">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta2" ID="ac536890-1e76-476e-81a7-a48d43261f1e">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta3" ID="b958f1d4-d928-44c5-ad1d-014512d484a7">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta4" ID="e2a97384-db25-4814-80fa-f0b97dd7c7d9">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta5" ID="dd2a8f4b-6196-4f7b-92ff-2e56ca5a65eb">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta6" ID="87f6df52-5e77-486d-a728-db83d8e3bf41">
+              <SubPort />
+            </Port>
+            <Port Name="Ch3_RngCmpDatSta/Ch3_RngCmpSta7" ID="a628afec-e2a8-48cd-b420-5544370da928">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="Ch3_LinCtVal" ID="a570b1ad-8bd4-4529-aa2d-148a7426fa38">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_RingCtVal" ID="3a870b43-9fab-4fd6-83fb-30c5b2f65998">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_CtOvf" ID="3fd00efc-de55-4227-8a71-d1769524f919">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_CtUdf" ID="3bca1c39-7a64-4e67-bc7c-972a4d316f57">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_CtRun" ID="163c5cd3-f465-4a8d-84ed-e3f23f9a1145">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_CntDir" ID="7bdd746d-ae23-490e-b9f0-189cd9eb7fe8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_PrstSta" ID="bee591a4-f76b-441b-b37e-74a49c84b2f3">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_RstSta" ID="ee018d5e-f257-4efe-87ce-543a5afc8058">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_ZSig" ID="4b4e5d67-2970-46b8-9c8d-53086fd7dcb5">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_RngCmpDatSta" ID="a15fc790-713b-43ab-ba72-3df641c33072">
+          <SubPort>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta0" ID="674b0b9a-9091-41ba-84c8-4e99152e9483">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta1" ID="0c1efcc1-3c2d-48fb-b8ac-e19e2d9da0de">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta2" ID="a1662cfc-1337-454d-a12d-cd80a511de21">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta3" ID="24d00428-041f-465b-9d93-b654906cef5f">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta4" ID="abef4c2d-3bab-4f44-9583-877df1cd0887">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta5" ID="515c9a85-bf90-4892-a09f-3e28ddce4761">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta6" ID="bb3eb571-03dc-442c-9d1d-cdb421e69b7f">
+              <SubPort />
+            </Port>
+            <Port Name="Ch4_RngCmpDatSta/Ch4_RngCmpSta7" ID="0cb3ff4e-e8b5-4656-9239-4c43880b9691">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+        <Port Name="Ch4_LinCtVal" ID="b9dd4478-bdd5-48ab-9d3e-9aafddd3319a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_RingCtVal" ID="f6079eb4-5adc-43a1-8764-d77adf3d7ede">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_CtOvf" ID="fb772243-7ae7-4ff9-8e5e-4953ea6e3394">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_CtUdf" ID="8a898071-e9a4-434e-b155-84728a60f5b3">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_CtRun" ID="24c13697-92b8-4949-a5ce-bdbb96d8804f">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_CntDir" ID="ae22530a-1125-48e3-bef9-42e9b1c0aae0">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_PrstSta" ID="f49d8b1f-edf0-41d0-a1be-28e629f80844">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_RstSta" ID="162146b4-ecb4-409c-b234-e5e45bf1bc6b">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_ZSig" ID="fabacef7-0801-4a1b-ab65-4bef809f983a">
+          <SubPort />
+        </Port>
+        <Port Name="OutCtlMdCfg" ID="53fdf39e-a629-4fdf-9b31-7fec690e5d7b">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_CtTypCfg" ID="65093696-4d4f-42b3-b251-c8efc61e623e">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_SigTypCfg" ID="6a83acb4-4af9-4024-9884-7e4b29d939d7">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_ZOvfUdfCfg" ID="c0272803-0e4e-47a8-9fe0-ae5df918e0fd">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_UpCtLmtCfg" ID="196bd120-543a-47a4-825d-de48856ea88a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_LowCtLmtCfg" ID="3e9558f6-ecde-4ce1-87d8-bec0268aabf7">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_InitLinCtCfg" ID="2675f609-041c-4c01-81d3-00e03345edec">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_InitRingCtCfg" ID="6f56bed8-3c61-4531-82c5-936964b42be5">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_RngCmpEnblCfg" ID="dbe016d4-a830-49d9-b5b7-cf6f643c7cb8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_OutSetPatCfg" ID="5ab067e3-d715-4648-a6fe-fdbfe3816fda">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_OutRstPatCfg" ID="ff243ecc-79e8-4dcb-9d7c-75e14884fb2d">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_HystrsCfg" ID="5c8a7512-9be7-4932-8aa0-6028f4d8c09a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_NumRngCmpCfg" ID="2a905044-5270-40ba-a585-08e2dbca5dcc">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_MemAreaCfg" ID="3799c598-00ff-4b15-9692-1edaef5847f8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch1_MemAdrCfg" ID="bca3197b-7abf-448f-a944-7d624daeb8b2">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_CtTypCfg" ID="11fcb994-38cf-4a67-bdd4-4c04f9a5972a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_SigTypCfg" ID="a87766ee-e40c-492a-8286-da3d9f8b0571">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_ZOvfUdfCfg" ID="087550c5-f15c-4126-9fef-78c63ba6a9e9">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_UpCtLmtCfg" ID="9aa43669-5d80-4fa9-8b4d-3b8cf6870ea7">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_LowCtLmtCfg" ID="727fb3fa-bd92-45fe-ae64-ccfcd49776d0">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_InitLinCtCfg" ID="16d63a98-b0f1-469d-9917-7a9da3676a8b">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_InitRingCtCfg" ID="fc7726bd-3789-4406-85ad-044bd8dcd57c">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_RngCmpEnblCfg" ID="a06558da-e8cc-497a-80c4-8671e0c062f4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_OutSetPatCfg" ID="7d5e3fee-cc4e-4c67-a40f-daec088c17a4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_OutRstPatCfg" ID="37809dd5-4ea1-4f4b-89f5-f8686d5e6eb1">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_HystrsCfg" ID="00042936-66a0-4e0a-93cf-6c786f7455c3">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_NumRngCmpCfg" ID="3b7db9c0-44e3-409a-84b5-0d71a89f7209">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_MemAreaCfg" ID="d078e12c-caa1-48a5-b17a-869aefc28e7a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch2_MemAdrCfg" ID="9019c77e-6c7d-4f35-a40a-47df1f884eb8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_CtTypCfg" ID="7d429603-c001-4c43-b2fe-3144fac6b4f8">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_SigTypCfg" ID="ebfde4e3-fca5-4c12-a598-d81cb094ae77">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_ZOvfUdfCfg" ID="662194c5-c1d2-4a28-a841-a71634142792">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_UpCtLmtCfg" ID="6842a442-9078-4952-a1eb-a84cad42daed">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_LowCtLmtCfg" ID="9be45adb-197b-4eaa-b449-aa29f46a21bb">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_InitLinCtCfg" ID="fb72ac94-2a26-477d-8426-e7d6dafac229">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_InitRingCtCfg" ID="9f8cf1aa-bdc0-4a20-af57-fc22663a62a4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_RngCmpEnblCfg" ID="2ccdcaf2-e479-4dab-bdb5-321bb916d383">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_OutSetPatCfg" ID="151432cd-42de-43f9-b9ba-5c42911dc1d7">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_OutRstPatCfg" ID="9b2ae7eb-f1a0-4608-a7ea-5a39f16efe06">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_HystrsCfg" ID="1529f2d6-af0a-4168-8c42-69df67b59d1f">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_NumRngCmpCfg" ID="57625dbb-31aa-494d-bdce-b2617fe00afd">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_MemAreaCfg" ID="fcc04e6c-4af8-4445-b074-fc8145bf746a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch3_MemAdrCfg" ID="cea98fea-7b43-4e79-abca-2af1118891bd">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_CtTypCfg" ID="01f01f16-be16-4503-917b-db4f7892d3e6">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_SigTypCfg" ID="be056319-3f04-4911-ae89-e48d5e41722d">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_ZOvfUdfCfg" ID="5ee1268c-bb52-4974-b681-236a1bc8f089">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_UpCtLmtCfg" ID="65a024e8-01fa-4edd-95f8-0102603a45ff">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_LowCtLmtCfg" ID="116ee3ef-1152-4a04-9c51-ab61c016b946">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_InitLinCtCfg" ID="688317cc-b0d1-47b3-ae19-3507c5f5faa7">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_InitRingCtCfg" ID="d1516aab-9a32-418e-b1db-4ebb3439ac17">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_RngCmpEnblCfg" ID="8739a670-2b07-4a63-b879-a0acfb044b40">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_OutSetPatCfg" ID="22b0436d-216a-4e70-b8d4-f2b3ce6e4f4f">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_OutRstPatCfg" ID="ec31a3ad-1d43-4a59-8ac7-9b6a369ed918">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_HystrsCfg" ID="2391f1ee-e900-47e0-a0ed-1cf08db91d2a">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_NumRngCmpCfg" ID="e2e6298b-c312-4515-808f-7324a98ac398">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_MemAreaCfg" ID="86577621-9330-4148-88f4-1ef11c59b7e4">
+          <SubPort />
+        </Port>
+        <Port Name="Ch4_MemAdrCfg" ID="30a0d06d-7e20-45f9-9b6f-0be1aa0519f0">
+          <SubPort />
+        </Port>
+      </IOPorts>
+      <IOPorts MdlNm="CJ1W-OD212" RackNum="0" StNum="5">
+        <Port Name="Ch1_Out" ID="49a97ff2-9385-4de5-9b85-092810b77106">
+          <SubPort>
+            <Port Name="Ch1_Out/Ch1_Out00" ID="a582fdc6-81b8-416f-8920-0aae121e5b91">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out01" ID="7004c5f7-3711-46be-9ea8-319e09a934c8">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out02" ID="439979a6-d4a3-4933-becf-fb9162849b76">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out03" ID="065b7925-ed80-4949-a25b-d4c0712b051f">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out04" ID="87d73b79-6939-4f4c-9cd9-c8f926ed67c0">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out05" ID="dde02e85-602d-4067-a7eb-71785aeb84d3">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out06" ID="fa5c3dfb-fad7-49dc-b91a-8aa684c7fafa">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out07" ID="ab7e2009-9876-463a-bc0d-b7a3f568616a">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out08" ID="5ec88e12-bb30-4ffc-8a98-d17397ed34f4">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out09" ID="1407acf8-da5d-451e-974e-b0d16c24361b">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out10" ID="bb13982f-58fa-4d4c-855c-a30dccb3766d">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out11" ID="308c63ce-919a-4dbb-bacb-2d3b51fdbb5f">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out12" ID="280ff2be-c828-433d-9af7-16134325cbc3">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out13" ID="65d5649c-b846-4401-a8ba-d5f13bb6bd87">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out14" ID="17eef6ff-6b13-4f5d-90f9-3816fd6c7247">
+              <SubPort />
+            </Port>
+            <Port Name="Ch1_Out/Ch1_Out15" ID="f0a2e9df-443a-4613-8761-d980dc9e8b98">
+              <SubPort />
+            </Port>
+          </SubPort>
+        </Port>
+      </IOPorts>
+    </UnitIOPorts>
+  </Data>
+</PC21ConfigurationData>

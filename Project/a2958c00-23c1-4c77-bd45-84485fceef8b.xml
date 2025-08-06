@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"LD","Var":"ExternalTrip"},{"__type":"FB","In":[{"__type":"PF","Arg":"Execute"},{"__type":"PRM","Arg":"Node","Ix":1,"Type":"UINT","Var":"1"}],"Ix":2,"Name":"INV010_MX2_ExternalTrip","Out":[{"__type":"PF","Arg":"ENO"}],"UD":true,"X":1,"Var":"MX2_ExternalTrip"}],"LRI":3,"RRI":4,"VLs":[]}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataTraceSetModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>Signal_Treatment.DI104_S17</Name>
+      <Id>126bd60b-c030-47bb-a2a4-93d01bc2a72f</Id>
+      <SymbolId>entity://nextask.base.6a5b0594-2e30-4416-a682-e713afcc9552/Signal_Treatment/DI104_S17%3ABOOL</SymbolId>
+      <NaturalDataType>BOOL</NaturalDataType>
+      <Comment>Crib Clamp End</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>255</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>0</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Boolean</DataType>
+      <Id>126bd60b-c030-47bb-a2a4-93d01bc2a72f</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>Aktuator.DO301_Y36</Name>
+      <Id>26fbef6a-1b7d-416d-b992-3e5951fbd6db</Id>
+      <SymbolId>entity://nextask.cyclic2.df71c2c9-9f9b-4df0-bd2e-80a41d0d6fe0/Aktuator/DO301_Y36%3ABOOL</SymbolId>
+      <NaturalDataType>BOOL</NaturalDataType>
+      <Comment>Valve HeadGrip</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>0</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>255</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Boolean</DataType>
+      <Id>26fbef6a-1b7d-416d-b992-3e5951fbd6db</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>-2</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+  </DataTraceSetModel>
+</data>

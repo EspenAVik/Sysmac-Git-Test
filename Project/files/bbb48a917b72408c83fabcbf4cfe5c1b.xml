@@ -1,0 +1,14 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Class</HiddenFooter><HiddenHeader>Partial Public Class Trend_ScrollEnd&#xD;
+</HiddenHeader><Text>'**********************************************************************&#xD;
+'* Omron標準IAG&#xD;
+'*作成日：2014/6/25&#xD;
+'*作成者：Omron&#xD;
+'*&#xD;
+'*「トレンドグラフスクロール最新データIAG」&#xD;
+'*トレンドグラフの最新データ部へ移動&#xD;
+'*&#xD;
+'**********************************************************************&#xD;
+Sub ScrollEnd&#xD;
+	ScrollTrendToEnd(_HMI_CurrentPage,TrendObjName)&#xD;
+End Sub</Text></CodeEditorModel>

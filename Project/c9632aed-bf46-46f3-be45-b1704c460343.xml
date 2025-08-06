@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OEN\General\HasChanged	N=FB_NewStep	G=VAR
+++D=BOOL	N=NextStep	G=VAR
+++D=TON	N=TON_TriggerDelay	G=VAR
+++D=TON	N=TON_TimeOut	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=StepNext	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT
+++D=INT	N=NumberOfSteps	Ord=2	G=VAR_INPUT
+++D=TIME	N=TriggerDelay	Ord=3	G=VAR_INPUT
+++D=TIME	N=TimeOutTime	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Trigger	Ord=5	G=VAR_OUTPUT
+++D=INT	N=StepActive	Ord=6	G=VAR_OUTPUT
+++D=BOOL	N=TimeOut	Ord=7	G=VAR_OUTPUT
+++D=TIME	N=TD_Timer	Ord=8	G=VAR_OUTPUT
+++D=TIME	N=TOT_Timer	Ord=9	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

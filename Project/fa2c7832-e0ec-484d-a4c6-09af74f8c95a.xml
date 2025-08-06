@@ -1,0 +1,32 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=OEN\Inv\sMX2_Mapping	N=MX2	Ord=1	G=VAR_IN_OUT
+++D=WORD	N=Status	Ord=2	G=VAR_INPUT
+++D=UINT	N=Output_frequency_monitor	Ord=3	G=VAR_INPUT
+++D=UINT	N=d002_Output_Current_Monitor	Ord=4	G=VAR_INPUT
+++D=WORD	N=d005_Multi_function_Input_Monitor	Ord=5	G=VAR_INPUT
+++D=WORD	N=d006_Multi_function_Output_Monitor	Ord=6	G=VAR_INPUT
+++D=INT	N=d012_Output_Torque_Monitor	Ord=7	G=VAR_INPUT
+++D=UINT	N=d013_Output_Voltage_Monitor	Ord=8	G=VAR_INPUT
+++D=INT	N=d018_Fin_Temperature_Monitor	Ord=9	G=VAR_INPUT
+++D=UINT	N=d081_Fault_Monitor_1_Cause	Ord=10	G=VAR_INPUT
+++D=UINT	N=d102_DC_Voltage_Monitor	Ord=11	G=VAR_INPUT
+++D=UDINT	N=d015_Integrated_Power_Monitor	Ord=12	G=VAR_INPUT
+++D=UDINT	N=d016_Total_RUN_Time	Ord=13	G=VAR_INPUT
+++D=UDINT	N=d017_Total_Power_ON_Time_Monitor	Ord=14	G=VAR_INPUT
+++D=UINT	N=P120_DriveProgramming_User_Parameter_U20	Ord=15	G=VAR_INPUT
+++D=UINT	N=P121_DriveProgramming_User_Parameter_U21	Ord=16	G=VAR_INPUT
+++D=BOOL	N=Active	Ord=17	G=VAR_OUTPUT
+++D=WORD	N=Command	Ord=18	G=VAR_OUTPUT
+++D=UINT	N=Frequency_reference	Ord=19	G=VAR_OUTPUT
+++D=UDINT	N=F002_1st_Acceleration_Time_1	Ord=20	G=VAR_OUTPUT
+++D=UDINT	N=F003_1st_Deceleration_Time_1	Ord=21	G=VAR_OUTPUT
+++D=UINT	N=Output_terminal_setting	Ord=22	G=VAR_OUTPUT
+++D=UINT	N=P123_DriveProgramming_User_Parameter_U23	Ord=23	G=VAR_OUTPUT
+++D=UINT	N=P124_DriveProgramming_User_Parameter_U24	Ord=24	G=VAR_OUTPUT
+++D=STRING[50]	N=LastErrorMessage	Ord=25	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

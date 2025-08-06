@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[1..3,1..23] OF WORD	N=IndexSizeOffset	G=VAR
+++D=ARRAY[0..299] OF BYTE	N=BackupData	R=1	G=VAR
+++D=EC_CoESDORead	N=fbBackupGX_ILM08C	G=VAR
+++D=UINT	N=x	IV=25	G=VAR
+++D=ARRAY[0..19] OF BYTE	N=ReadData	G=VAR
+++D=UINT	N=Size	G=VAR
+++D=UINT	N=Offset	G=VAR
+++D=_sSDO_ACCESS	N=SdoObj	G=VAR
+++D=STRING[255]	N=VString	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	G=VAR_INPUT
+++D=UINT	N=NodeNo	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=2	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=3	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=4	G=VAR_OUTPUT
+++D=DWORD	N=AbortCode	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[1..192] OF BOOL	N=_EC_MBXSlavTbl	Const=1	G=VAR_EXTERNAL

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataTraceEnvironmentalModel>
+    <CursorPosition>0</CursorPosition>
+    <StartTime>2020-09-22T10:47:49.869</StartTime>
+    <IsInAbsoluteTimeMode>false</IsInAbsoluteTimeMode>
+    <SeriesAxisSettings>
+      <SeriesAxis>
+        <SeriesId>bb48688b-fe79-45cb-b4ef-b50749c56b51</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>f17d23b3-d3a3-475d-a6a5-f1b606c7c384</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>ecdd632d-b59b-46bb-bece-1fbdc97a3aa5</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>dfc3259f-ee58-4cb8-a7d0-13a6cc1a89cd</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+    </SeriesAxisSettings>
+  </DataTraceEnvironmentalModel>
+</data>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String99" ID="65eaf5a5-e5fe-4aec-901c-508cee80030c">
+      <Localisation Language="en-US" Translation="Y2:" Default="True" />
+    </Resource>
+    <Resource Name="String98" ID="0ebe1b4a-e237-46f9-9d35-5bff7f10e2e4">
+      <Localisation Language="en-US" Translation="Y1:" Default="True" />
+    </Resource>
+    <Resource Name="String97" ID="9e6ccdc3-dd62-4ee8-ad78-d2b4daadc019">
+      <Localisation Language="en-US" Translation="Y0:" Default="True" />
+    </Resource>
+    <Resource Name="String96" ID="8ae3599b-2c0c-463f-9375-a5e2a9d3a76c">
+      <Localisation Language="en-US" Translation="X2:" Default="True" />
+    </Resource>
+    <Resource Name="String95" ID="b344b173-cc63-4960-a7db-bc2538613176">
+      <Localisation Language="en-US" Translation="X1:" Default="True" />
+    </Resource>
+    <Resource Name="String94" ID="6141778d-011f-41b6-aaf1-27025d2760a5">
+      <Localisation Language="en-US" Translation="X0:" Default="True" />
+    </Resource>
+    <Resource Name="String93" ID="193c85a7-1b89-4a36-a05e-75f73842aa9d">
+      <Localisation Language="en-US" Translation="Raw:" Default="True" />
+    </Resource>
+    <Resource Name="String106" ID="bbe2a58e-f824-4745-9640-39f7f061d138">
+      <Localisation Language="en-US" Translation="Offset:" Default="True" />
+    </Resource>
+    <Resource Name="String105" ID="02cff4bf-3601-46bd-b29a-0dd1a0b46e0f">
+      <Localisation Language="en-US" Translation="Signal Fault" Default="True" />
+    </Resource>
+    <Resource Name="String103" ID="61039258-9ef3-4dfe-99af-747d2f29b461">
+      <Localisation Language="en-US" Translation="Ymin:" Default="True" />
+    </Resource>
+    <Resource Name="String102" ID="50600033-009d-43f5-93bd-25c611ac9bb9">
+      <Localisation Language="en-US" Translation="Xmax:" Default="True" />
+    </Resource>
+    <Resource Name="String101" ID="1b8a2b91-b8bf-4575-9c6f-330b633991ef">
+      <Localisation Language="en-US" Translation="Xmin:" Default="True" />
+    </Resource>
+    <Resource Name="String100" ID="67373200-ab13-4b09-b792-29a8a9c17b4f">
+      <Localisation Language="en-US" Translation="Value:" Default="True" />
+    </Resource>
+    <Resource Name="String1" ID="0eec5535-2a87-4bed-a6b2-57815660c662">
+      <Localisation Language="en-US" Translation="Ymax:" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontFamilies">
+    <Resource Name="FontFamily" ID="e26a4f4a-0d59-44c5-9b06-9281cb8f80d6">
+      <Localisation Language="en-US" Translation="Segoe UI" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily23" ID="a5835bbc-b9d7-4588-b6f1-1a311e9ae724">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily0" ID="2cc13f00-c08d-48ec-935d-cda2f92006df">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily2" ID="0b93db0f-0d08-48b3-a783-be6688e19503">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily3" ID="045f2f3d-35d9-4eb6-a6c0-6c352078c96e">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily4" ID="214a7fc4-a602-4ebf-b1cf-b9d67200fb9c">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily5" ID="ac98c99f-7e7b-49af-b581-5b85b6df2442">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily6" ID="1ebe02be-5c78-4d92-948a-4c79afb72965">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily7" ID="ba0fc293-394a-459a-b967-01b1e5b9f5bc">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily8" ID="dfc2d22e-4009-4514-a656-2d63e75e9834">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily9" ID="9bacbe65-e745-440d-8b6d-0775bab1b06c">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily10" ID="e1594f78-1ea9-41f7-a82e-47fb2f4b9a8d">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily11" ID="ccf55781-8051-4a41-b989-a6aec4ba740e">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily13" ID="8d4a1097-29f1-43e2-8a12-d3b4c9d74dfd">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily14" ID="ff2ee803-8587-4e1d-9afe-0483ed29f22d">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily15" ID="8f9b09aa-cb67-4bed-869e-0044f1935f2b">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontSizes">
+    <Resource Name="FontSize" ID="3c884cd8-f9fd-42d8-af9f-512affa73a49">
+      <Localisation Language="en-US" Translation="12" Default="True" />
+    </Resource>
+    <Resource Name="FontSize95" ID="98b8b788-7a4d-4929-ba6c-f7c1166f9a30">
+      <Localisation Language="en-US" Translation="10" Default="True" />
+    </Resource>
+    <Resource Name="FontSize2" ID="c1d443d8-e303-4fd0-8093-f4ffaed85cd8">
+      <Localisation Language="en-US" Translation="10" Default="True" />
+    </Resource>
+    <Resource Name="FontSize93" ID="551bd97b-6be0-47d3-b3c0-af8630931c87">
+      <Localisation Language="en-US" Translation="10" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontStyles">
+    <Resource Name="FontStyle" ID="369bfa2c-7018-4e92-8c99-d25b5e92b464">
+      <Localisation Language="en-US" Translation="Normal" Default="True" />
+    </Resource>
+  </Resources>
+</IagResources>

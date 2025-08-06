@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types18" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sCommands" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="51" OffsetType="NJ">
+      <DataType Name="WriteSettings" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Set ON to Write Settings. Goes OFF when done." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSettings" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Set ON to Read Settings. Goes OFF when done" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetAllEnergyData" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Set ON to Reset All Energy Data. Goes OFF when done" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetDataAndSettings" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Set ON to Reset Data and Settings. Goes OFF when done" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sStatus" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="8" OffsetType="NJ">
+      <DataType Name="Voltage_1" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0000h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Voltage_2" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0002h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Voltage_3" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0004h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current_1" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0006h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current_2" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0008h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current_3" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="000Ah" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Power_Factor" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="000Ch" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Frequency" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="000Eh" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Power" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0010h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Power" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0012h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Voltage_V1_V2" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0014h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Voltage_V1_V3" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0016h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Voltage_V2_V3" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0018h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Non_Resetables" BaseType="OEN\Modbus\KM\sNo_Reset" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Resetables" BaseType="OEN\Modbus\KM\sWith_Reset" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Conversion_Value1" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0300h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Conversion_Value2" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0302h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TimeOutCounter" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNo_Reset" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="1" OffsetType="NJ">
+      <DataType Name="Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0200h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Energy_exp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0202h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_imp_Varh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0204h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_exp_Varh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0206h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cumulative_reactive_power_Varh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0208h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T1_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="020Ah" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="020Ch" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T3_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="020Eh" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T4_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0210h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0220h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Energy_exp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0222h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_imp_kVarh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0224h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_exp_kVarh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0226h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cumulative_Reactive_Power_kVarh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0228h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T1_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="022Ah" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="022Ch" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T3_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="022Eh" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T4_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0230h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sWith_Reset" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ">
+      <DataType Name="Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0240h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Energy_exp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0242h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_imp_Varh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0244h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_exp_Varh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0246h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cumulative_reactive_power_Varh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0248h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T1_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="024Ah" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="024Ch" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T3_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="024Eh" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T4_Active_Energy_imp_Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0250h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0260h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Active_Energy_exp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0262h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_imp_kVarh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0264h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Reactive_Energy_exp_kVarh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0266h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cumulative_Reactive_Power_kVarh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0268h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T1_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="026Ah" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="026Ch" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T3_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="026Eh" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T4_Active_Energy_imp_kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0270h" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCircuit_Settings" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="7" OffsetType="NJ">
+      <DataType Name="PhaseAndWire" BaseType="OEN\Modbus\KM\ePhaseAndWire" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2000h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CircuitAddress" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2002h R" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pulse_Output" BaseType="OEN\Modbus\KM\eOn_Off" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2010h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Voltage_Selected" BaseType="OEN\Modbus\KM\eVoltage" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2012h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CT_sec_current" BaseType="OEN\Modbus\KM\eCurrent" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2014h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CT_prim_current" BaseType="DINT(0..99999)" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2016h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCommon_Settings" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="53" OffsetType="NJ">
+      <DataType Name="UnitAddress" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2002h R" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Protocol" BaseType="OEN\Modbus\KM\eProtocol" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2200h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Comm_Speed" BaseType="OEN\Modbus\KM\eComm_Speed" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2202h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Data_Length" BaseType="OEN\Modbus\KM\eDataLength" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2204h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Stop_bit" BaseType="OEN\Modbus\KM\eStopBit" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2206h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Parity" BaseType="OEN\Modbus\KM\eParity" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2208h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Trans_Wait_Time" BaseType="UINT(0..99)" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="220Ah RW (ms)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pulse_Output_Units" BaseType="OEN\Modbus\KM\ePulseUnits" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="220Ch RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VT_ratio" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="220Eh RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Conversion_Factor" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2210h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Conversion_Units" BaseType="STRING[4]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2212h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LCD_Off_Time" BaseType="OEN\Modbus\KM\eLCD_offTime" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2214h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Alarm" BaseType="OEN\Modbus\KM\eOn_Off" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2218h RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Tariff" BaseType="OEN\Modbus\KM\eOn_Off" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="221Ah RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Current_Tariff" BaseType="OEN\Modbus\KM\eOn_Off" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="221Ch RW" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Model" BaseType="STRING[12]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2400h R" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Software" BaseType="STRING[10]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2406h R" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Status_Info" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="2408h R" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Buffer_Size" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="240Ah R" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eOn_Off" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_OFF" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_ON" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eComm_Speed" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_1200" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_2400" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_4800" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_9600" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_19200" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_38400" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ePulseUnits" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_1Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_10Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_100Wh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_1kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_5kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_10kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_50kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_100kWh" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="7" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ePhaseAndWire" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_1P2W" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_1P3W" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_3P3W" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_1P2W2" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_1P3W2" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_3P4W" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eDataLength" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_7bit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_8bit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eCurrent" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_1A" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_5A" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eStopBit" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_1bit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_2bit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eVoltage" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="V_R" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="V_T" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="V_R_T" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eParity" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Set_NONE" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_ODD" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_EVEN" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eProtocol" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="CompowayF" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Modbus" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eLCD_offTime" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Disabled" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_1min" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_5min" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Set_10min" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sTariff" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="T1" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T2" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T3" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="T4" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sCircuit" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="52" OffsetType="NJ">
+      <DataType Name="Status" BaseType="OEN\Modbus\KM\sStatus" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Circuit Status" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Settings" BaseType="OEN\Modbus\KM\sCircuit_Settings" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Circuit Settings" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ResetEnergyData" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Set ON to Reset Circuit Energy Data. Goes OFF when done" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Enable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ON=Enable Circuit Data Reading.  Make sure Circuit (B/C/D)=ACTIVE using KM-MODE key" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

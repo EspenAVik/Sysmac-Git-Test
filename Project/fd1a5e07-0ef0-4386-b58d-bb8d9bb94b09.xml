@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=EqualSetpointVelocityMode	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=EqualSetpointTorqueMode	Ord=3	G=VAR_IN_OUT
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperation	Ord=4	G=VAR_INPUT
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperationDisplay	Ord=5	G=VAR_INPUT
+++D=PTP_CIA402_CONTROLWORD	N=Controlword	Ord=6	G=VAR_INPUT
+++D=PTP_CIA402_STATUSWORD	N=Statusword	Ord=7	G=VAR_INPUT
+++D=BOOL	N=rtrigHomingError_Q	Ord=8	G=VAR_INPUT
+++D=BOOL	N=rtrigTargetReached_Q	Ord=9	G=VAR_INPUT
+++D=BOOL	N=rtrigInTorque_Q	Ord=10	G=VAR_INPUT
+++D=BOOL	N=ftrigSlippageErr_SingleRecDone_Q	Ord=11	G=VAR_INPUT
+++D=BOOL	N=ftrigInTorque_Q	Ord=12	G=VAR_INPUT
+++D=BOOL	N=ftrigTargetReached_Q	Ord=13	G=VAR_INPUT
+++D=BOOL	N=ftrigSetpointAcknowledge_Q	Ord=14	G=VAR_INPUT
+++D=BOOL	N=DampingTimerTorqueMode_Q	Ord=15	G=VAR_INPUT
+++D=BOOL	N=DampingTimerVelocityMode_Q	Ord=16	G=VAR_INPUT
+++D=BOOL	N=HaltDelayOneCylce	Ord=17	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=MotionMonitoring	G=RETURN

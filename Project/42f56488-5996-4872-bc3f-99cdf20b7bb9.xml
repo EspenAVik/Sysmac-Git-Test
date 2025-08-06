@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>MTCP_NJNX</Name>
+      <NameSpace></NameSpace>
+      <Version>2.3.2</Version>
+      <Revision>1</Revision>
+      <LibraryId>61f68706-fd95-483a-8638-bb7e40b241a0</LibraryId>
+      <Author>JP Viskovic</Author>
+      <Company>Omron France</Company>
+      <DateCreated>2012-09-10T15:19:49.8103044+02:00</DateCreated>
+      <DateModified>2019-07-05T08:22:24.4575423+02:00</DateModified>
+      <Comment>Removed Sample Programs</Comment>
+      <Password></Password>
+      <AttachedFiles>
+        <AttachedFile>C:\Users\baakje\OneDrive - OMRON\SYSMAC\SYSMAC Library\MTCP_NJNX_Client_E.pdf</AttachedFile>
+        <AttachedFile>C:\Users\baakje\OneDrive - OMRON\SYSMAC\SYSMAC Library\MTCP_NJNX_Server_E.pdf</AttachedFile>
+      </AttachedFiles>
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>MTCP_Server</PublicName>
+        <PublicName>MTCP_Client_Connect</PublicName>
+        <PublicName>MTCP_Client_Fn01</PublicName>
+        <PublicName>MTCP_Client_Fn02</PublicName>
+        <PublicName>MTCP_Client_Fn03</PublicName>
+        <PublicName>MTCP_Client_Fn04</PublicName>
+        <PublicName>MTCP_Client_Fn10</PublicName>
+        <PublicName>MTCP_Client_Fn05</PublicName>
+        <PublicName>MTCP_Client_Fn06</PublicName>
+        <PublicName>MTCP_Client_Fn17</PublicName>
+        <PublicName>uModbusReg</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ101-9020</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>18</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.18</DisplayVersion>
+        <Packages>
+          <Package Name="DBCon" Version="1.2" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>7e5241e1-9de2-4269-b9b8-8f9030939ee8</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\MTCP_NJNX v232.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

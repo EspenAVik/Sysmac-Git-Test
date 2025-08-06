@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=EC_CoESDOWrite	N=EtherCAT_Write_External_Trip	G=VAR
+++D=_sSDO_ACCESS	N=SDO_Obj_W	G=VAR
+++D=WORD	N=Write_ExternalTrip	R=1	IV=8	G=VAR
+++D=WORD	N=Reset_ExternalTrip	R=1	IV=0	G=VAR
+++D=EC_CoESDOWrite	N=EtherCAT_Reset_External_Trip	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=Executes the Functionblock
+++D=UINT	N=Node	Ord=2	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

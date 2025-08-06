@@ -1,0 +1,17 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Class</HiddenFooter><HiddenHeader>Partial Public Class Start_data_logging&#xD;
+</HiddenHeader><Text>'**********************************************************************&#xD;
+'* Omron標準IAG&#xD;
+'*作成日：2014/6/25&#xD;
+'*作成者：Omron&#xD;
+'*&#xD;
+'*「指定データロギング開始IAG」&#xD;
+'*&#xD;
+'**********************************************************************&#xD;
+Sub SelectDataLoggingStart&#xD;
+	If SelectDataSetName = "" Then&#xD;
+		StartDataLogging()&#xD;
+	Else&#xD;
+		StartDataLogging(SelectDataSetName)&#xD;
+	End If&#xD;
+End Sub</Text></CodeEditorModel>

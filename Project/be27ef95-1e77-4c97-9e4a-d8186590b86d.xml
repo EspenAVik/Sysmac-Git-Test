@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INV00x_MX2\uWORD_BOOL_MX2	N=tmp_Coil_Data_0	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=WORD	N=Coil_Data_0	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT	Com=Enables the Functionblock
+++D=BOOL	N=Intelligent_input_terminal_1	Ord=3	G=VAR_OUTPUT	Com=1: ON, 0: OFF
+++D=BOOL	N=Intelligent_input_terminal_2	Ord=4	G=VAR_OUTPUT	Com=1: ON, 0: OFF
+++D=BOOL	N=Intelligent_input_terminal_3	Ord=5	G=VAR_OUTPUT	Com=1: ON, 0: OFF
+++D=BOOL	N=Intelligent_input_terminal_4	Ord=6	G=VAR_OUTPUT	Com=1: ON, 0: OFF
+++D=BOOL	N=Intelligent_input_terminal_5	Ord=7	G=VAR_OUTPUT	Com=1: ON, 0: OFF
+++D=BOOL	N=Intelligent_input_terminal_6	Ord=8	G=VAR_OUTPUT	Com=1: ON, 0: OFF
+++D=BOOL	N=Intelligent_input_terminal_7	Ord=9	G=VAR_OUTPUT	Com=1: ON, 0: OFF
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

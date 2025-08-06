@@ -1,0 +1,5 @@
+﻿{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"ST","Ix":1,"Var":"Tx4bitTo4bit","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_00"},{"__type":"ST","Ix":1,"Var":"Output_00","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_01"},{"__type":"ST","Ix":1,"Var":"Output_01","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_02"},{"__type":"ST","Ix":1,"Var":"Output_02","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_03"},{"__type":"ST","Ix":1,"Var":"Output_03","X":1}],"LRI":2,"RRI":3,"VLs":[]}

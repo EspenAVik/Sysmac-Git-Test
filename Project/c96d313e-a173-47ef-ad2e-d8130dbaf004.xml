@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OEN\RFID\eRFID	N=eCommand	G=VAR
+++D=OEN\RFID\sRFID40	N=myRFID	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=OEN\RFID\sResponse40	N=From_V680S	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=BOOL	N=ReadData	Ord=2	G=VAR_INPUT
+++D=BOOL	N=WriteData	Ord=3	G=VAR_INPUT
+++D=OEN\RFID\sCommandData40	N=Data	Ord=4	G=VAR_INPUT
+++D=OEN\RFID\eRFID	N=Command	Ord=5	G=VAR_INPUT	Com=Select from a list of commands
+++D=BOOL	N=ExeCommand	Ord=6	G=VAR_INPUT	Com=Keep this bit ON until Done or Error
+++D=OEN\RFID\sCommand40	N=To_V680S	Ord=7	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=8	G=VAR_OUTPUT	Com=Waiting for Response
+++D=BOOL	N=Done	Ord=9	G=VAR_OUTPUT	Com=Command Completed
+++D=OEN\RFID\sResponseData40	N=ResponseData	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=11	G=VAR_OUTPUT	Com=Command not Successful
+++D=STRING[255]	N=ErrorMessage	Ord=12	G=VAR_OUTPUT
+++D=STRING[50]	N=Info2Message	Ord=13	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

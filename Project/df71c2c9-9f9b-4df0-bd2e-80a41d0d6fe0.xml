@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="8000" ExecutionPriority="17" CycleTimeOverDetection="Warning" TimeOutValue="40000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="MainStatus" InstanceName="MainStatus" IniFileTrackingId="25316661d3c94f228ed4671995464da7" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="AlarmHandling" InstanceName="AlarmHandling" IniFileTrackingId="cb6ed8606c5f48b692f8b3368d8bcdcf" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds />
+  <TaskInterfaceVariables version="1" />
+</data>

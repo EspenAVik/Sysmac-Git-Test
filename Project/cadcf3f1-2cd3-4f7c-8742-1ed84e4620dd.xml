@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=FB_Initialized	IV=False	G=VAR	Com=this function block is initialized
+++D=USINT	N=FB_Number	G=VAR	Com=initialization number of this function block
+++D=BOOL	N=DispatchNewMotionJob	G=VAR	Com=new motion job should be dispatch
+++D=R_TRIG	N=R_TRIG_JogP	G=VAR	Com=trigger to rising edge of JogPositive
+++D=R_TRIG	N=R_TRIG_JogN	G=VAR	Com=trigger to rising edge of JogNegative
+++D=F_TRIG	N=F_TRIG_JogP	G=VAR	Com=trigger to falling edge of JogPositive
+++D=F_TRIG	N=F_TRIG_JogN	G=VAR	Com=trigger to falling edge of JogNegative
+++D=BOOL	N=DoneInternal	G=VAR
+++D=BOOL	N=ActiveInternal	G=VAR
+++D=BOOL	N=BusyInternal	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=JogPositive	Ord=1	G=VAR_INPUT	Com=as long as "JogPositive" is true, the axis jogs in positive direction
+++D=BOOL	N=JogNegative	Ord=2	G=VAR_INPUT	Com=as long as "JogNegative" is true, the axis jogs in negative direction
+++D=PTP_MC_JOG_MODE	N=JogMode	Ord=3	G=VAR_INPUT	Com=jogging mode (0 = default (velo 1 and velo 2) / 1 = only velo 1 / 2 = only velo 2) 
+++D=BOOL	N=Velocity1	Ord=4	G=VAR_OUTPUT	Com=Drive jogs at velocity 1
+++D=BOOL	N=Velocity2	Ord=5	G=VAR_OUTPUT	Com=Drive jogs at velocity 2
+++D=BOOL	N=Busy	Ord=6	G=VAR_OUTPUT	Com=FB is not finished and new output values are to be expected
+++D=BOOL	N=CommandAborted	Ord=7	G=VAR_OUTPUT	Com="command" is aborted by another command
+++D=BOOL	N=Error	Ord=8	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=9	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=10	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

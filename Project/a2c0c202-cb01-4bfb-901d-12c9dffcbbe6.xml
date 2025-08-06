@@ -1,0 +1,17 @@
+﻿{"CLs":[{"__type":"LD","Var":"Bit_00"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[0]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_01"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[1]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_02"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[2]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_03"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[3]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_04"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[4]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_05"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[5]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_06"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[6]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_07"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[7]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_08"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[8]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_09"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[9]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_10"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[10]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_11"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[11]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_12"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[12]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_13"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[13]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_14"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[14]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Bit_15"},{"__type":"ST","Ix":1,"Var":"OutputWordAs.Bit[15]","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In","Ix":2,"Type":"ANY","Var":"OutputWordAs.Wrd"}],"Ix":4,"Name":"MOVE","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"Out","Ix":3,"Type":"ANY","Var":"Output_Word"}],"X":1},{"__type":"ST","Ix":1,"Var":"Tx16bitToWORD","X":2}],"LRI":5,"RRI":6,"VLs":[]}

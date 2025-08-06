@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT	Com=as long as "Enable" is true, order is being executed
+++D=BOOL	N=Valid	Ord=2	G=VAR_OUTPUT	Com=if true, a valid set of outputs is available at FB
+++D=BOOL	N=ErrorStop	Ord=3	G=VAR_OUTPUT	Com=drive is in state "ErrorStop"
+++D=BOOL	N=Disabled	Ord=4	G=VAR_OUTPUT	Com=drive is in state "Disabled"
+++D=BOOL	N=Stopping	Ord=5	G=VAR_OUTPUT	Com=drive is in state "Stopping"
+++D=BOOL	N=Homing	Ord=6	G=VAR_OUTPUT	Com=drive is in state "Homing"
+++D=BOOL	N=Standstill	Ord=7	G=VAR_OUTPUT	Com=drive is in state "Standstill"
+++D=BOOL	N=DiscreteMotion	Ord=8	G=VAR_OUTPUT	Com=drive is in state "DiscreteMotion"
+++D=BOOL	N=ContinuousMotion	Ord=9	G=VAR_OUTPUT	Com=drive is in state "ContinuousMotion"
+++D=BOOL	N=SynchronizedMotion	Ord=10	G=VAR_OUTPUT	Com=drive is in state "SynchronizedMotion"
+++D=BOOL	N=Error	Ord=11	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=12	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=13	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"ST","Ix":1,"Var":"ENO","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"IST","EID":"ee34cc75-de36-42c5-b835-e066c0f8d6d9","H":112.39999999999998,"TXT":"IF Bit THEN BOOL_To_UINT:=1; \u000d\u000a\u0009ELSE BOOL_To_UINT:=0;\u000d\u000aEND_IF;","W":608.80000000000018}],"LRI":1,"RRI":2,"VLs":[]}

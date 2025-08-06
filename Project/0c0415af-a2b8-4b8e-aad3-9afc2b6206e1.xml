@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataTraceEnvironmentalModel>
+    <CursorPosition>1085.8086031423213</CursorPosition>
+    <StartTime>2023-03-24T11:04:24.599</StartTime>
+    <IsInAbsoluteTimeMode>false</IsInAbsoluteTimeMode>
+    <SeriesAxisSettings>
+      <SeriesAxis>
+        <SeriesId>0a6f1c78-8112-4615-b3a0-f002ce88e234</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>a7e1a8f2-7ed8-49af-a93e-ad9c9f30e28a</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>e378b5af-503b-4cae-a661-788362a19d88</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>c09e88c6-bc45-410c-b91c-bcf62128fad8</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>9623b554-f2bb-4ab1-a52c-82c10343b60d</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>70b42797-af64-4610-835b-180dc941c051</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>5074e773-e2ef-4086-91ea-a774d430d54c</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+    </SeriesAxisSettings>
+  </DataTraceEnvironmentalModel>
+</data>

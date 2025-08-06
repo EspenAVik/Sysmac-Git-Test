@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String17" ID="ce6df1c1-1df7-4cb2-89be-1a0054859d2c">
+      <Localisation Language="ja-JP" Translation="Zoom Out" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+  <Resources Type="Images">
+    <Resource Name="Image108" ID="4ba984a0-bd8a-430c-aa36-6db4eddd82fe">
+      <Localisation Language="ja-JP" Translation="show_trend_cursor_1_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image109" ID="597c1c6c-865b-4b38-a949-3ae80527ca1a">
+      <Localisation Language="ja-JP" Translation="show_trend_cursor_1_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+</IagResources>

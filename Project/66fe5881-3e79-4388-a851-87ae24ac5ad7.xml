@@ -1,0 +1,63 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=BOOL	N=EnableDrive	Ord=3	G=VAR_INPUT	Com=CCON.0 : Drive Enable
+++D=BOOL	N=Stop	Ord=4	G=VAR_INPUT	Com=CCON.1 : stop active == 0 / stop not active == 1
+++D=BOOL	N=Brake	Ord=5	G=VAR_INPUT	Com=CCON.2 : release brake
+++D=BOOL	N=ResetFault	Ord=6	G=VAR_INPUT	Com=CCON.3 : quit active fault
+++D=BOOL	N=HMIAccessLocked	Ord=7	G=VAR_INPUT	Com=CCON.5 : PLC control == 1 / HMI control == 0
+++D=INT	N=OPM	Ord=8	G=VAR_INPUT	Com=operation mode
+++D=BOOL	N=Halt	Ord=9	G=VAR_INPUT	Com=CPOS.0 : Halt active == 0 / Halt not active == 1
+++D=BOOL	N=StartTask	Ord=10	G=VAR_INPUT	Com=CPOS.1 : starts positioning task
+++D=BOOL	N=StartHoming	Ord=11	G=VAR_INPUT	Com=CPOS.2 : starts homing task
+++D=BOOL	N=JoggingPos	Ord=12	G=VAR_INPUT	Com=CPOS.3 : jogging positive direction
+++D=BOOL	N=JoggingNeg	Ord=13	G=VAR_INPUT	Com=CPOS.4 : jogging negative direction
+++D=BOOL	N=TeachActualValue	Ord=14	G=VAR_INPUT	Com=CPOS.5 : teach actual position to selected record mode
+++D=BOOL	N=ClearRemainingPosition	Ord=15	G=VAR_INPUT	Com=CPOS.6 : clear remaining position if halt is/was active
+++D=BOOL	N=Relative	Ord=16	G=VAR_INPUT	Com=CDIR.0 : absolute == 0 / relative == 1
+++D=BOOL	N=DeactivateStrokeLimit	Ord=17	G=VAR_INPUT	Com=CDIR.5 : IF TRUE, stroke limit is deactivated (directmode/forcecontrol)
+++D=BOOL	N=ExecuteFunction	Ord=18	G=VAR_INPUT	Com=CDIR.7 : execute cam disc function
+++D=INT	N=SetFunctionNo	Ord=19	G=VAR_INPUT	Com=CDIR.3 and 4 : set function number for synchronisation mode
+++D=INT	N=SetFunctionGroup	Ord=20	G=VAR_INPUT	Com=CDIR.5 and 6 : set function group for synchronisation mode
+++D=INT	N=RecordNo	Ord=21	G=VAR_INPUT	Com=set value of record number (recordmode)
+++D=USINT	N=SetValueVelocity	Ord=22	G=VAR_INPUT	Com=set value velocity (directmode/forcecontrol)
+++D=DINT	N=SetValuePosition	Ord=23	G=VAR_INPUT	Com=set value position (directmode/forcecontrol)
+++D=USINT	N=SetValueForceRamp	Ord=24	G=VAR_INPUT	Com=set value for force-ramp
+++D=DINT	N=SetValueForce	Ord=25	G=VAR_INPUT	Com=set value force (directmode/forcecontrol)
+++D=USINT	N=SetValueRotRamp	Ord=26	G=VAR_INPUT	Com=set value for rotation-speed-ramp (directmode/rotation-speed-control)
+++D=DINT	N=SetValueRotSpeed	Ord=27	G=VAR_INPUT	Com=set value for rotation-speed (directmode/rotation-speed-control)
+++D=STRING[80]	N=OPMString	Ord=28	G=VAR_OUTPUT	Com=description of the operation mode
+++D=STRING[80]	N=StateOPMString	Ord=29	G=VAR_OUTPUT	Com=description of the actual state
+++D=BOOL	N=DriveEnabled	Ord=30	G=VAR_OUTPUT	Com=SCON.0 : 0 == disable / 1 == enable
+++D=BOOL	N=Ready	Ord=31	G=VAR_OUTPUT	Com=SCON.1 : drive is ready
+++D=BOOL	N=Warning	Ord=32	G=VAR_OUTPUT	Com=SCON.2 : indicates information to user (no stop of member)
+++D=BOOL	N=Fault	Ord=33	G=VAR_OUTPUT	Com=SCON.3 : indicates information to user (stop of member) 
+++D=BOOL	N=SupplyVoltagePresent	Ord=34	G=VAR_OUTPUT	Com=SCON.4 : 0 == not present / 1 == present
+++D=BOOL	N=ControlFCT_HMI	Ord=35	G=VAR_OUTPUT	Com=SCON.5 : 0 == access MMI / 1 == PLC
+++D=INT	N=StateOPM	Ord=36	G=VAR_OUTPUT	Com=state of the operation mode
+++D=BOOL	N=HaltActive	Ord=37	G=VAR_OUTPUT	Com=SPOS.0 : 0 == halt is active / 1 == halt is not active
+++D=BOOL	N=AckStart	Ord=38	G=VAR_OUTPUT	Com=SPOS.1 : acknowledge start
+++D=BOOL	N=MotionComplete	Ord=39	G=VAR_OUTPUT	Com=SPOS.2 : motion complete
+++D=BOOL	N=AckTeach	Ord=40	G=VAR_OUTPUT	Com=SPOS.3 : acknowledge teach
+++D=BOOL	N=DriveIsMoving	Ord=41	G=VAR_OUTPUT	Com=SPOS.4 : 1 == drive is moving
+++D=BOOL	N=FollowingError	Ord=42	G=VAR_OUTPUT	Com=SPOS.5 : 1 == following error active
+++D=BOOL	N=StandstillControl	Ord=43	G=VAR_OUTPUT	Com=SPOS.6 : 1 member outside tolerance window after motion complete
+++D=BOOL	N=HomingValid	Ord=44	G=VAR_OUTPUT	Com=SPOS.7 : homing is valid
+++D=BOOL	N=VelocityLimitReached	Ord=45	G=VAR_OUTPUT	Com=SDIR.4 : velocity limit reached (directmode/forcecontrol)
+++D=BOOL	N=StrokeLimitReached	Ord=46	G=VAR_OUTPUT	Com=SDIR.5 : stroke limit reached (directmode/forcecontrol)
+++D=BOOL	N=RC1	Ord=47	G=VAR_OUTPUT	Com=RSB.0 : record chain condition 1 reached 
+++D=BOOL	N=RCC	Ord=48	G=VAR_OUTPUT	Com=RSB.1 : record chain condition complete
+++D=INT	N=ActualRecordNo	Ord=49	G=VAR_OUTPUT	Com=actual record number (recordmode)
+++D=BOOL	N=FunctionIsActive	Ord=50	G=VAR_OUTPUT	Com=Byte 3 Bit 7: function is active (synchronisation mode)
+++D=INT	N=ActualFunctionNo	Ord=51	G=VAR_OUTPUT	Com=Byte 3 Bit 3 and 4 : actual function number for synchronisation mode
+++D=INT	N=ActualFunctionGroup	Ord=52	G=VAR_OUTPUT	Com=Byte 3 Bit 5 and 6 : actual function group for synchronisation mode
+++D=DINT	N=ActualPosition	Ord=53	G=VAR_OUTPUT	Com=actual position (directmode/positioncontrol)
+++D=DINT	N=ActualVelocity	Ord=54	G=VAR_OUTPUT	Com=actual velocity (directmode)
+++D=DINT	N=ActualForce	Ord=55	G=VAR_OUTPUT	Com=actual force (directmode/forcecontrol)
+++D=DINT	N=ActualRotRamp	Ord=56	G=VAR_OUTPUT	Com=actual value for rotation-speed-ramp (directmode/rotation-speed-control)
+++D=DINT	N=ActualRotSpeed	Ord=57	G=VAR_OUTPUT	Com=actual value for rotation-speed (directmode/rotation-speed-control)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

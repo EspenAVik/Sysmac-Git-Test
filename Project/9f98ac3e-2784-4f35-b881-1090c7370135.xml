@@ -1,0 +1,16 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(*&#xD;
+10 point scaling - Real. &#xD;
+Rev 1:	Initial version		2019.09.30 PMO&#xD;
+&#xD;
+*)&#xD;
+&#xD;
+IF Xp[0] &lt;= X AND X &lt; Xp[1] OR (X &gt;= Xp[1]  AND NoOfPoint =  1)      THEN           Y:= Yp[0] + (X - Xp[0]) * ((Yp[1] - Yp[0])/(Xp[1] - Xp[0]));     END_IF;&#xD;
+IF Xp[1] &lt;= X AND X &lt; Xp[2] OR (X &gt;= Xp[2]  AND NoOfPoint =  2)      THEN           Y:= Yp[1] + (X - Xp[1]) * ((Yp[2] - Yp[1])/(Xp[2] - Xp[1]));     END_IF;&#xD;
+IF Xp[2] &lt;= X AND X &lt; Xp[3] OR (X &gt;= Xp[3]  AND NoOfPoint =  3)      THEN           Y:= Yp[2] + (X - Xp[2]) * ((Yp[3] - Yp[2])/(Xp[3] - Xp[2]));     END_IF;&#xD;
+IF Xp[3] &lt;= X AND X &lt; Xp[4] OR (X &gt;= Xp[4]  AND NoOfPoint =  4)      THEN           Y:= Yp[3] + (X - Xp[3]) * ((Yp[4] - Yp[3])/(Xp[4] - Xp[3]));     END_IF;&#xD;
+IF Xp[4] &lt;= X AND X &lt; Xp[5] OR (X &gt;= Xp[5]  AND NoOfPoint =  5)      THEN           Y:= Yp[4] + (X - Xp[4]) * ((Yp[5] - Yp[4])/(Xp[5] - Xp[4]));     END_IF;&#xD;
+IF Xp[5] &lt;= X AND X &lt; Xp[6] OR (X &gt;= Xp[6]  AND NoOfPoint =  6)      THEN           Y:= Yp[5] + (X - Xp[5]) * ((Yp[6] - Yp[5])/(Xp[6] - Xp[5]));     END_IF;&#xD;
+IF Xp[6] &lt;= X AND X &lt; Xp[7] OR (X &gt;= Xp[7]  AND NoOfPoint =  7)      THEN           Y:= Yp[6] + (X - Xp[6]) * ((Yp[7] - Yp[6])/(Xp[7] - Xp[6]));     END_IF;&#xD;
+IF Xp[7] &lt;= X AND X &lt; Xp[8] OR (X &gt;= Xp[8]  AND NoOfPoint =  8)      THEN           Y:= Yp[7] + (X - Xp[7]) * ((Yp[8] - Yp[7])/(Xp[8] - Xp[7]));     END_IF;&#xD;
+IF Xp[8] &lt;= X AND X &lt; Xp[9] OR (X &gt;= Xp[9]  AND NoOfPoint =  9)      THEN           Y:= Yp[8] + (X - Xp[8]) * ((Yp[9] - Yp[8])/(Xp[9] - Xp[8]));     END_IF;&#xD;
+</Text></StructuredTextModel>

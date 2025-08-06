@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataTraceSetModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>M10_Enc.PosActual</Name>
+      <Id>bb48688b-fe79-45cb-b4ef-b50749c56b51</Id>
+      <SymbolId>entity://variables.global.c70d0156-295a-49c4-9044-6e55e830ea17/M10_Enc.PosActual%3AREAL</SymbolId>
+      <NaturalDataType>REAL</NaturalDataType>
+      <Comment>Actual Position</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>235</ColourR>
+      <ColourG>249</ColourG>
+      <ColourB>25</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Single</DataType>
+      <Id>bb48688b-fe79-45cb-b4ef-b50749c56b51</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>AI5_ZT12.Y_Real</Name>
+      <Id>f17d23b3-d3a3-475d-a6a5-f1b606c7c384</Id>
+      <SymbolId>entity://variables.global.c70d0156-295a-49c4-9044-6e55e830ea17/AI5_ZT12.Y_Real%3AREAL</SymbolId>
+      <NaturalDataType>REAL</NaturalDataType>
+      <Comment>M10 Pos Scaled Value Real</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>81</ColourR>
+      <ColourG>206</ColourG>
+      <ColourB>227</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Single</DataType>
+      <Id>f17d23b3-d3a3-475d-a6a5-f1b606c7c384</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>M10_Enc_StoredVal</Name>
+      <Id>ecdd632d-b59b-46bb-bece-1fbdc97a3aa5</Id>
+      <SymbolId>entity://variables.global.c70d0156-295a-49c4-9044-6e55e830ea17/M10_Enc_StoredVal%3ADINT</SymbolId>
+      <NaturalDataType>DINT</NaturalDataType>
+      <Comment>Stored encoder value in case of power loss</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>255</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>0</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Int32</DataType>
+      <Id>ecdd632d-b59b-46bb-bece-1fbdc97a3aa5</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset></ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>AI5_ZT12.X_INT</Name>
+      <Id>dfc3259f-ee58-4cb8-a7d0-13a6cc1a89cd</Id>
+      <SymbolId>entity://variables.global.c70d0156-295a-49c4-9044-6e55e830ea17/AI5_ZT12.X_INT%3AINT</SymbolId>
+      <NaturalDataType>INT</NaturalDataType>
+      <Comment>M10 Pos Unscaled value</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>0</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>255</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Int16</DataType>
+      <Id>dfc3259f-ee58-4cb8-a7d0-13a6cc1a89cd</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset></ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+  </DataTraceSetModel>
+</data>

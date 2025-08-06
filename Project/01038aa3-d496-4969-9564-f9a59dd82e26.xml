@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=R_TRIG_Enable	G=VAR	Com=trigger to rising edge of Enable
+++D=F_TRIG	N=F_TRIG_Enable	G=VAR	Com=trigger to falling edge of Enable
+++D=BOOL	N=WaitIfDisabled	G=VAR	Com=variable to wait until drive is disabled after switch off (disable voltage)
+++D=TON	N=TimeoutTimer	G=VAR	Com=timeout supervision after trigger enabling
+++D=BOOL	N=StartTimer	G=VAR	Com=start timeout supervision
+++D=R_TRIG	N=R_TRIG_AxisError	G=VAR	Com=trigger to rising edge of AxisError
+++D=TON	N=TimerReadDeviceErr	G=VAR	Com=timer for reading error id
+++D=BOOL	N=StartTimerReadDevErr	G=VAR	Com=start reading error id
+++D=BOOL	N=AxisErrorForThisFB	G=VAR	Com=during rising edge of AxisError no another FB is active which can to show the AxisError
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT	Com=as long as "Enable" is true, order is being executed
+++D=BOOL	N=Status	Ord=2	G=VAR_OUTPUT	Com=effective state of the power stage
+++D=BOOL	N=Valid	Ord=3	G=VAR_OUTPUT	Com=if true, a valid set of outputs is available at FB
+++D=BOOL	N=Error	Ord=4	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=5	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=6	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

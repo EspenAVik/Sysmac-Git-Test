@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=ByteNo	G=VAR
+++D=ARRAY[0..1] OF BYTE	N=StatusByte	Ord=6	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=OEN\IOL\s\sIOLinkPort	N=IOLPortStatus	Ord=1	G=VAR_OUTPUT
+++D=WORD	N=I_O_Port_Error_Status	Ord=2	G=VAR_INPUT	Com=Dual port Error Status
+++D=UINT	N=PortNo	Ord=3	G=VAR_INPUT	Com=IOLink Master Sensor Port Number (1..8)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=IOLink_PortStatus	G=RETURN

@@ -1,0 +1,24 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..23] OF BYTE	N=FHPP_PLUS_DATA_OUT	G=VAR	Com=intern variable to buffer the FHPP+ output data
+++D=ARRAY[0..9] OF DINT	N=InternalObjectBuffer	G=VAR	Com=intern variable to buffer the FHPP+ objects
+++D=STRING[9]	N=stConfigFHPP_PLUS	G=VAR	Com=string with the plc configuration code for the FHPP+ output (is displayed in the Festo Configuration Tool (FCT))
+++D=INT	N=iSingleSign	G=VAR
+++D=INT	N=iCount	G=VAR	Com=counter variable for the loop
+++D=INT	N=iAddress	G=VAR	Com=counter variable for adress of intern data buffer
+++D=INT	N=iObject	G=VAR	Com=counter variable for the FHPP+ objects in the FML_REF
+++D=ARRAY[0..5] OF BYTE	N=BufferForModbusSwapping	G=VAR	Com=buffer for modbus swapping of the ParID and the value
+++D=ARRAY[0..23] OF BYTE	N=FHPP_PLUS_DATA_IN	G=VAR	Com=intern variable to buffer the FHPP+ input data
+++D=BYTE	N=bBuffer	G=VAR
+++D=WORD	N=wBuffer	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=UDINT	N=PlcConfigFHPP_PLUS_OUT	Ord=3	G=VAR_INPUT	Com=plc configuration code for the FHPP+ output (is displayed in the Festo Configuration Tool (FCT))
+++D=ARRAY[0..7] OF BYTE	N=FHPP_PLUS_Target1	Ord=4	G=VAR_OUTPUT	Com=first 8 bytes of FHPP+ output data (to controller)
+++D=ARRAY[0..7] OF BYTE	N=FHPP_PLUS_Target2	Ord=5	G=VAR_OUTPUT	Com=second 8 bytes of FHPP+ output data (to controller)
+++D=ARRAY[0..7] OF BYTE	N=FHPP_PLUS_Target3	Ord=6	G=VAR_OUTPUT	Com=third 8 bytes of FHPP+ output data (to controller)
+++D=DT_FML_STATUS	N=Status	Ord=7	G=VAR_OUTPUT	Com=structure with the status information of the function block and FPC
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

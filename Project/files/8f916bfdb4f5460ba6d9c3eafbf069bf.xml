@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String12" ID="c7c28e9a-42d8-41d3-9097-9f52fc7237fd">
+      <Localisation Language="ja-JP" Translation="&gt;&gt;" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String13" ID="630ba08e-6e27-4cba-b95f-dbdc2ae78dab">
+      <Localisation Language="ja-JP" Translation="&lt;&lt;" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String14" ID="2f1c8e2e-637c-40d8-b7b3-6da8b466e7f0">
+      <Localisation Language="ja-JP" Translation="&lt;" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String15" ID="a81c3fa8-0c8b-4c9d-bfae-51c50bf51347">
+      <Localisation Language="ja-JP" Translation="&gt;" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String17" ID="5d939b36-653c-4884-a09f-9307950ad9df">
+      <Localisation Language="ja-JP" Translation="Zoom Out" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="String18" ID="d38f9976-9b2e-4a28-94ce-8b42a005a97c">
+      <Localisation Language="ja-JP" Translation="Button" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+  <Resources Type="Images">
+    <Resource Name="Image24" ID="7f5db5a2-49eb-4a58-8aa6-6bf5821685bf">
+      <Localisation Language="ja-JP" Translation="scroll_trend_to_end_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image25" ID="519a2318-780c-42bd-b365-70f757ebb614">
+      <Localisation Language="ja-JP" Translation="scroll_trend_to_end_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image26" ID="c2a6b014-f0b2-4bbd-86cf-832b39767eb3">
+      <Localisation Language="ja-JP" Translation="scroll_trend_to_start_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image27" ID="9eaea8a6-31b5-445b-83f8-376f0ada7b2b">
+      <Localisation Language="ja-JP" Translation="scroll_trend_to_start_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image28" ID="e08e765d-4a03-4056-ae78-9a7cf88767e2">
+      <Localisation Language="ja-JP" Translation="scroll_trend_light_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image29" ID="a705322d-78c1-4b6c-abe0-3af467350841">
+      <Localisation Language="ja-JP" Translation="scroll_trend_light_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image30" ID="1d0a5c82-49bc-4cf9-9979-2718a6b16546">
+      <Localisation Language="ja-JP" Translation="scroll_trend_left_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image31" ID="b8c9850b-e11d-4e0b-a5e0-d6b4b30aca74">
+      <Localisation Language="ja-JP" Translation="scroll_trend_left_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image38" ID="a81f289f-2d5b-4dc6-89ee-3a934167d33e">
+      <Localisation Language="ja-JP" Translation="set_trend_display_mode_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image39" ID="a1bb4a6a-8b21-4967-8ec5-f0d74658f662">
+      <Localisation Language="ja-JP" Translation="set_trend_display_mode_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image40" ID="14bd8fde-f60f-4d6e-a276-a0af9968debb">
+      <Localisation Language="ja-JP" Translation="show_trend_cursor_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image41" ID="c14e1d1e-a350-4b76-a4d0-2e8113f60c40">
+      <Localisation Language="ja-JP" Translation="show_trend_cursor_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image80" ID="5df152b3-67b7-40f7-ac64-1a51c6d3cb3c">
+      <Localisation Language="ja-JP" Translation="composition_center_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image81" ID="c4a8c66e-ae24-45a9-bb27-763231086b43">
+      <Localisation Language="ja-JP" Translation="composition_right_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image103" ID="374bd54e-6a85-49e8-9c60-594ab6de87ab">
+      <Localisation Language="ja-JP" Translation="trend_graph_composition2_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+</IagResources>

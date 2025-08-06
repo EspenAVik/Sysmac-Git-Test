@@ -1,0 +1,13 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Class</HiddenFooter><HiddenHeader>Partial Public Class Trend_DisplayCursor2&#xD;
+</HiddenHeader><Text>'**********************************************************************&#xD;
+'* Omron標準IAG&#xD;
+'*作成日：2014/6/25&#xD;
+'*作成者：Omron&#xD;
+'*&#xD;
+'*「トレンドグラフカーソル表示/非表示切換えIAG」&#xD;
+'*&#xD;
+'**********************************************************************&#xD;
+Sub TrendDisplayCursor&#xD;
+	ShowTrendCursor(_HMI_CurrentPage,TrendObjName,2,CursorVisible)&#xD;
+End Sub</Text></CodeEditorModel>

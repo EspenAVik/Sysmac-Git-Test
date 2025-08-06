@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT	Com=as long as "Enable" is true, order is being executed
+++D=BOOL	N=Valid	Ord=2	G=VAR_OUTPUT	Com=if true, a valid set of outputs is available at FB
+++D=REAL	N=Velocity	Ord=3	G=VAR_OUTPUT	Com=value of the actual velocity of the drive (in user unit)
+++D=BOOL	N=Error	Ord=4	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=5	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=6	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

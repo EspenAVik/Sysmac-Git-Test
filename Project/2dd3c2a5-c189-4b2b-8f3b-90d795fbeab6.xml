@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=bInit	IV=False	G=VAR	Com=status of inizialisation of the FB
+++D=INT	N=lMemberID	G=VAR	Com=local member ID of the FB
+++D=ARRAY[1..3] OF DT_FML_PRM_DESCRIPTION	N=Param	G=VAR	Com=parameter to write in motorcontroller (max number of parameter = 3)
+++D=ARRAY[1..3] OF INT	N=listPNU	IV=[540, 541, 542]	G=VAR	Com=PNUs for parameter writing (max number of parameter = 3)
+++D=INT	N=StepNo	IV=0	G=VAR	Com=actual step number
+++D=INT	N=ixPar	IV=1	G=VAR	Com=index for the array
+++D=TON	N=TONInst	G=VAR	Com=timer instance to monitor a timeout of the function block
+++D=BOOL	N=TimeStart	G=VAR	Com=variable to start the timer instance
+++D=TIME	N=TimeoutTime	IV=T#3s	Const=1	G=VAR	Com=timeout time
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=BOOL	N=Execute	Ord=3	G=VAR_INPUT	Com=perform data exchange
+++D=BOOL	N=Write	Ord=4	G=VAR_INPUT	Com=read or write parameter (1=write / 0=read)
+++D=DINT	N=Velocity	Ord=5	G=VAR_INPUT	Com=base velocity directmode positioning
+++D=DINT	N=Acceleration	Ord=6	G=VAR_INPUT	Com=acceleration directmode positioning
+++D=DINT	N=Deceleration	Ord=7	G=VAR_INPUT	Com=deceleration directmode positioning
+++D=BOOL	N=Done	Ord=8	G=VAR_OUTPUT	Com=execution done
+++D=BOOL	N=Error	Ord=9	G=VAR_OUTPUT	Com=transmission fault
+++D=DT_FML_STATUS	N=Status	Ord=10	G=VAR_OUTPUT	Com=structure with the status information of the function block and FPC
+++D=DINT	N=ActVelocity	Ord=11	G=VAR_OUTPUT	Com=actual base velocity directmode positioning
+++D=DINT	N=ActAcceleration	Ord=12	G=VAR_OUTPUT	Com=actual acceleration directmode positioning
+++D=DINT	N=ActDeceleration	Ord=13	G=VAR_OUTPUT	Com=actual deceleration directmode positioning
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

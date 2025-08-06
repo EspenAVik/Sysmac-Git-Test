@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=OEN\IOL\sE3S	N=Sensordata	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=IN_Data_Enable	Ord=2	G=VAR_INPUT
+++D=ARRAY[0..1] OF BYTE	N=Input_Data01	Ord=3	G=VAR_INPUT
+++D=ARRAY[0..1] OF BYTE	N=Input_Data02	Ord=4	G=VAR_INPUT
+++D=ARRAY[0..1] OF BYTE	N=Input_Data03	Ord=5	G=VAR_INPUT
+++D=ARRAY[0..1] OF BYTE	N=Input_Data04	Ord=6	G=VAR_INPUT
+++D=WORD	N=I_O_Port_Error_Status	Ord=7	G=VAR_INPUT	Com=Dual port Error Status
+++D=UINT	N=PortNo	Ord=8	G=VAR_INPUT	Com=IOLink Master Sensor Port Number (1..8)
+++D=UINT	N=R	Ord=9	G=VAR_OUTPUT
+++D=UINT	N=G	Ord=10	G=VAR_OUTPUT
+++D=UINT	N=B	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=InstabilityAlarm	Ord=12	G=VAR_OUTPUT
+++D=BOOL	N=MinorError	Ord=13	G=VAR_OUTPUT
+++D=BOOL	N=MajorError	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=IOLinkPortError	Ord=15	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=IOLink_E3S	G=RETURN

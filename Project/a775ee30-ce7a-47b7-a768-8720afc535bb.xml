@@ -1,0 +1,69 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=WORD	N=SdoWriteQueue	G=VAR
+++D=BOOL	N=HomingCommandIsSet	G=VAR	Com=(************ HOMING MODE (6) ************)
+++D=TON	N=tonHomingCommandWasSet	G=VAR
+++D=REAL	N=ActualAcceleration	IV=-999	G=VAR	Com=(************ MOVEMENT RELATED SDOs ************)
+++D=BOOL	N=StartWritingProfileAcceleration	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_ProfileAcceleration	IV=(Index := 16#6083, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_ProfileAcceleration	G=VAR	Com=// SDO 16#6083.0 (UDINT)
+++D=UDINT	N=WriteBufferSdoProfileAcceleration	G=VAR
+++D=REAL	N=ActualDeceleration	IV=-999	G=VAR
+++D=BOOL	N=StartWritingProfileDeceleration	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_ProfileDeceleration	IV=(Index := 16#6084, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_ProfileDeceleration	G=VAR	Com=// SDO 16#6084.0 (UDINT)
+++D=UDINT	N=WriteBufferSdoProfileDeceleration	G=VAR
+++D=REAL	N=ActualJerk	IV=-999	G=VAR
+++D=BOOL	N=StartWritingProfileJerk	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_ProfileJerk	IV=(Index := 16#60A4, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_ProfileJerk	G=VAR	Com=// SDO 16#60A4.0 (UDINT)
+++D=UDINT	N=WriteBufferSdoProfileJerk	G=VAR
+++D=UINT	N=ActualPositioningOptionCode	G=VAR
+++D=BOOL	N=StartWritingPosOptionCode	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_PosOptionCode	IV=(Index := 16#60F2, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_PosOptionCode	G=VAR
+++D=UINT	N=WriteBufferSdoPosOptionCode	G=VAR
+++D=DINT	N=ActualRecordIndex	IV=-999	G=VAR
+++D=BOOL	N=StartWritingNextRecordIndex	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_NextRecordIndex	IV=(Index := 16#216F, Subindex := 20, IsCompleteAccess := False)	G=VAR	Com=(************ RECORD TABLE MODE (-20) ************)
+++D=EC_CoESDOWrite	N=fb_WriteSdo_NextRecordIndex	G=VAR	Com=// SDO 16#216F.20 (DINT)
+++D=DINT	N=WriteBufferSdoNextRecordIndex	G=VAR
+++D=REAL	N=ActualVeloLimitTorqMode	IV=-999	G=VAR
+++D=BOOL	N=StartWritingVeloLimitTorqMode	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_VeloLimitTorqMode	IV=(Index := 16#216F, Subindex := 15, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_VeloLimitTorqMode	G=VAR	Com=// SDO 16#216F.15 (REAL)
+++D=REAL	N=WriteBufferSdoVeloLimitTorqMode	G=VAR
+++D=REAL	N=ActualTargetSlope	IV=-999	G=VAR
+++D=BOOL	N=StartWritingTargetSlope	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_TargetSlope	IV=(Index := 16#6087, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_TargetSlope	G=VAR	Com=// SDO 16#6087.0 (UDINT)
+++D=UDINT	N=WriteBufferSdoTargetSlope	G=VAR
+++D=PTP_MoveFbControl	N=ZeroMoveFb	G=VAR
+++D=BOOL	N=NewSetpointCommand	G=VAR
+++D=BOOL	N=DeleteVeloTorqJob	G=VAR
+++D=REAL	N=ActualHomeOffset	IV=-999	G=VAR
+++D=BOOL	N=StartWritingHomeOffset	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_HomeOffset	IV=(Index := 16#607C, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_HomeOffset	G=VAR	Com=// SDO 16#607C.0 (DINT)
+++D=DINT	N=WriteBufferSdoHomeOffset	G=VAR
+++D=REAL	N=ActualHomingMethod	IV=-999	G=VAR
+++D=BOOL	N=StartWritingHomingMethod	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_HomingMethod	IV=(Index := 16#6098, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDOWrite	N=fb_WriteSdo_HomingMethod	G=VAR	Com=// SDO 16#6098.0 (SINT)
+++D=BYTE	N=WriteBufferSdoHomingMethod	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperation	Ord=1	G=VAR_IN_OUT
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperationDisplay	Ord=2	G=VAR_IN_OUT
+++D=PTP_CIA402_CONTROLWORD	N=Controlword	Ord=3	G=VAR_IN_OUT
+++D=PTP_CIA402_STATUSWORD	N=Statusword	Ord=4	G=VAR_IN_OUT
+++D=DINT	N=TargetPosition	Ord=5	G=VAR_IN_OUT
+++D=UDINT	N=ProfileVelocity	Ord=6	G=VAR_IN_OUT
+++D=DINT	N=TargetVelocity	Ord=7	G=VAR_IN_OUT
+++D=INT	N=TargetTorque	Ord=8	G=VAR_IN_OUT
+++D=BOOL	N=EqualSetpointVelocityMode	Ord=9	G=VAR_IN_OUT
+++D=BOOL	N=EqualSetpointTorqueMode	Ord=10	G=VAR_IN_OUT
+++D=BOOL	N=StartDampingTimerHaltBit	Ord=11	G=VAR_INPUT
+++D=BOOL	N=DampingTimerHaltBit_Q	Ord=12	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

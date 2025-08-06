@@ -1,0 +1,55 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=SktTCPConnect	N=SktTCPConnect_instance	G=VAR
+++D=SktClearBuf	N=SktClearBuf_instance	G=VAR
+++D=MTCP_Client_Fn01	N=MTCP_Fn01_inst	G=VAR
+++D=MTCP_Client_Fn02	N=MTCP_Fn02_inst	G=VAR
+++D=MTCP_Client_Fn03	N=MTCP_Fn03_inst	G=VAR
+++D=MTCP_Client_Fn04	N=MTCP_Fn04_inst	G=VAR
+++D=MTCP_Client_Fn05	N=MTCP_Fn05_inst	G=VAR
+++D=MTCP_Client_Fn06	N=MTCP_Fn06_inst	G=VAR
+++D=MTCP_Client_Fn10	N=MTCP_Fn10_inst	G=VAR
+++D=MTCP_Client_Fn17	N=MTCP_Fn17_inst	G=VAR
+++D=UINT	N=NStep	G=VAR
+++D=BOOL	N=ConnectExecute	G=VAR
+++D=BOOL	N=ConnectError	G=VAR
+++D=BOOL	N=ClearBufExecute	G=VAR
+++D=BOOL	N=ClearBufDone	G=VAR
+++D=BOOL	N=ClearBufError	G=VAR
+++D=BOOL	N=ConnectBusy	G=VAR
+++D=WORD	N=ConnectErrorID	G=VAR
+++D=BOOL	N=ClearBufBusy	G=VAR
+++D=WORD	N=ClearBufErrorID	G=VAR
+++D=_sSOCKET	N=Socket	G=VAR
+++D=UINT	N=MsgLoop	IV=0	G=VAR
+++D=BYTE	N=Unit_ID	IV=16#FF	G=VAR
+++D=SktClose	N=SktClose_inst	G=VAR
+++D=BOOL	N=CloseDone	G=VAR
+++D=BOOL	N=CloseBusy	G=VAR
+++D=BOOL	N=CloseError	G=VAR
+++D=WORD	N=CloseErrorID	G=VAR
+++D=BOOL	N=CloseExecute	G=VAR
+++D=ARRAY[0..23] OF OEN\Modbus\sModbusFBSignals	N=Fn	G=VAR
+++D=ARRAY[0..127] OF WORD	N=InDataRegister4	G=VAR
+++D=UINT	N=FCode	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..29] OF OEN\Modbus\sModbusData	N=MessageTable	Ord=2	G=VAR_IN_OUT	Com=Modbus Data Table
+++D=BOOL	N=EIP_EtnOnlineSta	Ord=3	G=VAR_INPUT	Com=_EIP_EtnOnlineSta for NJ, _EIP1_EtnOnlineSta/_EIP2_EtnOnlineSta for NX
+++D=UINT	N=TCP_Port_Server	IV=502	Ord=4	G=VAR_INPUT
+++D=UINT	N=TCP_Port_Local	IV=44000	Ord=5	G=VAR_INPUT
+++D=STRING[16]	N=IP_Address	Ord=6	G=VAR_INPUT
+++D=ARRAY[0..29] OF OEN\Modbus\sWriteData	N=OutData	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Connected	Ord=8	G=VAR_OUTPUT
+++D=DINT	N=MessageCounter	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=CommError	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=ReadError	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=WriteError	Ord=12	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=13	G=VAR_OUTPUT
+++D=BOOL	N=ReadDone	Ord=14	G=VAR_OUTPUT
+++D=UINT	N=CurrentIndex	Ord=15	G=VAR_OUTPUT
+++D=ARRAY[0..127] OF WORD	N=InDataRegister	Ord=16	G=VAR_OUTPUT
+++D=ARRAY[0..1024] OF BOOL	N=InDataBool	Ord=17	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

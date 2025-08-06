@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>Festo_Motion_FHPP</Name>
+      <NameSpace></NameSpace>
+      <Version>1.3.0</Version>
+      <Revision>1</Revision>
+      <LibraryId>05bfc6ca-3c19-4054-99e8-516c619df1e4</LibraryId>
+      <Author>chmm</Author>
+      <Company>Festo AG &amp; Co. KG</Company>
+      <DateCreated>2015-06-10T09:20:03.233856+02:00</DateCreated>
+      <DateModified>2015-12-11T10:20:17.4570683+01:00</DateModified>
+      <Comment>Library to control and parametrize drives from Festo with FHPP</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames />
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category></Category>
+        <Family></Family>
+        <FullModel></FullModel>
+        <MajorVersion>0</MajorVersion>
+        <MinorVersion>0</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion></DisplayVersion>
+        <Packages />
+      </BuildDevice>
+      <DependencyId>a893b609-9e8a-4947-82c9-59dc28745fbe</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\espen\Team Havfront Dropbox\Havfront - Automasjon\1_Folla\Software\Festo\FHPP_MotionLib_Omron_V1_3_0\Library\Festo_Motion_FHPP.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Team Havfront Dropbox\Havfront - Automasjon\1_Folla\Software\Festo\FHPP_MotionLib_Omron_V1_3_0\Library\Festo_Motion_FHPP.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

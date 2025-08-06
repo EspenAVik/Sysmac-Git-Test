@@ -1,0 +1,40 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..1,0..19] OF WORD	N=TableData	G=VAR	Com=Modbus Data Table
+++D=UINT	N=LoopStart	IV=7	G=VAR	Com=Read/write table min value
+++D=INT	N=LoopEnd	IV=12	G=VAR	Com=Read/write table max value
+++D=INT	N=LoopIndex	IV=7	G=VAR	Com=loop variable (0-6 writing/7-17 reading)
+++D=INT	N=Circuit	IV=1	G=VAR	Com=Circuit read variable
+++D=NX_ModbusRtuRead	N=ReadBlock	G=VAR	Com=Modbus Read
+++D=NX_ModbusRtuWrite	N=WriteBlock	G=VAR	Com=Modbus Write
+++D=_sSERIAL_MODBUSRTU_READ	N=ReadCmd	G=VAR
+++D=_sSERIAL_MODBUSRTU_WRITE	N=WriteCmd	G=VAR
+++D=ARRAY[0..25] OF WORD	N=ReadDat	G=VAR
+++D=ARRAY[0..12] OF DINT	N=ReadDatDINT	G=VAR	Com=DINT data table
+++D=ARRAY[0..25] OF WORD	N=WriteDat	G=VAR
+++D=ARRAY[0..51] OF BYTE	N=ByteArray	G=VAR	Com=Supporting conversion to/from word/dword/string
+++D=CTU	N=CountWrites	G=VAR	Com=Write counter for 12 loops to make sure all parameters has been written
+++D=STRING[6]	N=Software	G=VAR	Com=Software string variable
+++D=INT	N=i	G=VAR	Com=Loop variable for word to Dint conversion
+++D=BOOL	N=AllSettingsRead	G=VAR	Com=All Settings have to be read to allow writing
+++D=DINT	N=DummyDINT	G=VAR	Com=Supporting conversion
+++D=BOOL	N=Write_Enable	G=VAR	Com=Allow Writing
+++D=UINT	N=ReadSettingsCounter	G=VAR	Com=Count number of ReadSettings (0-4)
+++D=DINT	N=ReadCounter	G=VAR	Com=Count number of sucessfully Reads
+++D=DINT	N=ErrorReadCounter	G=VAR	Com=Count number of unsucessful Reads
+++D=OEN\General\HasChanged	N=fbLoopTimeOutDetect	G=VAR
+++D=TON	N=fbLoopTimeOut	G=VAR
+++D=UINT	N=MaxCircuits	Ord=6	G=VAR	Com=Max Number of circuits
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT	Com=Set ON
+++D=OEN\Modbus\sKM	N=KM_Unit	Ord=2	G=VAR_IN_OUT	Com=The KM-N2-FLK Data Structure 
+++D=UINT	N=Target	Ord=3	G=VAR_INPUT	Com=Activate and Read every 0.02s if Target=Unit Address
+++D=UINT(1..99)	N=UnitAddress	Ord=4	G=VAR_INPUT	Com=KM-N2-FLK Address
+++D=_sDEVICE_PORT	N=DevicePort	Ord=5	G=VAR_INPUT	Com=Communication Port
+++D=DINT	N=TimeOutCounter	Ord=6	G=VAR_OUTPUT	Com=Counts Communication TimeOuts
+++D=WORD	N=ReadErrorCode	Ord=7	G=VAR_OUTPUT	Com=Error reading from KM
+++D=WORD	N=WriteErrorCode	Ord=8	G=VAR_OUTPUT	Com=Error writing to KM
+++D=BOOL	N=LoopDone	Ord=9	G=VAR_OUTPUT	Com=One Circuit loop Done
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

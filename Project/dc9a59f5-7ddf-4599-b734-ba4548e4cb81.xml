@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[80]	N=StatusStringCat	G=VAR	Com=string with the status category 
+++D=STRING[80]	N=StatusStringID	G=VAR	Com=string with the status ID
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=DT_FML_STATUS	N=StatusIn	Ord=1	G=VAR_INPUT	Com=actual status information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[80]	N=GetStatusMessage	G=RETURN	Com=string with the description of the actual status

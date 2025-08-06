@@ -1,0 +1,24 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=x	G=VAR
+++D=UINT	N=y	G=VAR
+++D=UINT	N=z	G=VAR
+++D=LREAL	N=XDiv	G=VAR
+++D=LREAL	N=YDiv	G=VAR
+++D=LREAL	N=ZXDiv	G=VAR
+++D=LREAL	N=ZYDiv	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=ARRAY[0..29,0..29] OF OEN\Servo\sObjectData	N=Matrix	Ord=1	G=VAR_IN_OUT	Com=Object table
+++D=UINT	N=Columns	Ord=2	G=VAR_INPUT	Com=Number of Columns
+++D=UINT	N=Rows	Ord=3	G=VAR_INPUT	Com=Number of Rows
+++D=BOOL	N=Teach_First	Ord=4	G=VAR_INPUT	Com=Save Position for first Object
+++D=BOOL	N=Teach_Last	Ord=5	G=VAR_INPUT	Com=Save Position for Last Object
+++D=LREAL	N=ServoXPos	Ord=6	G=VAR_INPUT	Com=Axis X-position
+++D=LREAL	N=ServoYPos	Ord=7	G=VAR_INPUT	Com=Axis Y-position
+++D=LREAL	N=ServoZPos	Ord=8	G=VAR_INPUT	Com=Axis Z-position
+++D=LREAL	N=ServoRotation	Ord=9	G=VAR_INPUT	Com=Axis Rotation
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=MatrixTeach	G=RETURN

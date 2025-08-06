@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DATE_AND_TIME	N=CurrentDateAndTime	G=VAR
+++D=DATE_AND_TIME	N=TimeStampInput	G=VAR
+++D=BOOL	N=Alarmstate_Digital	G=VAR	Com=Digital input is on after Delay and Not Disabled
+++D=BOOL	N=Alarmstate_AnalogL1	G=VAR	Com=Analog input is on after Delay and Not Disabled
+++D=BOOL	N=Alarmstate_AnalogL2	G=VAR	Com=Analog input is on after Delay and Not Disabled
+++D=BOOL	N=ACK	G=VAR	Com=Ackowledge signal from table or Input
+++D=BOOL	N=Analog_L1_True	G=VAR	Com=Analog is outside Level1
+++D=BOOL	N=Analog_L2_True	G=VAR	Com=Analog is outside Level2 (Critical)
+++D=BOOL	N=Digital_True	G=VAR	Com=Digital is on an not Disabled
+++D=DATE_AND_TIME	N=TimeStampCriticalInput	G=VAR
+++D=BOOL	N=L2_TimeStamped	G=VAR	Com=TimeStamp registered
+++D=BOOL	N=L1_TimeStamped	G=VAR	Com=TimeStamp registered
+++D=DATE_AND_TIME	N=DelayDigital	G=VAR	Com=TimeAtAlarmActive+Delay
+++D=DATE_AND_TIME	N=DelayAnalogL1	G=VAR	Com=TimeAtAlarmActive+Delay
+++D=DATE_AND_TIME	N=DelayAnalogL2	G=VAR	Com=TimeAtAlarmActive+Delay
+++D=TIME	N=NewAlarmDelay	G=VAR
+++D=TON	N=TON_NewAlarmDelay	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=OEN\General\sAlarms	N=Alarm	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=ACK_All	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Reset_All_Counters	Ord=3	G=VAR_INPUT
+++D=STRING[16]	N=Username	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Running	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

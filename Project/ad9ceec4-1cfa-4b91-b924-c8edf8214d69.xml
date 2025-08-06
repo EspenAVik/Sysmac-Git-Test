@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=1	G=VAR_OUTPUT
+++D=INT	N=NoOfPoint	Ord=2	G=VAR_INPUT
+++D=REAL	N=X	Ord=3	G=VAR_INPUT	Com=In Value
+++D=ARRAY[0..9] OF REAL	N=Xp	Ord=4	G=VAR_IN_OUT	Com=X0 - X9
+++D=ARRAY[0..9] OF REAL	N=Yp	Ord=5	G=VAR_IN_OUT	Com=Y0 - Y9
+++D=REAL	N=Y	Ord=6	G=VAR_OUTPUT	Com=Scaled value
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

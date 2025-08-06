@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <NexDataTraceConfigModel>
+    <TaskName>BaseControl</TaskName>
+    <TraceId>0</TraceId>
+    <SampleTimingType>cyclic</SampleTimingType>
+    <SamplingInterval>1</SamplingInterval>
+    <SamplingTime>1</SamplingTime>
+    <PostTriggerDataRatio>100</PostTriggerDataRatio>
+    <StartOnRun>False</StartOnRun>
+    <EnableRealTimeDisplay>False</EnableRealTimeDisplay>
+    <BehaviorWhenMax>Stop</BehaviorWhenMax>
+    <NumSamplingRecords>10000</NumSamplingRecords>
+    <NexDataTraceTriggerModel>
+      <Enabled>false</Enabled>
+      <SymbolId>entity://variables.global.c70d0156-295a-49c4-9044-6e55e830ea17/fb_RunningAuto%3ABOOL</SymbolId>
+      <SymbolName>fb_RunningAuto</SymbolName>
+      <Condition>BooleanRising</Condition>
+      <Value></Value>
+    </NexDataTraceTriggerModel>
+  </NexDataTraceConfigModel>
+</data>

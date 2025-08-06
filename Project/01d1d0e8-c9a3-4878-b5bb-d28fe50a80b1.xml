@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INV00x_MX2\uWORD_BOOL_MX2	N=tmp_Status	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=STRING[256]	N=Alarm_Status	Ord=1	G=VAR_OUTPUT
+++D=STRING[256]	N=Alarm_Fault	Ord=2	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=3	G=VAR_INPUT	Com=Enables the Functionblock
+++D=UINT	N=Fault_Monitor_1_Inverter_Status	Ord=4	G=VAR_INPUT
+++D=UINT	N=Fault_Monitor_1_Cause	Ord=5	G=VAR_INPUT
+++D=WORD	N=Status	Ord=6	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

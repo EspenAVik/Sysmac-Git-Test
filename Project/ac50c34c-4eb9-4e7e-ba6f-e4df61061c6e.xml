@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=tmp_Analog_Voltage_Bits	G=VAR
+++D=REAL	N=tmp_Analog_Current_Bits	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=UINT	N=Analog_O	Ord=1	G=VAR_INPUT	Com=Analog voltage input FV monitor
+++D=UINT	N=Analog_OI	Ord=2	G=VAR_INPUT	Com=Analog current input FI monitor
+++D=BOOL	N=Enable	Ord=3	G=VAR_INPUT	Com=Enables the Functionblock
+++D=REAL	N=Analog_Voltage	Ord=4	G=VAR_OUTPUT	Com=Voltage in, it displays the inputed value for the terminal FV (0V to 10.9 V)
+++D=REAL	N=Analog_Voltage_Percentage	Ord=5	G=VAR_OUTPUT	Com=Voltage In, 0-100%
+++D=REAL	N=Analog_Current	Ord=6	G=VAR_OUTPUT	Com=Current in, it displays the inputed value for the terminal FI (4mA to 23.3 mA)
+++D=REAL	N=Analog_Current_Percentage	Ord=7	G=VAR_OUTPUT	Com=Current in, 0-100%
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

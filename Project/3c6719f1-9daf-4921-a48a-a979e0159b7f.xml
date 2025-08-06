@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=OEN\Inv\sMX2_Mapping	N=MX2	Ord=1	G=VAR_IN_OUT
+++D=WORD	N=Status	Ord=2	G=VAR_INPUT
+++D=UINT	N=Output_frequency_monitor	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Active	Ord=4	G=VAR_OUTPUT
+++D=WORD	N=Command	Ord=5	G=VAR_OUTPUT
+++D=UINT	N=Frequency_reference	Ord=6	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

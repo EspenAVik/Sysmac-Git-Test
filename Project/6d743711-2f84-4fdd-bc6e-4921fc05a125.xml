@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=WORD	N=I_O_Port_Status	Ord=1	G=VAR_INPUT
+++D=WORD	N=Port1_2_I_O_Port_Error_Status	Ord=2	G=VAR_INPUT
+++D=WORD	N=Port3_4_I_O_Port_Error_Status	Ord=3	G=VAR_INPUT
+++D=OEN\IOL\sNX_ILM400	N=NX_ILM400_Status	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=IOLink_NX_ILM400	G=RETURN

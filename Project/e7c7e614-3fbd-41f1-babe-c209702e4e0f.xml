@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=FHPP_Read	N=FB_FHPP_Read	G=VAR	Com=function block for reading the FHPP data
+++D=FPC_Read	N=FB_FPC_Read	G=VAR	Com=function block for reading the FPC data
+++D=FHPP_PLUS_Read	N=FB_FHPP_PLUS_Read	G=VAR	Com=function block for reading the FHPP+ data
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=E_FML_DEVICE_TYPE	N=DeviceType	Ord=3	G=VAR_INPUT	Com=type of the controller
+++D=BOOL	N=Modbus	Ord=4	G=VAR_INPUT	Com=modbus is using
+++D=BOOL	N=HighByteFirst	Ord=5	G=VAR_INPUT	Com=byteorder
+++D=BOOL	N=FPC_active	Ord=6	G=VAR_INPUT	Com=Festo Parameter Channel (FPC) in use
+++D=UDINT	N=PlcConfigFHPP_PLUS_IN	Ord=7	G=VAR_INPUT	Com=plc configuration code for the FHPP+ input (is displayed in the Festo Configuration Tool (FCT))
+++D=ARRAY[0..7] OF BYTE	N=FHPP_Source	Ord=8	G=VAR_INPUT	Com=input FHPP data (from controller)
+++D=ARRAY[0..7] OF BYTE	N=FPC_Source	Ord=9	G=VAR_INPUT	Com=input FPC data (from controller)
+++D=ARRAY[0..7] OF BYTE	N=FHPP_PLUS_Source1	Ord=10	G=VAR_INPUT	Com=first 8 bytes of FHPP+ input data (from controller)
+++D=ARRAY[0..7] OF BYTE	N=FHPP_PLUS_Source2	Ord=11	G=VAR_INPUT	Com=second 8 bytes of FHPP+ input data (from controller)
+++D=ARRAY[0..7] OF BYTE	N=FHPP_PLUS_Source3	Ord=12	G=VAR_INPUT	Com=third 8 bytes of FHPP+ input data (from controller)
+++D=BOOL	N=Error	Ord=13	G=VAR_OUTPUT	Com=transmission fault
+++D=DT_FML_STATUS	N=Status	Ord=14	G=VAR_OUTPUT	Com=structure with the status information of the function block and FPC
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=bInit	IV=False	G=VAR	Com=status of inizialisation of the FB
+++D=INT	N=lMemberID	G=VAR	Com=local member ID of the FB
+++D=INT	N=NumberOfParams	IV=50	G=VAR	Com=maximal number of parameters to read/write
+++D=INT	N=StepNo	G=VAR	Com=actual number of the state machine 
+++D=TON	N=TONInst	G=VAR	Com=timer instance to monitor a timeout of the function block
+++D=BOOL	N=TimeStart	G=VAR	Com=variable to start the timer instance
+++D=TIME	N=TimeoutTime	IV=T#3s	Const=1	G=VAR	Com=timeout time
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=ARRAY[0..49] OF DT_FML_PRM_DESCRIPTION	N=ParamData	Ord=3	G=VAR_IN_OUT	Com=array of parameters to read/write from/to motor controller
+++D=BOOL	N=Execute	Ord=4	G=VAR_INPUT	Com=perform data exchange
+++D=BOOL	N=Done	Ord=5	G=VAR_OUTPUT	Com=execution done
+++D=BOOL	N=Error	Ord=6	G=VAR_OUTPUT	Com=transmission fault
+++D=DT_FML_STATUS	N=Status	Ord=7	G=VAR_OUTPUT	Com=structure with the status information of the function block and FPC
+++D=INT	N=ActualParamNo	Ord=8	G=VAR_OUTPUT	Com=number of the actual reading/writing parameter
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

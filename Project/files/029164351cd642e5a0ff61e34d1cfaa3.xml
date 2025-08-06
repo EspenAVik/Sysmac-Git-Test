@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String2" ID="4226cc5b-d67f-466e-b1c7-92f9d8acadb9">
+      <Localisation Language="en-US" Translation="Encoder Value:" Default="True" />
+    </Resource>
+    <Resource Name="String3" ID="88df7796-be60-4030-b261-758b98353614">
+      <Localisation Language="en-US" Translation="Pulses Per Rev:" Default="True" />
+    </Resource>
+    <Resource Name="String4" ID="59f5d804-5a59-4119-90ba-7e281c2098e0">
+      <Localisation Language="en-US" Translation="Gear Ratio:" Default="True" />
+    </Resource>
+    <Resource Name="String5" ID="5f53459d-2d06-4c7c-964a-8ed64a0381cd">
+      <Localisation Language="en-US" Translation="Travel Per Rev:" Default="True" />
+    </Resource>
+    <Resource Name="String6" ID="17d6aadf-999f-4be2-bffb-288931c87c75">
+      <Localisation Language="en-US" Translation="Full Travel:" Default="True" />
+    </Resource>
+    <Resource Name="String7" ID="582cdd41-79f3-42ea-a01b-9b7bb0587207">
+      <Localisation Language="en-US" Translation="Min Travel: " Default="True" />
+    </Resource>
+    <Resource Name="String8" ID="085e2058-2796-4d87-b976-7c2e4b8c8dfe">
+      <Localisation Language="en-US" Translation="Max Travel:" Default="True" />
+    </Resource>
+    <Resource Name="String9" ID="99e37a13-00ba-4410-a048-47b4657eae93">
+      <Localisation Language="en-US" Translation="Actual Position:" Default="True" />
+    </Resource>
+    <Resource Name="String10" ID="f7c5cbdc-be9a-48de-b0ee-3a7fae49dfbe">
+      <Localisation Language="en-US" Translation="Position Percent:" Default="True" />
+    </Resource>
+    <Resource Name="String11" ID="c2cb66a8-9cd5-4d34-aff7-460f2f1e3811">
+      <Localisation Language="en-US" Translation="(mm)" Default="True" />
+    </Resource>
+    <Resource Name="String12" ID="07d2c253-cc0c-4404-8dda-a9e8447dec1e">
+      <Localisation Language="en-US" Translation="(%)" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontFamilies">
+    <Resource Name="FontFamily23" ID="b6aa621d-e766-42db-b8d8-f4b0af4705e0">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontSizes">
+    <Resource Name="FontSize95" ID="7a25fe4b-efe5-4c11-9e81-2e267cd1f7e7">
+      <Localisation Language="en-US" Translation="14" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontStyles">
+    <Resource Name="FontStyle" ID="ce209857-0922-4132-8c4f-969e40c143b7">
+      <Localisation Language="en-US" Translation="Normal" Default="True" />
+    </Resource>
+  </Resources>
+</IagResources>

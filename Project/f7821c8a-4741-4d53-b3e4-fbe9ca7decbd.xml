@@ -1,0 +1,17 @@
+﻿{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In1","Ix":2,"Type":"ANY_BIT","Var":"Input_Word"},{"__type":"PRM","Arg":"In2","Ix":3,"Type":"ANY_BIT","Var":"Invert_Mask"}],"Ix":5,"Name":"XOR","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"","Ix":4,"Type":"ANY_BIT","Var":"InputWordAs.Wrd"}],"X":1,"PL":true},{"__type":"ST","Ix":1,"Var":"TxWORDTo16bit","X":2}],"LRI":6,"RRI":7,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[0]"},{"__type":"ST","Ix":1,"Var":"Bit_00","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[1]"},{"__type":"ST","Ix":1,"Var":"Bit_01","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[2]"},{"__type":"ST","Ix":1,"Var":"Bit_02","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[3]"},{"__type":"ST","Ix":1,"Var":"Bit_03","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[4]"},{"__type":"ST","Ix":1,"Var":"Bit_04","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[5]"},{"__type":"ST","Ix":1,"Var":"Bit_05","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[6]"},{"__type":"ST","Ix":1,"Var":"Bit_06","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[7]"},{"__type":"ST","Ix":1,"Var":"Bit_07","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[8]"},{"__type":"ST","Ix":1,"Var":"Bit_08","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[9]"},{"__type":"ST","Ix":1,"Var":"Bit_09","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[10]"},{"__type":"ST","Ix":1,"Var":"Bit_10","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[11]"},{"__type":"ST","Ix":1,"Var":"Bit_11","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[12]"},{"__type":"ST","Ix":1,"Var":"Bit_12","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[13]"},{"__type":"ST","Ix":1,"Var":"Bit_13","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[14]"},{"__type":"ST","Ix":1,"Var":"Bit_14","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputWordAs.Bit[15]"},{"__type":"ST","Ix":1,"Var":"Bit_15","X":1}],"LRI":2,"RRI":3,"VLs":[]}

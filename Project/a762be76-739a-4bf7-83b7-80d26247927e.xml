@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OEN\uWord	N=Status	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=WORD	N=ErrorCode	Ord=1	G=VAR_IN_OUT
+++D=WORD	N=Statusword	Ord=2	G=VAR_INPUT
+++D=BOOL	N=InitProgress	Ord=3	G=VAR_OUTPUT	Com=Not ready(0)
+++D=BOOL	N=Standby	Ord=4	G=VAR_OUTPUT	Com=Switch on disabled(1)
+++D=BOOL	N=Ready	Ord=5	G=VAR_OUTPUT	Com=Ready to switch on(2)
+++D=BOOL	N=Switched_On	Ord=6	G=VAR_OUTPUT	Com=Switched On(3)
+++D=BOOL	N=Servo_On	Ord=7	G=VAR_OUTPUT	Com=Operation Enabled(4)
+++D=BOOL	N=ErrorTrigger	Ord=8	G=VAR_OUTPUT	Com=Fault reaction Active(13)
+++D=BOOL	N=Fault	Ord=9	G=VAR_OUTPUT	Com=Fault(14)
+++D=BOOL	N=RemoteControl	Ord=10	G=VAR_OUTPUT	Com=Command controlled
+++D=BOOL	N=Warning	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=Mains_OK	Ord=12	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

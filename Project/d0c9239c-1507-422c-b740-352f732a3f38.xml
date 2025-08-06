@@ -1,0 +1,98 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=SlaveState	IV=8	G=VAR
+++D=PTP_CIA402_STATUSWORD	N=Statusword	G=VAR
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperationDisplay	G=VAR
+++D=DINT	N=PositionActualValue	G=VAR
+++D=DINT	N=VelocityActualValue	G=VAR
+++D=INT	N=TorqueActualValue	G=VAR
+++D=PTP_CIA402_CONTROLWORD	N=Controlword	G=VAR
+++D=PTP_CIA402_MODES_OF_OPERATION	N=ModesOfOperation	IV=PtP_NoModeAssigned	G=VAR
+++D=DINT	N=TargetPosition	G=VAR
+++D=UDINT	N=ProfileVelocity	G=VAR
+++D=DINT	N=TargetVelocity	G=VAR
+++D=INT	N=TargetTorque	G=VAR
+++D=TP	N=tpResetStart	G=VAR
+++D=UINT	N=NUMBER_OF_BUSY_MOVE_FBs	IV=10	Const=1	G=VAR
+++D=TON	N=TimoutTimer	G=VAR
+++D=BOOL	N=StartTimeoutTimer	G=VAR
+++D=ARRAY[0..1] OF BYTE	N=BufferArray	G=VAR
+++D=BOOL	N=DeleteVeloTorqJob	G=VAR
+++D=R_TRIG	N=rtrigNewSetpoint	G=VAR	Com=trigger to RISING edges of controlword entries
+++D=R_TRIG	N=rtrigDeviceControl	G=VAR	Com=trigger to RISING edges of statusword entries
+++D=R_TRIG	N=rtrigTargetReached	G=VAR
+++D=R_TRIG	N=rtrigHomingError	G=VAR
+++D=R_TRIG	N=rtrigInTorque	G=VAR
+++D=F_TRIG	N=ftrigSetPointAcknowledge	G=VAR	Com=trigger to FALLING edges of statusword entries
+++D=F_TRIG	N=ftrigTargetReached	G=VAR
+++D=F_TRIG	N=ftrigSlippageErr_SingleRecDone	G=VAR
+++D=F_TRIG	N=ftrigInTorque	G=VAR
+++D=BOOL	N=EqualSetpointVelocityMode	IV=False	G=VAR	Com=(************ PROFILE VELOCITE MODE (3) ************)
+++D=TON	N=DampingTimerVelocityMode	G=VAR
+++D=BOOL	N=EqualSetpointTorqueMode	IV=False	G=VAR	Com=(************ PROFILE TORQUE MODE (4) ************)
+++D=TON	N=DampingTimerTorqueMode	G=VAR
+++D=PtP_MotionJobManager	N=MotionJobManager	G=VAR
+++D=BOOL	N=StartDampingTimerHaltBit	G=VAR
+++D=TON	N=DampingTimerHaltBit	G=VAR
+++D=BOOL	N=SecondAttemptAtInitialization	IV=False	G=VAR
+++D=TON	N=tonSecondAttemptAtInitialization	G=VAR
+++D=R_TRIG	N=rtrigTonSecondAttemptAtInitialization	G=VAR
+++D=BOOL	N=StartReadingUnitPosition	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_SiUnitPosition	IV=(Index := 16#60A8, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_SiUnitPosition	G=VAR	Com=// SDO 16#60A8.0 (UDINT)
+++D=DWORD	N=ReadBuffer_SiUnitPosition	IV=0	G=VAR
+++D=BOOL	N=StartReadingUnitVelocity	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_SiUnitVelocity	IV=(Index := 16#60A9, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_SiUnitVelocity	G=VAR	Com=// SDO 16#60A9.0 (UDINT)
+++D=DWORD	N=ReadBuffer_SiUnitVelocity	IV=0	G=VAR
+++D=BOOL	N=StartReadingUnitAcceleration	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_SiUnitAcceleration	IV=(Index := 16#60AA, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_SiUnitAcceleration	G=VAR	Com=// SDO 16#60AA.0 (UDINT)
+++D=DWORD	N=ReadBuffer_SiUnitAcceleration	IV=0	G=VAR
+++D=BOOL	N=StartReadingUnitJerk	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_SiUnitJerk	IV=(Index := 16#60AB, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_SiUnitJerk	G=VAR	Com=// SDO 16#60AB.0 (UDINT)
+++D=DWORD	N=ReadBuffer_SiUnitJerk	IV=0	G=VAR
+++D=BOOL	N=StartReadingUnitMotorRatedTorque	IV=False	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_MotorRatedTorqueInNm	IV=(Index := 16#6076, Subindex := 0, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_MotorRatedTorqueInNm	G=VAR	Com=// SDO 16#6076.0 (UDINT)
+++D=DWORD	N=ReadBuffer_MotorRatedTorqueInNm	IV=0	G=VAR
+++D=_sSDO_ACCESS	N=SdoObject_AxisError	IV=(Index := 16#2145, Subindex := 12, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_AxisError	G=VAR	Com=// SDO 16#2145.12 (UDINT)
+++D=UDINT	N=ReadBuffer_AxisError	G=VAR
+++D=BOOL	N=StartReadingAxisError	G=VAR
+++D=TON	N=tonReadAxisError	G=VAR
+++D=WORD	N=ErrorID_SiUnitPosition	G=VAR
+++D=DWORD	N=AbortCode_SiUnitPosition	G=VAR
+++D=WORD	N=ErrorID_SiUnitVelocity	G=VAR
+++D=DWORD	N=AbortCode_SiUnitVelocity	G=VAR
+++D=WORD	N=ErrorID_SiUnitAcceleration	G=VAR
+++D=DWORD	N=AbortCode_SiUnitAcceleration	G=VAR
+++D=WORD	N=ErrorID_SiUnitJerk	G=VAR
+++D=DWORD	N=AbortCode_SiUnitJerk	G=VAR
+++D=WORD	N=ErrorID_MotorRatedTorqueInNm	G=VAR
+++D=DWORD	N=AbortCode_MotorRatedTorqueInNm	G=VAR
+++D=WORD	N=ErrorID_ReadAxisError	G=VAR
+++D=DWORD	N=AbortCode_ReadAxisError	G=VAR
+++D=BOOL	N=HaltDelayOneCycle	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	Ord=0	G=VAR_INPUT
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=EC_PDActive	Ord=3	G=VAR_INPUT
+++D=UINT	N=SlaveNodeInfo_In	Ord=4	G=VAR_INPUT
+++D=UINT	N=Statusword_In	Ord=5	G=VAR_INPUT
+++D=SINT	N=ModesOfOperationDisplay_In	Ord=6	G=VAR_INPUT
+++D=DINT	N=PositionActualValue_In	Ord=7	G=VAR_INPUT
+++D=DINT	N=VelocityActualValue_In	Ord=8	G=VAR_INPUT
+++D=INT	N=TorqueActualValue_In	Ord=9	G=VAR_INPUT
+++D=PTP_INIT_ERROR	N=InitErrorInfo	Ord=10	G=VAR_OUTPUT
+++D=PTP_AXIS_STATE	N=AxisState	Ord=11	G=VAR_OUTPUT
+++D=UINT	N=Controlword_Out	Ord=12	G=VAR_OUTPUT
+++D=SINT	N=ModesOfOperation_Out	Ord=13	G=VAR_OUTPUT
+++D=DINT	N=TargetPosition_Out	Ord=14	G=VAR_OUTPUT
+++D=UDINT	N=ProfileVelocity_Out	Ord=15	G=VAR_OUTPUT
+++D=DINT	N=TargetVelocity_Out	Ord=16	G=VAR_OUTPUT
+++D=INT	N=TargetTorque_Out	Ord=17	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

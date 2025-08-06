@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Strings">
+    <Resource Name="String99" ID="a0fd8c38-427c-4d12-9e03-ff68212fee22">
+      <Localisation Language="en-US" Translation="Y2:" Default="True" />
+    </Resource>
+    <Resource Name="String98" ID="d90e7e0e-e471-42fa-a48f-f8b3af18163f">
+      <Localisation Language="en-US" Translation="Y1:" Default="True" />
+    </Resource>
+    <Resource Name="String97" ID="7d6c1eb3-8bfd-48ab-a6c9-3171e21a9c5c">
+      <Localisation Language="en-US" Translation="Y0:" Default="True" />
+    </Resource>
+    <Resource Name="String96" ID="ba7813e0-e9e5-43ee-9efc-507a6d788e96">
+      <Localisation Language="en-US" Translation="X2:" Default="True" />
+    </Resource>
+    <Resource Name="String95" ID="a0ae877d-7112-409f-9c33-09db8c1cc8d4">
+      <Localisation Language="en-US" Translation="X1:" Default="True" />
+    </Resource>
+    <Resource Name="String94" ID="376eeb15-12a2-45b9-a54c-d7138c623ce5">
+      <Localisation Language="en-US" Translation="X0:" Default="True" />
+    </Resource>
+    <Resource Name="String93" ID="9841d634-514e-4daf-9a8a-cc9f4ee2b6e2">
+      <Localisation Language="en-US" Translation="Raw:" Default="True" />
+    </Resource>
+    <Resource Name="String106" ID="1447685e-22cd-4de4-b6db-5cdcd7fde966">
+      <Localisation Language="en-US" Translation="Offset:" Default="True" />
+    </Resource>
+    <Resource Name="String105" ID="5965dfd9-8907-4b34-b8ed-450ccde78b37">
+      <Localisation Language="en-US" Translation="Signal Fault" Default="True" />
+    </Resource>
+    <Resource Name="String103" ID="0d799dbd-c646-4057-b084-bcbbd53c8f33">
+      <Localisation Language="en-US" Translation="Ymin:" Default="True" />
+    </Resource>
+    <Resource Name="String102" ID="2f5fbbec-b0ab-437d-a92d-98ff276fc835">
+      <Localisation Language="en-US" Translation="Xmax:" Default="True" />
+    </Resource>
+    <Resource Name="String101" ID="d6138990-d503-4e2d-85b1-6a0e11ffb3b9">
+      <Localisation Language="en-US" Translation="Xmin:" Default="True" />
+    </Resource>
+    <Resource Name="String100" ID="8f4e2978-1447-4fa9-baad-4b1389c0a45a">
+      <Localisation Language="en-US" Translation="Value:" Default="True" />
+    </Resource>
+    <Resource Name="String1" ID="cc46000c-a0ac-4904-b3a2-604457455d62">
+      <Localisation Language="en-US" Translation="Ymax:" Default="True" />
+    </Resource>
+    <Resource Name="String13" ID="f2238758-53d3-4146-b5de-4369de9c60e0">
+      <Localisation Language="en-US" Translation="Y3:" Default="True" />
+    </Resource>
+    <Resource Name="String14" ID="4b0025b4-77af-4b3b-a28e-4d71960e09e2">
+      <Localisation Language="en-US" Translation="X3:" Default="True" />
+    </Resource>
+    <Resource Name="String15" ID="c081d1e3-0dee-4370-9392-2c94e741b1b0">
+      <Localisation Language="en-US" Translation="Enable 3p Scaling" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontFamilies">
+    <Resource Name="FontFamily" ID="762df4e9-3bb6-4f46-bc03-d7a39a524e2b">
+      <Localisation Language="en-US" Translation="Segoe UI" Default="True" />
+    </Resource>
+    <Resource Name="FontFamily23" ID="a0f53aa2-4ee9-4640-830e-dcf38737e858">
+      <Localisation Language="en-US" Translation="Arial" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontSizes">
+    <Resource Name="FontSize" ID="e781b5a7-9796-4f0a-b0ca-66f691be2bb3">
+      <Localisation Language="en-US" Translation="12" Default="True" />
+    </Resource>
+    <Resource Name="FontSize2" ID="37736615-e87d-4495-a90d-a04b0a18008c">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize121" ID="0fbfdf40-bb9d-4f84-88a8-b1b1502c8390">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize122" ID="bf772434-aaf5-4e83-acf4-d02c8c05df9b">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize123" ID="0f5ca6ab-f19c-4064-847a-e08add2486cd">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize124" ID="5a6c7a20-d475-42c8-b34e-c2d1dddbba02">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize125" ID="b6a266f8-808d-4e98-8156-004eaf8c0324">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize126" ID="101619c6-1c47-4eae-bead-ee6c2a29141c">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize127" ID="87911eac-1a2a-4199-9baa-cc999cedb4ee">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize128" ID="adeed6e5-666e-4e24-8c75-d4354753d86a">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize129" ID="ce11d5da-b5fa-432e-a188-4b19d9ca7652">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize130" ID="99eba4fe-f18a-46a1-8686-d84e3ca70c70">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize131" ID="4ed7e111-8ce9-4d69-8ed9-683e1470ea2b">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize132" ID="ba6f3ce5-1c5d-438c-9686-53816ad9360b">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize133" ID="b876c1ed-0adb-4f6a-8dd9-ee0599c5552a">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize134" ID="46834309-2b19-4b35-aaae-5fa9ccdaa42d">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize135" ID="1631d3c4-222c-4a47-91b0-a9dcbd73a485">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize136" ID="cda4b4cd-1cc5-4534-a084-534242d01902">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize137" ID="1d6f5126-ac21-45e4-a772-cb4ae78120d4">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize138" ID="f3f48d59-fbbd-442c-b31b-e063d8688884">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize139" ID="958b291d-22e7-4d50-a110-fa64ee9db715">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize140" ID="76bf7b66-e884-4e4f-ae1e-d2207c90dece">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize141" ID="1b218c31-1cd8-432c-b6de-9e60dc2ce454">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize142" ID="1bde2d40-e0d7-41da-990e-08212a5c25fa">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize143" ID="301cf8ec-85f2-450b-bb3e-9208c5c487f8">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize144" ID="9d2c1896-cfa5-4538-8bb7-0735dd321166">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize145" ID="8ec25184-73d1-425a-99ea-cf99c36348e0">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize146" ID="9783666d-c6d0-48f2-adf5-c256e5f68848">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize147" ID="174bf016-4577-4552-a324-26e6dfb316fd">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize148" ID="e6fb3e56-4c9e-4ffe-8c31-4e7e0b358c9a">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize149" ID="7ec388c5-ee01-4230-8fe3-ae5c069af932">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize150" ID="38ab5b8a-011e-41bb-addf-2943b2a8c0f5">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+    <Resource Name="FontSize151" ID="8720c94b-2e70-4713-8cc0-691c36c08711">
+      <Localisation Language="en-US" Translation="13" Default="True" />
+    </Resource>
+  </Resources>
+  <Resources Type="FontStyles">
+    <Resource Name="FontStyle" ID="5ea6285e-fe26-41f7-9f07-beb6cad0bc5c">
+      <Localisation Language="en-US" Translation="Normal" Default="True" />
+    </Resource>
+  </Resources>
+</IagResources>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>Festo_PointToPoint_Omron</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.2</Version>
+      <Revision>1</Revision>
+      <LibraryId>247d69be-84c8-4ee5-a508-c4cbaca2cec8</LibraryId>
+      <Author>chmm</Author>
+      <Company>Festo SE &amp; Co. KG</Company>
+      <DateCreated>2018-03-22T10:28:58.4518177+01:00</DateCreated>
+      <DateModified>2020-06-29T08:32:07.9518057+02:00</DateModified>
+      <Comment>PtP library with PLCopen compliant user interface for Festo motor controller family. With this library you can control and  parameterise for example the CMMT-AS and CMMT-ST motor controller from Festo.</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>PtP_CiA402_CMMT_Festo</PublicName>
+        <PublicName>MC_Power_Festo</PublicName>
+        <PublicName>MC_Reset_Festo</PublicName>
+        <PublicName>MC_Home_Festo</PublicName>
+        <PublicName>MC_Halt_Festo</PublicName>
+        <PublicName>MC_Stop_Festo</PublicName>
+        <PublicName>MC_Jog_Festo</PublicName>
+        <PublicName>MC_MoveAbsolute_Festo</PublicName>
+        <PublicName>MC_MoveRelative_Festo</PublicName>
+        <PublicName>MC_MoveAdditive_Festo</PublicName>
+        <PublicName>MC_MoveVelocity_Festo</PublicName>
+        <PublicName>MC_TorqueControl_Festo</PublicName>
+        <PublicName>MC_ReadActualPosition_Festo</PublicName>
+        <PublicName>MC_ReadActualVelocity_Festo</PublicName>
+        <PublicName>MC_ReadActualTorque_Festo</PublicName>
+        <PublicName>MC_ReadAxisError_Festo</PublicName>
+        <PublicName>MC_ReadAxisInfo_Festo</PublicName>
+        <PublicName>MC_ReadStatus_Festo</PublicName>
+        <PublicName>MC_ReadParameter_Festo</PublicName>
+        <PublicName>MC_ReadStringParameter_Festo</PublicName>
+        <PublicName>MC_WriteParameter_Festo</PublicName>
+        <PublicName>MC_WriteStringParameter_Festo</PublicName>
+        <PublicName>MC_RecordTable_Festo</PublicName>
+        <PublicName>PTP_INIT_ERROR</PublicName>
+        <PublicName>PTP_CFG</PublicName>
+        <PublicName>PTP_CMD</PublicName>
+        <PublicName>PTP_AXIS_STATE</PublicName>
+        <PublicName>PTP_CIA402_DRIVESTATE</PublicName>
+        <PublicName>PTP_DEVICE_CONTROL</PublicName>
+        <PublicName>PTP_STATUS</PublicName>
+        <PublicName>PTP_ERROR_ID</PublicName>
+        <PublicName>PTP_MoveFbControl</PublicName>
+        <PublicName>PTP_CIA402_MOTION_JOB_STATUS</PublicName>
+        <PublicName>PTP_MC_BUFFER_MODE</PublicName>
+        <PublicName>PTP_CIA402_MODES_OF_OPERATION</PublicName>
+        <PublicName>PTP_MC_Direction</PublicName>
+        <PublicName>CIA402_RELATIVE_POSITIONING_TYPE</PublicName>
+        <PublicName>PTP_MC_JOG_MODE</PublicName>
+        <PublicName>PTP_CIA402_MOTION_JOB</PublicName>
+        <PublicName>PTP_MOTION</PublicName>
+        <PublicName>PTP_CIA402_FACTORGROUP</PublicName>
+        <PublicName>PTP_SCALE</PublicName>
+        <PublicName>PTP_AXIS_REF_FESTO</PublicName>
+        <PublicName>PTP_EC_DATATYPE</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames>
+        <InternalName>StateMachineCiA402</InternalName>
+        <InternalName>StateMachinePLCopen</InternalName>
+        <InternalName>CheckMethodConditions</InternalName>
+        <InternalName>CheckHomingMethod</InternalName>
+        <InternalName>ErrorStringGenerator</InternalName>
+        <InternalName>Write_ModesOfOperation</InternalName>
+        <InternalName>Read_ModesOfOperation</InternalName>
+        <InternalName>DeleteMotionJob</InternalName>
+        <InternalName>MotionMonitoring</InternalName>
+        <InternalName>BuildFactorgroup</InternalName>
+        <InternalName>SetFbOutputs</InternalName>
+        <InternalName>ErrorList_CMMT</InternalName>
+        <InternalName>AbortCodeList</InternalName>
+        <InternalName>DequeueAbortedJob</InternalName>
+        <InternalName>QueueAbortedJob</InternalName>
+        <InternalName>PtP_MotionJobManager</InternalName>
+        <InternalName>PTP_CIA402_CONTROLWORD</InternalName>
+        <InternalName>PTP_CIA402_STATUSWORD</InternalName>
+        <InternalName>PtP_FB_Outputs</InternalName>
+      </InternalPartsNames>
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX1P2-1040DT1</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>13</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.13</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.13" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>cf3ec452-3ce5-4365-b746-3737bbc03767</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\PMO\Team Havfront Dropbox\Havfront - Automasjon\5_Software\Omron\Sysmac\Library\20_Library\Festo_PointToPoint_Omron.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Team Havfront Dropbox\Havfront - Automasjon\5_Software\Omron\Sysmac\Library\20_Library\Festo_PointToPoint_Omron.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

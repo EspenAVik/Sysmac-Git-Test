@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IagResources>
+  <Resources Type="Images">
+    <Resource Name="Image48" ID="22e0bdde-4d00-4de5-a542-3d2ab3e469a7">
+      <Localisation Language="ja-JP" Translation="start_data_logging_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image49" ID="885a7dc6-c44a-4d3d-9d21-ecd8f11bc93f">
+      <Localisation Language="ja-JP" Translation="start_data_logging_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image50" ID="8615b8be-4df1-48d2-adb1-92f2e017ed31">
+      <Localisation Language="ja-JP" Translation="stop_data_logging_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image51" ID="49db3edf-50a5-472e-949d-050ddfff0a98">
+      <Localisation Language="ja-JP" Translation="stop_data_logging_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image52" ID="b056cf9d-c203-4cf7-ba5c-c09c55ca666c">
+      <Localisation Language="ja-JP" Translation="clear_datalog_buffer_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image53" ID="2966915b-9ab8-4d7d-9239-32f8558fe6d3">
+      <Localisation Language="ja-JP" Translation="clear_datalog_buffer_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image54" ID="b1c76676-2c20-4f10-a4c4-852487ebaa1a">
+      <Localisation Language="ja-JP" Translation="export_datalog_buffer_u_n.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image55" ID="7e114ecf-c24a-448e-8de8-f8ca8d557585">
+      <Localisation Language="ja-JP" Translation="export_datalog_buffer_u_s.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image80" ID="bae60474-c423-4c68-ad09-01fc09d6c750">
+      <Localisation Language="ja-JP" Translation="composition_center_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image81" ID="cb580897-91ca-4c23-9876-ddebff6de27d">
+      <Localisation Language="ja-JP" Translation="composition_right_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+    <Resource Name="Image102" ID="a811295c-ab82-4635-9f09-4b1d4b3a44ab">
+      <Localisation Language="ja-JP" Translation="datalog_composition_yoko.png" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+  <Resources Type="Strings">
+    <Resource Name="String18" ID="db57221b-4844-4763-8559-2c584eb87ab7">
+      <Localisation Language="ja-JP" Translation="Button" Default="True" />
+      <Localisation Language="en-US" Translation="" />
+      <Localisation Language="zh-CN" Translation="" />
+      <Localisation Language="ko-KR" Translation="" />
+    </Resource>
+  </Resources>
+</IagResources>

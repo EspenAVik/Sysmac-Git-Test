@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>MineFB_rev2</Name>
+      <NameSpace></NameSpace>
+      <Version>1.2.0</Version>
+      <Revision>1</Revision>
+      <LibraryId>97f49683-ea7b-407f-b72b-f615241de49a</LibraryId>
+      <Author>PMO</Author>
+      <Company>Havfront</Company>
+      <DateCreated>2019-09-18T13:59:56.2275064+02:00</DateCreated>
+      <DateModified>2019-10-14T16:22:31.1811052+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>FB_SCL_3P</PublicName>
+        <PublicName>FB_SCL_4P</PublicName>
+        <PublicName>sSCL</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ101-9000</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>20</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.20</DisplayVersion>
+        <Packages />
+      </BuildDevice>
+      <DependencyId>1d9f2622-09f1-4871-a2e5-dc6cd23cb3af</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\MineFB_rev2.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

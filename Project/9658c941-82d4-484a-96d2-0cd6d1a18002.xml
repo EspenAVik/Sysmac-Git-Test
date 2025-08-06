@@ -1,0 +1,9 @@
+﻿{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"ST","Ix":1,"Var":"Tx8bitTo8bit","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_00"},{"__type":"ST","Ix":1,"Var":"Output_00","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_01"},{"__type":"ST","Ix":1,"Var":"Output_01","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_02"},{"__type":"ST","Ix":1,"Var":"Output_02","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_03"},{"__type":"ST","Ix":1,"Var":"Output_03","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_04"},{"__type":"ST","Ix":1,"Var":"Output_04","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_05"},{"__type":"ST","Ix":1,"Var":"Output_05","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_06"},{"__type":"ST","Ix":1,"Var":"Output_06","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"Input_07"},{"__type":"ST","Ix":1,"Var":"Output_07","X":1}],"LRI":2,"RRI":3,"VLs":[]}

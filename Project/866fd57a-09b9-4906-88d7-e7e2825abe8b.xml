@@ -1,0 +1,32 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=FB_Initialized	IV=False	G=VAR	Com=this function block is initialized
+++D=USINT	N=FB_Number	G=VAR	Com=initialization number of this function block
+++D=R_TRIG	N=R_TRIG_Execute	G=VAR	Com=trigger to rising edge of Execute
+++D=BOOL	N=DispatchNewMotionJob	G=VAR	Com=new motion job should be dispatch
+++D=BOOL	N=ContinuousUpdateActive	G=VAR	Com=if input ContinuousUpdate is true during rising edge of Execute, continuous update functionality will be activated
+++D=REAL	N=DistanceLastRun	G=VAR	Com=value of the distance in previous cycle 
+++D=REAL	N=VeloLastRun	G=VAR	Com=value of the velocity in previous cycle 
+++D=REAL	N=AccLastRun	G=VAR	Com=value of the acceleration in previous cycle
+++D=REAL	N=DecLastRun	G=VAR	Com=value of the deceleration in previous cycle
+++D=REAL	N=JerkLastRun	G=VAR	Com=value of jerk in previous cycle
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=starts motion with rising edge
+++D=BOOL	N=ContinuousUpdate	Ord=2	G=VAR_INPUT	Com=if input is true during rising edge of Execute, changes at input variables will start a new movement immediately
+++D=REAL	N=Distance	Ord=3	G=VAR_INPUT	Com=relative distance to actual postion for the motion (in user unit)
+++D=REAL	N=Velocity	Ord=4	G=VAR_INPUT	Com=value of the maximun velocity (in user unit)
+++D=REAL	N=Acceleration	Ord=5	G=VAR_INPUT	Com=value of the acceleration (in user unit)
+++D=REAL	N=Deceleration	Ord=6	G=VAR_INPUT	Com=value of the deceleration (in user unit)
+++D=REAL	N=Jerk	Ord=7	G=VAR_INPUT	Com=value of jerk (in user unit)
+++D=PTP_MC_DIRECTION	N=Direction	Ord=8	G=VAR_INPUT	Com=defines the positioning direction if "modulo" is activated
+++D=PTP_MC_BUFFER_MODE	N=BufferMode	Ord=9	G=VAR_INPUT	Com=defines the chronological sequence of the FB (aborting vs. buffered)
+++D=BOOL	N=Done	Ord=10	G=VAR_OUTPUT	Com="Command" successfully finished
+++D=BOOL	N=Busy	Ord=11	G=VAR_OUTPUT	Com=FB is not finished and new output values aer to be expected
+++D=BOOL	N=Active	Ord=12	G=VAR_OUTPUT	Com=indicates that FB has control on the axis
+++D=BOOL	N=CommandAborted	Ord=13	G=VAR_OUTPUT	Com="Command" is aborted by another command
+++D=BOOL	N=Error	Ord=14	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=15	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=16	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

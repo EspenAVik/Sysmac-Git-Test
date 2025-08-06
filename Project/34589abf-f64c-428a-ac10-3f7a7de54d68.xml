@@ -1,0 +1,32 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DWORD	N=ActualStatusMotionMonitor	G=VAR	Com=Status internal motion monitor of drive
+++D=_sSDO_ACCESS	N=SdoObject_StatusMotionMonitor	IV=(Index := 16#2166, Subindex := 1, IsCompleteAccess := False)	G=VAR
+++D=EC_CoESDORead	N=fb_ReadSdo_StatusMotionMonitor	G=VAR	Com=SDO 16#2166.1 (UDINT)
+++D=BOOL	N=StartReading	G=VAR
+++D=TON	N=tonUpdateTimer	G=VAR
+++D=BOOL	N=StartUpdateTimer	G=VAR
+++D=R_TRIG	N=R_TRIG_Enable	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT	Com=as long as "Enable" is true, order is being executed
+++D=TIME	N=UpdateTime	IV=T#1S	Ord=2	G=VAR_INPUT	Com=delay time between finish of last and request of next SDO read command (default = T#1S = 1 second)
+++D=BOOL	N=Valid	Ord=3	G=VAR_OUTPUT	Com=if true, a valid set of outputs is available at FB
+++D=BOOL	N=Busy	Ord=4	G=VAR_OUTPUT	Com=FB is not finished and new output values are to be expected
+++D=BOOL	N=HomeAbsSwitch	Ord=5	G=VAR_OUTPUT	Com=digital home switch is active
+++D=BOOL	N=IsHomed	Ord=6	G=VAR_OUTPUT	Com=the absolute reference position is knwon for the axis (axis is homed)
+++D=BOOL	N=IsMoving	Ord=7	G=VAR_OUTPUT	Com=shows if the axis is moving
+++D=BOOL	N=HwLimitSwitchPos	Ord=8	G=VAR_OUTPUT	Com=positive hardware end switch is active
+++D=BOOL	N=HwLimitSwitchNeg	Ord=9	G=VAR_OUTPUT	Com=negative hardware end switch is active
+++D=BOOL	N=SwLimitSwitchPos	Ord=10	G=VAR_OUTPUT	Com=positive software end switch is active
+++D=BOOL	N=SwLimitSwitchNeg	Ord=11	G=VAR_OUTPUT	Com=negative software end switch is active
+++D=BOOL	N=StrokeLimitPos	Ord=12	G=VAR_OUTPUT	Com=positve stroke limit reached
+++D=BOOL	N=StrokeLimitNeg	Ord=13	G=VAR_OUTPUT	Com=negative stroke limit reached
+++D=BOOL	N=CommunicationReady	Ord=14	G=VAR_OUTPUT	Com="network" is initialized and ready for communication
+++D=BOOL	N=PowerOn	Ord=15	G=VAR_OUTPUT	Com=if TRUE shows that the power stage is switched ON
+++D=BOOL	N=AxisWarning	Ord=16	G=VAR_OUTPUT	Com=warning(s) on the axis is present
+++D=BOOL	N=Error	Ord=17	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=18	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=19	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

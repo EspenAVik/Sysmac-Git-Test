@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=FB_Initialized	IV=False	G=VAR
+++D=USINT	N=FB_Number	G=VAR
+++D=R_TRIG	N=R_TRIG_Execute	G=VAR	Com=trigger to rising edge of Execute
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=0	G=VAR_IN_OUT	Com=reference to the axis
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=starts motion with rising edge
+++D=REAL	N=Position	Ord=2	G=VAR_INPUT	Com=absolute position when the reference signal is detedted (Position (HomeOffset) is only written if HomingMethod is nonzero (HomingMethod <> 0))
+++D=DINT	N=HomingMethod	Ord=3	G=VAR_INPUT	Com=number of homing method according to CiA402 specification (HomingMethod is only written if HomingMethod is nonzero (HomingMethod <> 0)
+++D=BOOL	N=Done	Ord=4	G=VAR_OUTPUT	Com="Command" successfully finished
+++D=BOOL	N=Busy	Ord=5	G=VAR_OUTPUT	Com=FB is not finished and new output values aer to be expected
+++D=BOOL	N=Active	Ord=6	G=VAR_OUTPUT	Com=Indicates that FB has control on the axis
+++D=BOOL	N=CommandAborted	Ord=7	G=VAR_OUTPUT	Com="Command" is aborted by another command
+++D=BOOL	N=Error	Ord=8	G=VAR_OUTPUT	Com=signals that an error has occurred within the function block
+++D=WORD	N=ErrorID	Ord=9	G=VAR_OUTPUT	Com=error identification
+++D=STRING[50]	N=ErrorString	Ord=10	G=VAR_OUTPUT	Com=string with detailed error information
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

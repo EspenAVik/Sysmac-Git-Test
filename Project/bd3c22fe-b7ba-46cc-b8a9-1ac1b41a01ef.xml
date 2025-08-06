@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=DINT	N=iErr	Ord=1	G=VAR_INPUT	Com=error number of the controller
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[80]	N=ErrorList_CMMO_ST_EMCA_EC	G=RETURN	Com=string with the fault description of the controller COOM_ST and EMCA_EC

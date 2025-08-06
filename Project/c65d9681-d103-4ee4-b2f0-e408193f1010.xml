@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=TCP_Port	IV=UINT#502	G=VAR
+++D=SktTCPConnect	N=TCP_Connect_Inst	G=VAR
+++D=SktClearBuf	N=TCP_ClearBuf_Inst	G=VAR
+++D=SktGetTCPStatus	N=TCP_Status_Inst	G=VAR
+++D=BOOL	N=Connecting	G=VAR
+++D=INT	N=TCP_Step	G=VAR
+++D=SktClose	N=TCP_Close_Inst	G=VAR
+++D=UINT	N=LocalPort	G=VAR
+++D=BOOL	N=Cycle	G=VAR
+++D=_sTimer	N=CyclicTimer	G=VAR
+++D=UINT	N=Rtime	G=VAR
+++D=BOOL	N=Busy	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=EIP_EtnOnlineSta	Ord=1	G=VAR_INPUT
+++D=STRING[16]	N=IPaddress	Ord=2	G=VAR_INPUT
+++D=UINT	N=Port	IV=UINT#502	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Connect	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Connected	Ord=5	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=6	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=7	G=VAR_OUTPUT
+++D=_sSOCKET	N=TCP_Socket	Ord=8	G=VAR_OUTPUT
+++D=_eCONNECTION_STATE	N=Socket_Status	Ord=9	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

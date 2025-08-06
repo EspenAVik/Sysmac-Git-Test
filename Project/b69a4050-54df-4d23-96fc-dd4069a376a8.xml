@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=INT	N=iOPM	Ord=1	G=VAR_INPUT	Com=selected OPM of the controller (from function block)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[80]	N=GetOPMString	G=RETURN	Com=string of the selected OPM of the controller (from function block)

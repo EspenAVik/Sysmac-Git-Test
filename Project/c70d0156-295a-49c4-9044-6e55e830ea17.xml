@@ -1,0 +1,1027 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=BOOL	N=fb_WashingActive	G=VAR_GLOBAL	Com=Washing in progress
+++D=BOOL	N=fb_WashingRdy	G=VAR_GLOBAL	Com=Rdy for washing
+++D=REAL	N=Y15_Lim_Out	R=1	G=VAR_GLOBAL
+++D=REAL	N=Y15_Lim_In	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=ZT41_Reg	R=1	G=VAR_GLOBAL
+++D=REAL	N=Y25_Ret_X_P	G=VAR_GLOBAL	Com=X position when return triggered
+++D=REAL	N=Y25_Ret_X_RmpP	G=VAR_GLOBAL	Com=X endpoint return ramp
+++D=REAL	N=Y25_Ret_X_RmpD	G=VAR_GLOBAL	Com=X ramp distance return
+++D=REAL	N=Y25_Ret_X_L	G=VAR_GLOBAL	Com=X Lim to activate return above crib
+++D=BOOL	N=Y25_Ret_On	G=VAR_GLOBAL	Com=1 = Return above crib 
+++D=REAL	N=Y25_Ret_Y_P	G=VAR_GLOBAL	Com=Y Sp when return triggered
+++D=REAL	N=Y25_Ret_Y_SP	IV=180	G=VAR_GLOBAL	Com=Calculated SP above Crib
+++D=INT	N=Y35_CalcPuls	G=VAR_GLOBAL	Com=Calculated Pulslength ms
+++D=sSCL	N=AI2_ZT40A	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 3955, Y0 := 295, X1 := 1530, Y1 := 100, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4200, X_Min := 200, Y_Max := 320, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Laser height A
+++D=sSCL	N=AI3_PT43	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 3900, Y1 := 10, X2 := 4000, Y2 := 10, X3 := 0, Y3 := 0, X_Max := 4000, X_Min := 0, Y_Max := 10, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Air Press
+++D=INT	N=Temp_M10	G=VAR_GLOBAL	Com=Temperatur Transportør PT1000
+++D=sSCL	N=AI4_ZT12A	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 1033, Y0 := 60, X1 := 3332, Y1 := 175, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4200, X_Min := 200, Y_Max := 400, Y_Min := 1, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=M10 Pos Ultrasonic A (New Ultrasonic)
+++D=sSCL	N=AI5_ZT12B	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 2490, Y0 := 101, X1 := 1945, Y1 := 148, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4000, X_Min := 400, Y_Max := 400, Y_Min := 1, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=M10 Pos Ultrasonic B (Old original)
+++D=sSCL	N=AI6_ZT35	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 879, Y0 := -41, X1 := 3725, Y1 := 105, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4000, X_Min := 400, Y_Max := 200, Y_Min := -50, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Head Act
+++D=sSCL	N=AI7_ZT40B	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 3955, Y0 := 295, X1 := 1530, Y1 := 100, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4200, X_Min := 200, Y_Max := 320, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Laser height B
+++D=sSCL	N=AI8_ZT42	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 2619, Y0 := 35, X1 := 2070, Y1 := 100, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4000, X_Min := 400, Y_Max := 150, Y_Min := 20, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=New fish Ultrasonic
+++D=sEncoder	N=M10_Enc	R=1	IV=(Enc_Value := 0, Puls_Per_Rev := 1024, Gear_Ratio := 0.014925, Travel_Per_Rev := 1180, Full_Travel := 5000, Min_Travel := 0.0, Max_Travel := 5000, PosActual := 0.0, PosPercent := 0.0, ZeroPos := 0, PresetReq := False, ResetReq := False, CountUp := False, CountDwn := False, Position_Reset_mm := 0.0, Position_Reset_mm_Scaled := 0.0)	G=VAR_GLOBAL	EC=<ECs><EC EK="Gear_Ratio" C="1/67" /><EC EK="Travel_Per_Rev" C="Travel per revolution - mm" /></ECs>
+++D=BOOL	N=DI000_S1	G=VAR_GLOBAL	Com=Start PB(Panel)
+++D=BOOL	N=DI001_S2	G=VAR_GLOBAL	Com=Stop PB(Panel)
+++D=BOOL	N=DI002_S101	G=VAR_GLOBAL	Com=EmgStop1
+++D=BOOL	N=DI003	G=VAR_GLOBAL	Com=Fuse F4.1
+++D=ARRAY[0..9] OF REAL	N=Y25_CurveX	R=1	G=VAR_GLOBAL
+++D=REAL	N=Y25_Ret_Y_Ofs	G=VAR_GLOBAL	Com=Y25 Offset return SP
+++D=REAL	N=Y25_Ret_Y1	G=VAR_GLOBAL	Com=Y1
+++D=REAL	N=Y25_Ret_Y0	G=VAR_GLOBAL	Com=Y0
+++D=ARRAY[0..9] OF REAL	N=Y25_CurveY_Out	R=1	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_00	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_01	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_02	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_03	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_04	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_05	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_06	G=VAR_GLOBAL
+++D=BOOL	N=M10_DigIn_07	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_01	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_02	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_03	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_04	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_05	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_06	G=VAR_GLOBAL
+++D=BOOL	N=M20_DigIn_07	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_01	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_02	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_03	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_04	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_05	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_06	G=VAR_GLOBAL
+++D=BOOL	N=M21_DigIn_07	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_01	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_02	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_03	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_04	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_05	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_06	G=VAR_GLOBAL
+++D=BOOL	N=M30_DigIn_07	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_01	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_02	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_03	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_04	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_05	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_06	G=VAR_GLOBAL
+++D=BOOL	N=M31_DigIn_07	G=VAR_GLOBAL
+++D=BOOL	N=DI004_S102	G=VAR_GLOBAL	Com=EmgStop2
+++D=BOOL	N=DI005_S42	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DI006_S14	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DI007_S103	G=VAR_GLOBAL	Com=EmgStop3
+++D=BOOL	N=DI008_S13	G=VAR_GLOBAL	Com=KrybbeBellyPos Prox
+++D=BOOL	N=DI009_S26	G=VAR_GLOBAL	Com=BellyScrewHome Prox
+++D=BOOL	N=DI010_S27	G=VAR_GLOBAL	Com=Spare/Safety Door S109 over exit fish
+++D=BOOL	N=DI011_S24	G=VAR_GLOBAL	Com=Roe Clamp B S24B
+++D=BOOL	N=DI012_S34	G=VAR_GLOBAL	Com=HeadScrewHome Prox
+++D=BOOL	N=DI013_S3	G=VAR_GLOBAL	Com=Last Fish
+++D=BOOL	N=DI014	G=VAR_GLOBAL	Com=S4 Washing
+++D=BOOL	N=DI015_S3	G=VAR_GLOBAL	Com=R.Clamp C Spare
+++D=BOOL	N=DI100_S16	G=VAR_GLOBAL	Com=Fuse F4.4
+++D=BOOL	N=DI101	G=VAR_GLOBAL	Com=Fuse F4.5
+++D=BOOL	N=DI102_Safety_Emg_IN	G=VAR_GLOBAL	Com=EMG from SafetyPLC. True = Disabled
+++D=BOOL	N=DI103	G=VAR_GLOBAL	Com=Safety Switch Enabled
+++D=BOOL	N=DI104_S17	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DI105	G=VAR_GLOBAL	Com=ZT40A Laser In Range
+++D=BOOL	N=DI106	G=VAR_GLOBAL	Com=ZT40B Laser In Range
+++D=BOOL	N=DI107	G=VAR_GLOBAL	Com=ZT40C Laser In Range
+++D=BOOL	N=DI108	G=VAR_GLOBAL	Com=S14 Crib Proxx 2. 
+++D=BOOL	N=DI109	G=VAR_GLOBAL	Com=Air On/Off confirmation
+++D=BOOL	N=DI110	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DI111_GroundFault	G=VAR_GLOBAL	Com=Groundfault
+++D=BOOL	N=DI112	G=VAR_GLOBAL	Com=Spare/Safety Door S105
+++D=BOOL	N=DI113	G=VAR_GLOBAL	Com=Spare/Safety Door S106
+++D=BOOL	N=DI114	G=VAR_GLOBAL	Com=Spare/Safety Door S107
+++D=BOOL	N=DI115	G=VAR_GLOBAL	Com=Spare/Safety Door S108
+++D=BOOL	N=DO200_H1	G=VAR_GLOBAL	Com=Ind. Light Running
+++D=BOOL	N=DO201_H2	G=VAR_GLOBAL	Com=Ind. Light Stopped
+++D=BOOL	N=DO202_H73	G=VAR_GLOBAL	Com=Fish alignment laser H73
+++D=BOOL	N=DO203_Y29_Water	G=VAR_GLOBAL	Com=Water Main Valve
+++D=BOOL	N=DO204	G=VAR_GLOBAL
+++D=BOOL	N=DO205	G=VAR_GLOBAL
+++D=BOOL	N=DO206	G=VAR_GLOBAL
+++D=BOOL	N=DO207	G=VAR_GLOBAL
+++D=BOOL	N=DO208	G=VAR_GLOBAL
+++D=BOOL	N=DO209	G=VAR_GLOBAL
+++D=BOOL	N=DO210	G=VAR_GLOBAL	Com=Commisioning (doors disabling temp 1)
+++D=BOOL	N=DO211	G=VAR_GLOBAL	Com=Washing to Safety
+++D=BOOL	N=DO212	G=VAR_GLOBAL
+++D=BOOL	N=DO213	G=VAR_GLOBAL	Com=SignalLight_Green
+++D=BOOL	N=DO214	G=VAR_GLOBAL	Com=SignalLight_Red
+++D=BOOL	N=DO215	G=VAR_GLOBAL	Com=SignalLight_Yellow
+++D=BOOL	N=DO300_Y44	G=VAR_GLOBAL	Com=Valve Neck Arm
+++D=BOOL	N=DO301_Y36	G=VAR_GLOBAL	Com=Valve HeadGrip
+++D=BOOL	N=DO302_Y28	G=VAR_GLOBAL	Com=Valve Roe Clamp
+++D=BOOL	N=DO303_Y15	G=VAR_GLOBAL	Com=Crib Clamp
+++D=BOOL	N=DO304	G=VAR_GLOBAL	Com=1 = CMD HeadAct Up
+++D=BOOL	N=DO305	G=VAR_GLOBAL	Com=1 = CMD HeadAct Dwn
+++D=BOOL	N=DO306	G=VAR_GLOBAL	Com=MachineLight
+++D=BOOL	N=DO307	G=VAR_GLOBAL	Com=Spare
+++D=INT	N=Test_trendGraph	R=1	G=VAR_GLOBAL
+++D=BOOL	N=DO308	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DO309	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DO310	G=VAR_GLOBAL	Com=Commisioning (doors disabling temp 2)
+++D=BOOL	N=DO311	G=VAR_GLOBAL	Com=EMG stop from PLC to Safety PLC
+++D=BOOL	N=DO312	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DO313	G=VAR_GLOBAL	Com=Spare
+++D=BOOL	N=DO314	G=VAR_GLOBAL	Com=Spare
+++D=sEncoder	N=M21_Enc	R=1	IV=(Enc_Value := 0, Puls_Per_Rev := 1024, Gear_Ratio := 1, Travel_Per_Rev := 20, Full_Travel := 618, Min_Travel := 0.0, Max_Travel := 618, PosActual := 0.0, PosPercent := 0.0, ZeroPos := 0, PresetReq := False, ResetReq := False, CountUp := False, CountDwn := False, Position_Reset_mm := 30, Position_Reset_mm_Scaled := 0.0)	G=VAR_GLOBAL
+++D=sEncoder	N=M31_Enc	R=1	IV=(Enc_Value := 0, Puls_Per_Rev := 1024, Gear_Ratio := 1, Travel_Per_Rev := 20, Full_Travel := 636, Min_Travel := 0.0, Max_Travel := 636, PosActual := 0.0, PosPercent := 0.0, ZeroPos := 0, PresetReq := False, ResetReq := False, CountUp := False, CountDwn := False, Position_Reset_mm := 96, Position_Reset_mm_Scaled := 0.0)	G=VAR_GLOBAL
+++D=BOOL	N=DevM10_M31_Aux	G=VAR_GLOBAL
+++D=BOOL	N=DO315	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AI3_ZT40C	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 3955, Y0 := 295, X1 := 1530, Y1 := 100, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4200, X_Min := 200, Y_Max := 320, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Laser height C
+++D=sSCL	N=AO02_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 400, X1 := 120, Y1 := 1000, X2 := 400, Y2 := 1000, X3 := 600, Y3 := 200, X_Max := 2000, X_Min := 0, Y_Max := 4000, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL
+++D=sSCL	N=AO03_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 4000, X1 := 100, Y1 := 4000, X2 := 350, Y2 := 4000, X3 := 450, Y3 := 200, X_Max := 700, X_Min := 0, Y_Max := 4000, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL
+++D=sSCL	N=AO04_Spare	R=1	IV=(X_INT := 0, X_REAL := 0.0, Y_Real := 0.0, Y_INT := 0, Y_Sim := 0.0, X0 := 0.0, Y0 := 0.0, X1 := 100, Y1 := 4000, X2 := 0.0, Y2 := 0.0, X3 := 0.0, Y3 := 0.0, X_Max := 100, X_Min := 0.0, Y_Max := 4000, Y_Min := 0.0, Offset := 0.0, Signal_Fault := False, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL
+++D=sSCL	N=AO05_Spare	R=1	IV=(X_INT := 0, X_REAL := 0.0, Y_Real := 0.0, Y_INT := 0, Y_Sim := 0.0, X0 := 0.0, Y0 := 0.0, X1 := 100, Y1 := 4000, X2 := 0.0, Y2 := 0.0, X3 := 0.0, Y3 := 0.0, X_Max := 100, X_Min := 0, Y_Max := 4000, Y_Min := 0.0, Offset := 0.0, Signal_Fault := False, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL
+++D=sSCL	N=AO06_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO07_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO08_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO09_Y25	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 221, Y0 := 0, X1 := 148, Y1 := 2000, X2 := 75, Y2 := 4000, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 4000, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := True)	G=VAR_GLOBAL	Com=Pos Order BellyActuator
+++D=sSCL	N=AO10_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO11_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO12_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO13_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO14_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO15_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AO16_Spare	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare
+++D=sSCL	N=AI1_ZT41	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 3927, Y0 := 17, X1 := 2293, Y1 := 100, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4000, X_Min := 350, Y_Max := 200, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Neck Arm Pos
+++D=ARRAY[0..100] OF REAL	N=ZT40A_Reg	R=1	G=VAR_GLOBAL
+++D=sCntMod	N=Cnt1	R=1	G=VAR_GLOBAL
+++D=BOOL	N=CMD_NeckValShift	G=VAR_GLOBAL	Com=Shift register values
+++D=sMotor	N=M10_D	R=1	IV=(FB_RdyAutoFwd := False, FB_RdyAutoRev := False, FB_RdyManFW := False, FB_RdyManRev := False, FB_Home := False, FB_Auto := False, FB_ReqRef := 0, FB_StatusWord := 16#0, FB_DriveFault := False, FB_Fwd := False, FB_Rev := False, CMD_AutoHome := False, CMD_AutoFwd := False, CMD_AutoRev := False, CMD_AutoCyclusFWD := False, CMD_AutoCyclusREV := False, CMD_ManHome := False, CMD_ManFwd := False, CMD_ManRev := False, CMD_Reset := False, CMD_Auto := False, CMD_Man := False, Lim_HomeMin := 0.0, Lim_HomeMax := 0.0, Lim_SpeedAuto_FWD := 0.0, Lim_SpeedAuto_Rev := 0.0, Lim_SpeedMan_FWD := 0.0, Lim_SpeedMan_Rev := 0.0, SP_Speed := 0.0, CMD_PositioningOn := False, Lim_PosSP_Fwd := 558, Lim_PosSP_Rev := 0.0, CMD_Fwd := False, CMD_Rev := False, FB_Warning := False, FB_Remote := False, FB_ConnectionError := False, Lim_Deceleration := 0.0, Lim_Acceleration := 30, Lim_Pos_Setpoint := 0.0, Lim_Ramp_Dist := 70, Lim_Stop_Dist := 3, FB_SpeedSp := 0.0, Lim_SpeedMin := 1, CMD_Stop := False, Lim_Linear_Square := False, SP_PosHome := 0.0, FB_FreqMatch := False, FB_Deviation := 0.0, SP_Ramped := 0.0, FB_FRQ_Out := 0.0, Lim_FRQ_Fwd := 50, Lim_FRQ_Rev := 25, Lim_Pos_EncRst := 555, Lim_Ramp_DistMan := 0.0, FB_BlockFwd := False, FB_BlockRev := False, CMD_TestRun := False, FB_Run := False, FB_Block := False)	G=VAR_GLOBAL
+++D=sMotor	N=M20_D	R=1	IV=(FB_RdyAutoFwd := False, FB_RdyAutoRev := False, FB_RdyManFW := False, FB_RdyManRev := False, FB_Home := False, FB_Auto := False, FB_ReqRef := 0, FB_StatusWord := 16#0, FB_DriveFault := False, FB_Fwd := False, FB_Rev := False, CMD_AutoHome := False, CMD_AutoFwd := False, CMD_AutoRev := False, CMD_AutoCyclusFWD := False, CMD_AutoCyclusREV := False, CMD_ManHome := False, CMD_ManFwd := False, CMD_ManRev := False, CMD_Reset := False, CMD_Auto := False, CMD_Man := False, Lim_HomeMin := 0.0, Lim_HomeMax := 0.0, Lim_SpeedAuto_FWD := 50, Lim_SpeedAuto_Rev := 50, Lim_SpeedMan_FWD := 50, Lim_SpeedMan_Rev := 50, SP_Speed := 0.0, CMD_PositioningOn := False, Lim_PosSP_Fwd := 0.0, Lim_PosSP_Rev := 0.0, CMD_Fwd := False, CMD_Rev := False, FB_Warning := False, FB_Remote := False, FB_ConnectionError := False, Lim_Deceleration := 1, Lim_Acceleration := 3, Lim_Pos_Setpoint := 0.0, Lim_Ramp_Dist := 0.0, Lim_Stop_Dist := 0.0, FB_SpeedSp := 0.0, Lim_SpeedMin := 0.0, CMD_Stop := False, Lim_Linear_Square := False, SP_PosHome := 0.0, FB_FreqMatch := False, FB_Deviation := 0.0, SP_Ramped := 0.0, FB_FRQ_Out := 0.0, Lim_FRQ_Fwd := 50, Lim_FRQ_Rev := 50, Lim_Pos_EncRst := 0.0, Lim_Ramp_DistMan := 0.0, FB_BlockFwd := False, FB_BlockRev := False, CMD_TestRun := False, FB_Run := False, FB_Block := False)	G=VAR_GLOBAL
+++D=BOOL	N=DevM10_M31_Alarm	G=VAR_GLOBAL
+++D=REAL	N=DevM10_M31	G=VAR_GLOBAL
+++D=sMotor	N=M21_D	R=1	IV=(FB_RdyAutoFwd := False, FB_RdyAutoRev := False, FB_RdyManFW := False, FB_RdyManRev := False, FB_Home := False, FB_Auto := False, FB_ReqRef := 0, FB_StatusWord := 16#0, FB_DriveFault := False, FB_Fwd := False, FB_Rev := False, CMD_AutoHome := False, CMD_AutoFwd := False, CMD_AutoRev := False, CMD_AutoCyclusFWD := False, CMD_AutoCyclusREV := False, CMD_ManHome := False, CMD_ManFwd := False, CMD_ManRev := False, CMD_Reset := False, CMD_Auto := False, CMD_Man := False, Lim_HomeMin := 0.0, Lim_HomeMax := 0.0, Lim_SpeedAuto_FWD := 45, Lim_SpeedAuto_Rev := 35, Lim_SpeedMan_FWD := 10, Lim_SpeedMan_Rev := 10, SP_Speed := 0.0, CMD_PositioningOn := False, Lim_PosSP_Fwd := 550, Lim_PosSP_Rev := 45, CMD_Fwd := False, CMD_Rev := False, FB_Warning := False, FB_Remote := False, FB_ConnectionError := False, Lim_Deceleration := 0.0, Lim_Acceleration := 45, Lim_Pos_Setpoint := 0.0, Lim_Ramp_Dist := 35, Lim_Stop_Dist := 1, FB_SpeedSp := 0.0, Lim_SpeedMin := 1, CMD_Stop := False, Lim_Linear_Square := False, SP_PosHome := 45, FB_FreqMatch := False, FB_Deviation := 0.0, SP_Ramped := 0.0, FB_FRQ_Out := 0.0, Lim_FRQ_Fwd := 45, Lim_FRQ_Rev := 50, Lim_Pos_EncRst := 0.0, Lim_Ramp_DistMan := 0.0, FB_BlockFwd := False, FB_BlockRev := False, CMD_TestRun := False, FB_Run := False, FB_Block := False)	G=VAR_GLOBAL
+++D=sMotor	N=M30_D	R=1	IV=(FB_RdyAutoFwd := False, FB_RdyAutoRev := False, FB_RdyManFW := False, FB_RdyManRev := False, FB_Home := False, FB_Auto := False, FB_ReqRef := 0, FB_StatusWord := 16#0, FB_DriveFault := False, FB_Fwd := False, FB_Rev := False, CMD_AutoHome := False, CMD_AutoFwd := False, CMD_AutoRev := False, CMD_AutoCyclusFWD := False, CMD_AutoCyclusREV := False, CMD_ManHome := False, CMD_ManFwd := False, CMD_ManRev := False, CMD_Reset := False, CMD_Auto := False, CMD_Man := False, Lim_HomeMin := 0.0, Lim_HomeMax := 0.0, Lim_SpeedAuto_FWD := 50, Lim_SpeedAuto_Rev := 50, Lim_SpeedMan_FWD := 50, Lim_SpeedMan_Rev := 50, SP_Speed := 0.0, CMD_PositioningOn := False, Lim_PosSP_Fwd := 0.0, Lim_PosSP_Rev := 0.0, CMD_Fwd := False, CMD_Rev := False, FB_Warning := False, FB_Remote := False, FB_ConnectionError := False, Lim_Deceleration := 1, Lim_Acceleration := 3, Lim_Pos_Setpoint := 0.0, Lim_Ramp_Dist := 0.0, Lim_Stop_Dist := 0.0, FB_SpeedSp := 0.0, Lim_SpeedMin := 1, CMD_Stop := False, Lim_Linear_Square := False, SP_PosHome := 0.0, FB_FreqMatch := False, FB_Deviation := 0.0, SP_Ramped := 0.0, FB_FRQ_Out := 0.0, Lim_FRQ_Fwd := 50, Lim_FRQ_Rev := 50, Lim_Pos_EncRst := 0.0, Lim_Ramp_DistMan := 0.0, FB_BlockFwd := False, FB_BlockRev := False, CMD_TestRun := False, FB_Run := False, FB_Block := False)	G=VAR_GLOBAL
+++D=sMotor	N=M31_D	R=1	IV=(FB_RdyAutoFwd := False, FB_RdyAutoRev := False, FB_RdyManFW := False, FB_RdyManRev := False, FB_Home := False, FB_Auto := False, FB_ReqRef := 0, FB_StatusWord := 16#0, FB_DriveFault := False, FB_Fwd := False, FB_Rev := False, CMD_AutoHome := False, CMD_AutoFwd := False, CMD_AutoRev := False, CMD_AutoCyclusFWD := False, CMD_AutoCyclusREV := False, CMD_ManHome := False, CMD_ManFwd := False, CMD_ManRev := False, CMD_Reset := False, CMD_Auto := False, CMD_Man := False, Lim_HomeMin := 0.0, Lim_HomeMax := 0.0, Lim_SpeedAuto_FWD := 45, Lim_SpeedAuto_Rev := 50, Lim_SpeedMan_FWD := 50, Lim_SpeedMan_Rev := 50, SP_Speed := 0.0, CMD_PositioningOn := False, Lim_PosSP_Fwd := 450, Lim_PosSP_Rev := 102, CMD_Fwd := False, CMD_Rev := False, FB_Warning := False, FB_Remote := False, FB_ConnectionError := False, Lim_Deceleration := 0.0, Lim_Acceleration := 20, Lim_Pos_Setpoint := 0.0, Lim_Ramp_Dist := 40, Lim_Stop_Dist := 1, FB_SpeedSp := 0.0, Lim_SpeedMin := 1, CMD_Stop := False, Lim_Linear_Square := False, SP_PosHome := 102, FB_FreqMatch := False, FB_Deviation := 0.0, SP_Ramped := 0.0, FB_FRQ_Out := 0.0, Lim_FRQ_Fwd := 45, Lim_FRQ_Rev := 50, Lim_Pos_EncRst := 0.0, Lim_Ramp_DistMan := 0.0, FB_BlockFwd := False, FB_BlockRev := False, CMD_TestRun := False, FB_Run := False, FB_Block := False)	G=VAR_GLOBAL
+++D=BOOL	N=CMD_LaserValShift	G=VAR_GLOBAL	Com=Shift register values
+++D=BOOL	N=fb_Starting	G=VAR_GLOBAL	Com=Autostart in progress
+++D=BOOL	N=fb_StartFail	G=VAR_GLOBAL	Com=Start Sequence Timed Out
+++D=REAL	N=L_M21_Collition	R=1	IV=100	G=VAR_GLOBAL	Com=Collition Limit BellyScrew Conveyer
+++D=REAL	N=L_Y25_Collition	R=1	IV=175	G=VAR_GLOBAL	Com=Collition Limit BellyActuator Conveyer
+++D=BOOL	N=fb_RunningAuto	G=VAR_GLOBAL	Com=Auto sequence active
+++D=REAL	N=L_Y44_Home	R=1	IV=140	G=VAR_GLOBAL	Com=Min Limit to define neck neck arm home (mm)
+++D=BOOL	N=fb_Y44Home	G=VAR_GLOBAL	Com=Neck Arm Home (pos>lim)
+++D=TIME	N=L_Y44_Holding_Del	R=1	G=VAR_GLOBAL	Com=Holding time Neck Arm
+++D=BOOL	N=fb_RdyAuto	G=VAR_GLOBAL	Com=1 = ready for auto
+++D=BOOL	N=fb_FishDetected	G=VAR_GLOBAL	Com=Fish in measuring station
+++D=TIME	N=L_Y44_Del	R=1	G=VAR_GLOBAL	Com=Holding time Neck Arm
+++D=BOOL	N=fb_MeasActive	G=VAR_GLOBAL	Com=Measring in progress
+++D=BOOL	N=fb_Meas_Del1	G=VAR_GLOBAL	Com=Measuring Delay1 elapsed
+++D=BOOL	N=fb_Meas_Del2	G=VAR_GLOBAL	Com=Measuring Delay2 elapsed
+++D=REAL	N=ZT40A_Aux_Highest	G=VAR_GLOBAL	Com=Highest measured value for one measuring
+++D=BOOL	N=fb_RdyAutoStM10	G=VAR_GLOBAL	Com=Conveyor - M10 Ready for AutoSequence
+++D=BOOL	N=fb_RdyAutoStM21	G=VAR_GLOBAL	Com=Belly Screw - M21 Ready for AutoSequence
+++D=BOOL	N=fb_RdyAutoStM31	G=VAR_GLOBAL	Com=Head Screw - M31 Ready for AutoSequence
+++D=BOOL	N=fb_RdyAutoStY35	G=VAR_GLOBAL	Com=Head Actuator - Y35 Ready for AutoSequence
+++D=LINT	N=L_Meas1_Del_n	R=1	IV=500000000	G=VAR_GLOBAL	Com=Measuring Delay1 in nanosec
+++D=LINT	N=L_Meas2_Del_n	R=1	IV=20000000	G=VAR_GLOBAL	Com=Measuring Delay2 in nanosec
+++D=LINT	N=L_Y44_Del_n	R=1	IV=500000000	G=VAR_GLOBAL	Com=Holding time Neck Arm in nanosec
+++D=BOOL	N=fb_MeasStatRdy	G=VAR_GLOBAL	Com=Y1 Home & no signal fault (ZT1/ZT2)
+++D=TIME	N=L_Meas1_Del	R=1	G=VAR_GLOBAL	Com=Measuring Delay1
+++D=TIME	N=L_Meas2_Del	R=1	G=VAR_GLOBAL	Com=Measuring Delay2
+++D=REAL	N=L_Y25_HomePos	R=1	IV=180	G=VAR_GLOBAL	Com=Limit Belly Actuator Home (mm)
+++D=REAL	N=L_Y25_HomeDB	R=1	IV=10	G=VAR_GLOBAL	Com=Limit Belly Actuator Home DB (mm)
+++D=sSCL	N=AI_Soft1_Y25	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 1, Y1 := 1, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 4000, X_Min := 0, Y_Max := 999, Y_Min := -999, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL
+++D=BOOL	N=fb_Y25_NoCollision	G=VAR_GLOBAL	Com=1 =  No Collition
+++D=ARRAY[0..9] OF REAL	N=Y25_CurveY_In	R=1	G=VAR_GLOBAL	Com=Reverse
+++D=LINT	N=L_Y44_Holding_Del_n	R=1	IV=600000000	G=VAR_GLOBAL	Com=Holding time Neck Arm in nanosec
+++D=BOOL	N=CMD_CuttingCurve1	G=VAR_GLOBAL
+++D=BOOL	N=CMD_CuttingCurve2	G=VAR_GLOBAL
+++D=REAL	N=Y25_OffsetCurve_Out	G=VAR_GLOBAL	Com=Forward
+++D=REAL	N=Y25_OffsetCurve_In	G=VAR_GLOBAL	Com=Reverse
+++D=REAL	N=Test_trendGraph_Re	R=1	G=VAR_GLOBAL
+++D=REAL	N=TEST_Y3_CurveOffset_In	G=VAR_GLOBAL	Com=Reverse
+++D=REAL	N=TEST_Y3_CurveOffset_Out	G=VAR_GLOBAL
+++D=TIME	N=L_ManHomeFail_Del	R=1	G=VAR_GLOBAL	Com=Delay before timeout for manual home cmd
+++D=sActAn	N=Y35_A	G=VAR_GLOBAL	Com=Head actuator	EC=<ECs><EC EK="Lim_DB" C="DeadBand" /></ECs>
+++D=sActAn	N=Y25_A	G=VAR_GLOBAL
+++D=sActDig	N=Y44_A	G=VAR_GLOBAL	Com=Neck Arm
+++D=TIME	N=L_StartFail_Del	R=1	G=VAR_GLOBAL	Com=Start Fail timer
+++D=LINT	N=L_StartFail_Del_n	R=1	IV=8000000000	G=VAR_GLOBAL	Com=Start Fail delay in nanosec
+++D=BOOL	N=CMD_StartAuto	G=VAR_GLOBAL	Com=HMI Command To start In Auto
+++D=BOOL	N=CMD_StopAuto	G=VAR_GLOBAL	Com=HMI Command To Stop In Auto
+++D=BOOL	N=fb_BellyCutActive	G=VAR_GLOBAL	Com=Belly cut in progress
+++D=BOOL	N=fb_Y36_Fastened	G=VAR_GLOBAL	Com=Delayed feedback of Head grip cylinder activated
+++D=REAL	N=L_M21_PosReturn	R=1	IV=500	G=VAR_GLOBAL	Com=Return limit Belly Screw (mm)
+++D=REAL	N=L_M31_PosMax	R=1	IV=600	G=VAR_GLOBAL	Com=Return limit Head Screw (mm)
+++D=LINT	N=L_ManHomeFail_Del_n	R=1	IV=5000000000	G=VAR_GLOBAL	Com=Manual home timeout - nano sec
+++D=REAL	N=L_ZT40_Min	R=1	IV=50	G=VAR_GLOBAL	Com=Min height to detect fish (mm)
+++D=REAL	N=L_ZT40_Max	R=1	IV=290	G=VAR_GLOBAL	Com=Max height to detect fish (mm)
+++D=ARRAY[0..100] OF BOOL	N=fb_FishInCribReg	G=VAR_GLOBAL	Com=Array Fish in crib. [0] = 
+++D=BOOL	N=fb_EmgStopActive	G=VAR_GLOBAL	Com=1 = emg stop active. 
+++D=BOOL	N=fb_SignalFaultCom	G=VAR_GLOBAL	Com=1 = OK. Signal fault: Laser/Neck Arm/Head Saw position or...
+++D=REAL	N=L_PT1	R=1	G=VAR_GLOBAL	Com=Limit for air pressure (bar)
+++D=BOOL	N=fb_All_InAuto	G=VAR_GLOBAL	Com=1 = All in Auto
+++D=BOOL	N=fb_RdyAutoStY25	G=VAR_GLOBAL	Com=Belly Actuator - Y25 Ready for AutoSequence
+++D=sSCL	N=AI_Soft2_Y25Offset	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := -35, X1 := 150, Y1 := -45, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 0, Y_Min := -60, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=U25 Offset Laser A
+++D=sSCL	N=AI_ZT40A_Y25Offset_NO_RoeClamp	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := -35, X1 := 150, Y1 := -45, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 0, Y_Min := -60, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=U25 Offset Laser A for without Roe Clamp
+++D=sSCL	N=AI_Soft3_Y25Offset_Next	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := -35, X1 := 150, Y1 := -45, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := -35, Y_Min := -60, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL
+++D=BOOL	N=fb_FWDRdy_BAct	G=VAR_GLOBAL	Com=Belly Actuator Ready for Auto - fwd
+++D=BOOL	N=fb_FWDRdy_NArm	G=VAR_GLOBAL	Com=Neck arm Ready for Auto - fwd
+++D=REAL	N=Y25_OffsetCurve_Validated	G=VAR_GLOBAL	Com=Curve in use
+++D=REAL	N=Y25_CurveSP	G=VAR_GLOBAL	Com=SP acc to: curve, height, and height offset
+++D=REAL	N=Y25_Aux_CurveSP	G=VAR_GLOBAL	Com=Calculate value
+++D=REAL	N=L_SmallFish	R=1	IV=1550000000	G=VAR_GLOBAL	Com=Limit to define small fish (mm) -155
+++D=BOOL	N=fb_SmallFishDel	G=VAR_GLOBAL	Com=Delay for small fish
+++D=BOOL	N=fb_Y25Limited	G=VAR_GLOBAL	Com=1 = limit active. 0 = limit disabled
+++D=sSCL	N=AI_Soft4_Y4Offset	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := 0, X1 := 150, Y1 := 20, X2 := 250, Y2 := 50, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 50, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL
+++D=sSCL	N=AI_Soft5_Y4Offset_Next	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 10, Y0 := 10, X1 := 150, Y1 := 10, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0,X_Max := 100, X_Min := 0, Y_Max := 100, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 0, Scl_3P := False)	G=VAR_GLOBAL
+++D=REAL	N=L_Y35_WaitPos	R=1	IV=34	G=VAR_GLOBAL	Com=Position when waiting or if height abowe limit (mm)
+++D=REAL	N=Y35_SP_Aux	G=VAR_GLOBAL	Com=Aux Auto SP Head act
+++D=REAL	N=L_Y35_DB	R=1	IV=5	G=VAR_GLOBAL	Com=Dead band head actuator (mm)
+++D=REAL	N=L_Y35_DB_LowAux	G=VAR_GLOBAL	Com=Dead band head actuator lower (mm)
+++D=REAL	N=L_Y35_DB_HighAux	G=VAR_GLOBAL	Com=Dead band head actuator upper (mm)
+++D=sActDig	N=Y36_A	G=VAR_GLOBAL	Com=Head Grip Actuator
+++D=BOOL	N=fb_BellyPosAux	G=VAR_GLOBAL	Com=Crib in belly position
+++D=sActDig	N=Y28_A	G=VAR_GLOBAL	Com=Roe Clamp (Rognbøyle)
+++D=REAL	N=L_RC_Release	R=1	IV=170	G=VAR_GLOBAL	Com=Release position RC(rognbøyle). mm BellyScrew
+++D=BOOL	N=Y28_RC_InAux	G=VAR_GLOBAL
+++D=BOOL	N=Y28_RC_OutAux	G=VAR_GLOBAL
+++D=TIME	N=L_Y36_Fastened_Del	R=1	G=VAR_GLOBAL	Com=Delay HeadGrip fastened
+++D=LINT	N=L_Y36_Fastened_Del_n	R=1	IV=30000000	G=VAR_GLOBAL	Com=Delay HeadGrip fastened in nanosec
+++D=WORD	N=J01_Ch1_In	AT=IOBus://rack#0/slot#0/Ch1_In	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In00	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In00	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In01	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In01	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In02	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In02	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In03	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In03	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In04	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In04	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In05	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In05	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In06	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In06	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In07	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In07	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In08	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In08	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In09	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In09	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In10	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In10	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In11	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In11	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In12	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In12	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In13	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In13	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In14	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In14	G=VAR_GLOBAL
+++D=BOOL	N=J01_Ch1_In15	AT=IOBus://rack#0/slot#0/Ch1_In/Ch1_In15	G=VAR_GLOBAL
+++D=WORD	N=J02_Ch1_In	AT=IOBus://rack#0/slot#1/Ch1_In	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In00	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In00	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In01	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In01	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In02	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In02	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In03	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In03	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In04	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In04	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In05	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In05	G=VAR_GLOBAL	Com=ZT40 within range
+++D=BOOL	N=J02_Ch1_In06	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In06	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In07	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In07	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In08	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In08	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In09	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In09	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In10	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In10	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In11	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In11	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In12	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In12	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In13	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In13	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In14	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In14	G=VAR_GLOBAL
+++D=BOOL	N=J02_Ch1_In15	AT=IOBus://rack#0/slot#1/Ch1_In/Ch1_In15	G=VAR_GLOBAL
+++D=WORD	N=J03_Ch1_Out	AT=IOBus://rack#0/slot#2/Ch1_Out	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out00	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out00	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out01	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out01	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out02	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out02	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out03	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out03	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out04	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out04	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out05	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out05	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out06	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out06	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out07	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out07	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out08	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out08	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out09	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out09	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out10	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out10	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out11	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out11	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out12	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out12	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out13	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out13	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out14	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out14	G=VAR_GLOBAL
+++D=BOOL	N=J03_Ch1_Out15	AT=IOBus://rack#0/slot#2/Ch1_Out/Ch1_Out15	G=VAR_GLOBAL
+++D=INT	N=J04_Ch1_RdAI	AT=IOBus://rack#0/slot#3/Ch1_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch2_RdAI	AT=IOBus://rack#0/slot#3/Ch2_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch3_RdAI	AT=IOBus://rack#0/slot#3/Ch3_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch4_RdAI	AT=IOBus://rack#0/slot#3/Ch4_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch5_RdAI	AT=IOBus://rack#0/slot#3/Ch5_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch6_RdAI	AT=IOBus://rack#0/slot#3/Ch6_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch7_RdAI	AT=IOBus://rack#0/slot#3/Ch7_RdAI	G=VAR_GLOBAL
+++D=INT	N=J04_Ch8_RdAI	AT=IOBus://rack#0/slot#3/Ch8_RdAI	G=VAR_GLOBAL
+++D=WORD	N=J04_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd	G=VAR_GLOBAL
+++D=BYTE	N=J04_SensErr	AT=IOBus://rack#0/slot#3/SensErr	G=VAR_GLOBAL
+++D=BYTE	N=J04_UnitErr	AT=IOBus://rack#0/slot#3/UnitErr	G=VAR_GLOBAL
+++D=BYTE	N=J04_AdjCh	AT=IOBus://rack#0/slot#3/AdjCh	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjOfs	AT=IOBus://rack#0/slot#3/AdjOfs	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjGain	AT=IOBus://rack#0/slot#3/AdjGain	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjDwn	AT=IOBus://rack#0/slot#3/AdjDwn	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjUp	AT=IOBus://rack#0/slot#3/AdjUp	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjSet	AT=IOBus://rack#0/slot#3/AdjSet	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjClr	AT=IOBus://rack#0/slot#3/AdjClr	G=VAR_GLOBAL
+++D=INT	N=J04_AdjPV	AT=IOBus://rack#0/slot#3/AdjPV	G=VAR_GLOBAL
+++D=BYTE	N=J04_AdjUnitErr	AT=IOBus://rack#0/slot#3/AdjUnitErr	G=VAR_GLOBAL
+++D=WORD	N=J04_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J04_InRngCfg	AT=IOBus://rack#0/slot#3/InRngCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch1_AveCfg	AT=IOBus://rack#0/slot#3/Ch1_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch2_AveCfg	AT=IOBus://rack#0/slot#3/Ch2_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch3_AveCfg	AT=IOBus://rack#0/slot#3/Ch3_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch4_AveCfg	AT=IOBus://rack#0/slot#3/Ch4_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch5_AveCfg	AT=IOBus://rack#0/slot#3/Ch5_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch6_AveCfg	AT=IOBus://rack#0/slot#3/Ch6_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch7_AveCfg	AT=IOBus://rack#0/slot#3/Ch7_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J04_Ch8_AveCfg	AT=IOBus://rack#0/slot#3/Ch8_AveCfg	R=1	G=VAR_GLOBAL
+++D=BYTE	N=J04_MdCfg	AT=IOBus://rack#0/slot#3/MdCfg	R=1	G=VAR_GLOBAL
+++D=BYTE	N=J04_ResolutionCfg	AT=IOBus://rack#0/slot#3/ResolutionCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch1_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch1_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch2_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch2_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch3_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch3_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch4_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch4_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch5_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch5_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch6_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch6_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch7_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch7_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch8_PkHdCmd	AT=IOBus://rack#0/slot#3/PkHdCmd/Ch8_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch1_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch1_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch2_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch2_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch3_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch3_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch4_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch4_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch5_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch5_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch6_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch6_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch7_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch7_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch8_SensErr	AT=IOBus://rack#0/slot#3/SensErr/Ch8_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_AveErr	AT=IOBus://rack#0/slot#3/UnitErr/AveErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjAveErr	AT=IOBus://rack#0/slot#3/AdjUnitErr/AdjAveErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjInErr	AT=IOBus://rack#0/slot#3/AdjUnitErr/AdjInErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjInNoErr	AT=IOBus://rack#0/slot#3/AdjUnitErr/AdjInNoErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjMemErr	AT=IOBus://rack#0/slot#3/AdjUnitErr/AdjMemErr	G=VAR_GLOBAL
+++D=BOOL	N=J04_AdjMd	AT=IOBus://rack#0/slot#3/AdjUnitErr/AdjMd	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch1_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch1_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch2_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch2_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch3_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch3_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch4_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch4_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch5_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch5_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch6_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch6_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch7_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch7_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J04_Ch8_InChUseCfg	AT=IOBus://rack#0/slot#3/InChUseCfg/Ch8_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J07_RdNxtErr	AT=IOBus://rack#0/slot#4/RdNxtErr	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_Enbl	AT=IOBus://rack#0/slot#4/Ch1_Enbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_Dsbl	AT=IOBus://rack#0/slot#4/Ch1_Dsbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_Prst	AT=IOBus://rack#0/slot#4/Ch1_Prst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_Rst	AT=IOBus://rack#0/slot#4/Ch1_Rst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RstEnbl	AT=IOBus://rack#0/slot#4/Ch1_RstEnbl	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch1_PrstLinCtVal	AT=IOBus://rack#0/slot#4/Ch1_PrstLinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch1_PrstRingCtVal	AT=IOBus://rack#0/slot#4/Ch1_PrstRingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_Enbl	AT=IOBus://rack#0/slot#4/Ch2_Enbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_Dsbl	AT=IOBus://rack#0/slot#4/Ch2_Dsbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_Prst	AT=IOBus://rack#0/slot#4/Ch2_Prst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_Rst	AT=IOBus://rack#0/slot#4/Ch2_Rst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RstEnbl	AT=IOBus://rack#0/slot#4/Ch2_RstEnbl	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch2_PrstLinCtVal	AT=IOBus://rack#0/slot#4/Ch2_PrstLinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch2_PrstRingCtVal	AT=IOBus://rack#0/slot#4/Ch2_PrstRingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_Enbl	AT=IOBus://rack#0/slot#4/Ch3_Enbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_Dsbl	AT=IOBus://rack#0/slot#4/Ch3_Dsbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_Prst	AT=IOBus://rack#0/slot#4/Ch3_Prst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_Rst	AT=IOBus://rack#0/slot#4/Ch3_Rst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RstEnbl	AT=IOBus://rack#0/slot#4/Ch3_RstEnbl	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch3_PrstLinCtVal	AT=IOBus://rack#0/slot#4/Ch3_PrstLinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch3_PrstRingCtVal	AT=IOBus://rack#0/slot#4/Ch3_PrstRingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_Enbl	AT=IOBus://rack#0/slot#4/Ch4_Enbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_Dsbl	AT=IOBus://rack#0/slot#4/Ch4_Dsbl	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_Prst	AT=IOBus://rack#0/slot#4/Ch4_Prst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_Rst	AT=IOBus://rack#0/slot#4/Ch4_Rst	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RstEnbl	AT=IOBus://rack#0/slot#4/Ch4_RstEnbl	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch4_PrstLinCtVal	AT=IOBus://rack#0/slot#4/Ch4_PrstLinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch4_PrstRingCtVal	AT=IOBus://rack#0/slot#4/Ch4_PrstRingCtVal	G=VAR_GLOBAL
+++D=DWORD	N=J07_OutStaDat	AT=IOBus://rack#0/slot#4/OutStaDat	G=VAR_GLOBAL
+++D=WORD	N=J07_ErrCode1	AT=IOBus://rack#0/slot#4/ErrCode1	G=VAR_GLOBAL
+++D=WORD	N=J07_ErrCode2	AT=IOBus://rack#0/slot#4/ErrCode2	G=VAR_GLOBAL
+++D=BOOL	N=J07_GlblErr	AT=IOBus://rack#0/slot#4/GlblErr	G=VAR_GLOBAL
+++D=BOOL	N=J07_UnitInitSta	AT=IOBus://rack#0/slot#4/UnitInitSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_IABlkOverlapSta	AT=IOBus://rack#0/slot#4/IABlkOverlapSta	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch1_RngCmpDatSta	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch1_LinCtVal	AT=IOBus://rack#0/slot#4/Ch1_LinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch1_RingCtVal	AT=IOBus://rack#0/slot#4/Ch1_RingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_CtOvf	AT=IOBus://rack#0/slot#4/Ch1_CtOvf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_CtUdf	AT=IOBus://rack#0/slot#4/Ch1_CtUdf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_CtRun	AT=IOBus://rack#0/slot#4/Ch1_CtRun	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_CntDir	AT=IOBus://rack#0/slot#4/Ch1_CntDir	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_PrstSta	AT=IOBus://rack#0/slot#4/Ch1_PrstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RstSta	AT=IOBus://rack#0/slot#4/Ch1_RstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_ZSig	AT=IOBus://rack#0/slot#4/Ch1_ZSig	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch2_RngCmpDatSta	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch2_LinCtVal	AT=IOBus://rack#0/slot#4/Ch2_LinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch2_RingCtVal	AT=IOBus://rack#0/slot#4/Ch2_RingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_CtOvf	AT=IOBus://rack#0/slot#4/Ch2_CtOvf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_CtUdf	AT=IOBus://rack#0/slot#4/Ch2_CtUdf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_CtRun	AT=IOBus://rack#0/slot#4/Ch2_CtRun	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_CntDir	AT=IOBus://rack#0/slot#4/Ch2_CntDir	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_PrstSta	AT=IOBus://rack#0/slot#4/Ch2_PrstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RstSta	AT=IOBus://rack#0/slot#4/Ch2_RstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_ZSig	AT=IOBus://rack#0/slot#4/Ch2_ZSig	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch3_RngCmpDatSta	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch3_LinCtVal	AT=IOBus://rack#0/slot#4/Ch3_LinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch3_RingCtVal	AT=IOBus://rack#0/slot#4/Ch3_RingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_CtOvf	AT=IOBus://rack#0/slot#4/Ch3_CtOvf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_CtUdf	AT=IOBus://rack#0/slot#4/Ch3_CtUdf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_CtRun	AT=IOBus://rack#0/slot#4/Ch3_CtRun	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_CntDir	AT=IOBus://rack#0/slot#4/Ch3_CntDir	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_PrstSta	AT=IOBus://rack#0/slot#4/Ch3_PrstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RstSta	AT=IOBus://rack#0/slot#4/Ch3_RstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_ZSig	AT=IOBus://rack#0/slot#4/Ch3_ZSig	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch4_RngCmpDatSta	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch4_LinCtVal	AT=IOBus://rack#0/slot#4/Ch4_LinCtVal	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch4_RingCtVal	AT=IOBus://rack#0/slot#4/Ch4_RingCtVal	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_CtOvf	AT=IOBus://rack#0/slot#4/Ch4_CtOvf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_CtUdf	AT=IOBus://rack#0/slot#4/Ch4_CtUdf	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_CtRun	AT=IOBus://rack#0/slot#4/Ch4_CtRun	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_CntDir	AT=IOBus://rack#0/slot#4/Ch4_CntDir	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_PrstSta	AT=IOBus://rack#0/slot#4/Ch4_PrstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RstSta	AT=IOBus://rack#0/slot#4/Ch4_RstSta	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_ZSig	AT=IOBus://rack#0/slot#4/Ch4_ZSig	G=VAR_GLOBAL
+++D=WORD	N=J07_OutCtlMdCfg	AT=IOBus://rack#0/slot#4/OutCtlMdCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch1_CtTypCfg	AT=IOBus://rack#0/slot#4/Ch1_CtTypCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch1_SigTypCfg	AT=IOBus://rack#0/slot#4/Ch1_SigTypCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch1_ZOvfUdfCfg	AT=IOBus://rack#0/slot#4/Ch1_ZOvfUdfCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch1_UpCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch1_UpCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch1_LowCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch1_LowCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch1_InitLinCtCfg	AT=IOBus://rack#0/slot#4/Ch1_InitLinCtCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch1_InitRingCtCfg	AT=IOBus://rack#0/slot#4/Ch1_InitRingCtCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch1_RngCmpEnblCfg	AT=IOBus://rack#0/slot#4/Ch1_RngCmpEnblCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch1_OutSetPatCfg	AT=IOBus://rack#0/slot#4/Ch1_OutSetPatCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch1_OutRstPatCfg	AT=IOBus://rack#0/slot#4/Ch1_OutRstPatCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch1_HystrsCfg	AT=IOBus://rack#0/slot#4/Ch1_HystrsCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch1_NumRngCmpCfg	AT=IOBus://rack#0/slot#4/Ch1_NumRngCmpCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch1_MemAreaCfg	AT=IOBus://rack#0/slot#4/Ch1_MemAreaCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch1_MemAdrCfg	AT=IOBus://rack#0/slot#4/Ch1_MemAdrCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch2_CtTypCfg	AT=IOBus://rack#0/slot#4/Ch2_CtTypCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch2_SigTypCfg	AT=IOBus://rack#0/slot#4/Ch2_SigTypCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch2_ZOvfUdfCfg	AT=IOBus://rack#0/slot#4/Ch2_ZOvfUdfCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch2_UpCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch2_UpCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch2_LowCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch2_LowCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch2_InitLinCtCfg	AT=IOBus://rack#0/slot#4/Ch2_InitLinCtCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch2_InitRingCtCfg	AT=IOBus://rack#0/slot#4/Ch2_InitRingCtCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch2_RngCmpEnblCfg	AT=IOBus://rack#0/slot#4/Ch2_RngCmpEnblCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch2_OutSetPatCfg	AT=IOBus://rack#0/slot#4/Ch2_OutSetPatCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch2_OutRstPatCfg	AT=IOBus://rack#0/slot#4/Ch2_OutRstPatCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch2_HystrsCfg	AT=IOBus://rack#0/slot#4/Ch2_HystrsCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch2_NumRngCmpCfg	AT=IOBus://rack#0/slot#4/Ch2_NumRngCmpCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch2_MemAreaCfg	AT=IOBus://rack#0/slot#4/Ch2_MemAreaCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch2_MemAdrCfg	AT=IOBus://rack#0/slot#4/Ch2_MemAdrCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch3_CtTypCfg	AT=IOBus://rack#0/slot#4/Ch3_CtTypCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch3_SigTypCfg	AT=IOBus://rack#0/slot#4/Ch3_SigTypCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch3_ZOvfUdfCfg	AT=IOBus://rack#0/slot#4/Ch3_ZOvfUdfCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch3_UpCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch3_UpCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch3_LowCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch3_LowCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch3_InitLinCtCfg	AT=IOBus://rack#0/slot#4/Ch3_InitLinCtCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch3_InitRingCtCfg	AT=IOBus://rack#0/slot#4/Ch3_InitRingCtCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch3_RngCmpEnblCfg	AT=IOBus://rack#0/slot#4/Ch3_RngCmpEnblCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch3_OutSetPatCfg	AT=IOBus://rack#0/slot#4/Ch3_OutSetPatCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch3_OutRstPatCfg	AT=IOBus://rack#0/slot#4/Ch3_OutRstPatCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch3_HystrsCfg	AT=IOBus://rack#0/slot#4/Ch3_HystrsCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch3_NumRngCmpCfg	AT=IOBus://rack#0/slot#4/Ch3_NumRngCmpCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch3_MemAreaCfg	AT=IOBus://rack#0/slot#4/Ch3_MemAreaCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch3_MemAdrCfg	AT=IOBus://rack#0/slot#4/Ch3_MemAdrCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch4_CtTypCfg	AT=IOBus://rack#0/slot#4/Ch4_CtTypCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch4_SigTypCfg	AT=IOBus://rack#0/slot#4/Ch4_SigTypCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch4_ZOvfUdfCfg	AT=IOBus://rack#0/slot#4/Ch4_ZOvfUdfCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch4_UpCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch4_UpCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch4_LowCtLmtCfg	AT=IOBus://rack#0/slot#4/Ch4_LowCtLmtCfg	R=1	G=VAR_GLOBAL
+++D=DINT	N=J07_Ch4_InitLinCtCfg	AT=IOBus://rack#0/slot#4/Ch4_InitLinCtCfg	R=1	G=VAR_GLOBAL
+++D=UDINT	N=J07_Ch4_InitRingCtCfg	AT=IOBus://rack#0/slot#4/Ch4_InitRingCtCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch4_RngCmpEnblCfg	AT=IOBus://rack#0/slot#4/Ch4_RngCmpEnblCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch4_OutSetPatCfg	AT=IOBus://rack#0/slot#4/Ch4_OutSetPatCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch4_OutRstPatCfg	AT=IOBus://rack#0/slot#4/Ch4_OutRstPatCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch4_HystrsCfg	AT=IOBus://rack#0/slot#4/Ch4_HystrsCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J07_Ch4_NumRngCmpCfg	AT=IOBus://rack#0/slot#4/Ch4_NumRngCmpCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J07_Ch4_MemAreaCfg	AT=IOBus://rack#0/slot#4/Ch4_MemAreaCfg	R=1	G=VAR_GLOBAL
+++D=DWORD	N=J07_Ch4_MemAdrCfg	AT=IOBus://rack#0/slot#4/Ch4_MemAdrCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta0	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta0	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta1	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta1	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta2	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta2	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta3	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta3	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta4	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta4	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta5	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta5	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta6	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta6	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta7	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta7	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta8	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta8	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta9	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta9	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta10	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta10	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta11	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta11	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta12	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta12	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta13	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta13	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta14	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta14	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta15	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta15	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta16	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta16	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta17	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta17	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta18	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta18	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta19	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta19	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta20	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta20	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta21	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta21	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta22	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta22	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta23	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta23	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta24	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta24	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta25	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta25	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta26	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta26	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta27	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta27	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta28	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta28	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta29	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta29	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta30	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta30	G=VAR_GLOBAL
+++D=BOOL	N=J07_OutSta31	AT=IOBus://rack#0/slot#4/OutStaDat/OutSta31	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta0	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta0	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta1	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta1	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta2	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta2	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta3	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta3	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta4	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta4	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta5	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta5	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta6	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta6	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch1_RngCmpSta7	AT=IOBus://rack#0/slot#4/Ch1_RngCmpDatSta/Ch1_RngCmpSta7	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta0	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta0	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta1	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta1	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta2	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta2	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta3	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta3	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta4	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta4	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta5	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta5	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta6	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta6	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch2_RngCmpSta7	AT=IOBus://rack#0/slot#4/Ch2_RngCmpDatSta/Ch2_RngCmpSta7	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta0	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta0	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta1	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta1	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta2	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta2	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta3	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta3	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta4	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta4	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta5	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta5	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta6	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta6	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch3_RngCmpSta7	AT=IOBus://rack#0/slot#4/Ch3_RngCmpDatSta/Ch3_RngCmpSta7	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta0	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta0	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta1	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta1	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta2	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta2	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta3	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta3	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta4	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta4	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta5	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta5	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta6	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta6	G=VAR_GLOBAL
+++D=BOOL	N=J07_Ch4_RngCmpSta7	AT=IOBus://rack#0/slot#4/Ch4_RngCmpDatSta/Ch4_RngCmpSta7	G=VAR_GLOBAL
+++D=WORD	N=J08_Ch1_Out	AT=IOBus://rack#0/slot#5/Ch1_Out	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out00	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out00	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out01	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out01	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out02	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out02	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out03	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out03	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out04	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out04	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out05	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out05	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out06	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out06	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out07	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out07	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out08	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out08	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out09	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out09	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out10	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out10	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out11	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out11	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out12	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out12	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out13	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out13	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out14	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out14	G=VAR_GLOBAL
+++D=BOOL	N=J08_Ch1_Out15	AT=IOBus://rack#0/slot#5/Ch1_Out/Ch1_Out15	G=VAR_GLOBAL
+++D=REAL	N=M21_SpeedFactorAuto	IV=0.75	G=VAR_GLOBAL	Com=Speed factor auto
+++D=REAL	N=M21_SpeedFactorMan	IV=0.75	G=VAR_GLOBAL	Com=Speed factor auto
+++D=REAL	N=M21_SpeedOutScaled	G=VAR_GLOBAL	Com=Scaled ouput Real
+++D=REAL	N=M31_SpeedOutScaled	G=VAR_GLOBAL	Com=Scaled ouput Real
+++D=REAL	N=M31_SpeedFactorAuto	IV=0.9	G=VAR_GLOBAL	Com=Speed factor auto
+++D=REAL	N=M31_SpeedFactorMan	IV=0.75	G=VAR_GLOBAL	Com=Speed factor auto
+++D=BOOL	N=CMD_SetAllAuto	G=VAR_GLOBAL	Com=HMI Command Set all in auto
+++D=BOOL	N=fb_SmallFish_Aux	G=VAR_GLOBAL
+++D=TIME	N=L_SmallFish_Del	R=1	G=VAR_GLOBAL	Com=Extended actuator time small fish -1sec
+++D=LINT	N=L_SmallFish_Del_n	R=1	IV=1000000000	G=VAR_GLOBAL	Com=Extended actuator time small fish in nanosec
+++D=REAL	N=M10_SpeedFactorAuto	IV=1	G=VAR_GLOBAL	Com=Speed factor auto
+++D=REAL	N=M10_SpeedFactorMan	IV=0.75	G=VAR_GLOBAL	Com=Speed factor auto
+++D=REAL	N=M10_SpeedOutScaled	G=VAR_GLOBAL	Com=Scaled ouput Real
+++D=DINT	N=M10_Enc_StoredVal	R=1	G=VAR_GLOBAL	Com=Stored encoder value in case of power loss
+++D=DINT	N=M21_Enc_StoredVal	R=1	G=VAR_GLOBAL	Com=Stored encoder value in case of power loss
+++D=DINT	N=M31_Enc_StoredVal	R=1	G=VAR_GLOBAL	Com=Stored encoder value in case of power loss
+++D=sActDig	N=YSpare_A	G=VAR_GLOBAL	Com=Crib Clamp
+++D=BOOL	N=Y15_CC_InAux	G=VAR_GLOBAL	Com=Crib clamp in aux
+++D=BOOL	N=Y15_CC_OutAux	G=VAR_GLOBAL	Com=Crib clamp out aux
+++D=BOOL	N=fb_SafetySysEnabled	G=VAR_GLOBAL	Com=1 = ok
+++D=BOOL	N=fb_Drive_Ok	G=VAR_GLOBAL	Com=1 = All drive ok
+++D=BOOL	N=fb_AirPress_Ok	G=VAR_GLOBAL	Com=1 = Ok
+++D=REAL	N=Test_Neck_Height	R=1	G=VAR_GLOBAL	Com=Testing variable
+++D=REAL	N=Test_Laser_Height	R=1	G=VAR_GLOBAL	Com=Testing variable
+++D=UINT	N=CurrentDay	R=1	G=VAR_GLOBAL
+++D=_sDT	N=DateAndT	R=1	G=VAR_GLOBAL
+++D=INT	N=Rep_FishToday	R=1	G=VAR_GLOBAL	Com=Numbers of fish today
+++D=ARRAY[0..100] OF INT	N=Rep_Fish	R=1	G=VAR_GLOBAL	Com=Numbers of fish today
+++D=INT	N=Y15_OkCounter	G=VAR_GLOBAL
+++D=BOOL	N=Y15_SeqAlarm	G=VAR_GLOBAL
+++D=REAL	N=DevM31_M10	G=VAR_GLOBAL
+++D=REAL	N=L_DevM31_M10	R=1	IV=50	G=VAR_GLOBAL	Com=Deviation Limit M10 - M31
+++D=BOOL	N=CMD_Head_En	R=1	IV=False	G=VAR_GLOBAL	Com=1 = Head Cut disabled
+++D=REAL	N=L_Y35_CollitionLim	R=1	IV=55	G=VAR_GLOBAL	Com=Min position to allow head screw fwd
+++D=BOOL	N=Y35_UpLegal	G=VAR_GLOBAL	Com=1 = Up legal
+++D=BOOL	N=Y35_DwnLegal	G=VAR_GLOBAL	Com=1 = Dwn legal
+++D=LINT	N=Rep_FishTotal	R=1	G=VAR_GLOBAL	Com=Numbers of fish total
+++D=BOOL	N=CMD_Light_En	G=VAR_GLOBAL	Com=1 = Light On
+++D=BOOL	N=M31_PosError	G=VAR_GLOBAL	Com=Home Active but position out of limit
+++D=BOOL	N=M10_PosError	G=VAR_GLOBAL	Com=Home Active but position out of limit
+++D=BOOL	N=M21_PosError	G=VAR_GLOBAL	Com=Home Active but position out of limit
+++D=BOOL	N=CMD_Wash_En	G=VAR_GLOBAL	Com=1 = Washing Modus enabled
+++D=REAL	N=Y15_Lim_Error_In	R=1	IV=200	G=VAR_GLOBAL	Com=Inner limit M10 Position
+++D=REAL	N=Y15_Lim_Error_Out	R=1	IV=500	G=VAR_GLOBAL	Com=Outer limit M10 Position
+++D=REAL	N=Rep_Avg_NeckH	R=1	G=VAR_GLOBAL	Com=Average neck height
+++D=REAL	N=Rep_Avg_LaserH	R=1	G=VAR_GLOBAL	Com=Average laser height
+++D=REAL	N=Y25_Aux_CurveSP_Next	G=VAR_GLOBAL	Com=Calculate value next belly cut
+++D=BOOL	N=CMD_Y15_En	G=VAR_GLOBAL	Com=1 = Y15 enabled
+++D=BOOL	N=fb_SafetySysResetReady	G=VAR_GLOBAL	Com=1 = ok ready to reset
+++D=BOOL	N=fb_Drive_Ok_H_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=BOOL	N=fb_SignalFaultCom_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=BOOL	N=fb_AirPress_Ok_H_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=BOOL	N=Y15_SeqAlarm_H_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=BOOL	N=fb_Spare1_H_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=BOOL	N=fb_Spare2_H_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=BOOL	N=fb_Spare3_H_Alarm	G=VAR_GLOBAL	Com=Alarm TOF
+++D=WORD	N=U31_MX2_Command	AT=ECAT://node#31/Command	G=VAR_GLOBAL
+++D=UINT	N=U31_MX2_Frequency_reference	AT=ECAT://node#31/Frequency reference	G=VAR_GLOBAL
+++D=WORD	N=U31_MX2_Status	AT=ECAT://node#31/Status	G=VAR_GLOBAL
+++D=UINT	N=U31_MX2_Output_frequency_monitor	AT=ECAT://node#31/Output frequency monitor	G=VAR_GLOBAL
+++D=BYTE	N=U31_MX2_Sysmac_Error_Status	AT=ECAT://node#31/Sysmac Error Status	G=VAR_GLOBAL
+++D=BOOL	N=U31_MX2_Observation	AT=ECAT://node#31/Sysmac Error Status/Observation	G=VAR_GLOBAL
+++D=BOOL	N=U31_MX2_Minor_Fault	AT=ECAT://node#31/Sysmac Error Status/Minor Fault	G=VAR_GLOBAL
+++D=UDINT	N=U31_MX2_F002_1st_Acceleration_Time_1	AT=ECAT://node#31/F002 1st Acceleration Time 1	G=VAR_GLOBAL
+++D=UDINT	N=U31_MX2_F003_1st_Deceleration_Time_1	AT=ECAT://node#31/F003 1st Deceleration Time 1	G=VAR_GLOBAL
+++D=BOOL	N=Test_Report	G=VAR_GLOBAL
+++D=WORD	N=U30_MX2_Command	AT=ECAT://node#30/Command	G=VAR_GLOBAL
+++D=UINT	N=U30_MX2_Frequency_reference	AT=ECAT://node#30/Frequency reference	G=VAR_GLOBAL
+++D=UDINT	N=U30_MX2_F002_1st_Acceleration_Time_1	AT=ECAT://node#30/F002 1st Acceleration Time 1	G=VAR_GLOBAL
+++D=UDINT	N=U30_MX2_F003_1st_Deceleration_Time_1	AT=ECAT://node#30/F003 1st Deceleration Time 1	G=VAR_GLOBAL
+++D=WORD	N=U30_MX2_Status	AT=ECAT://node#30/Status	G=VAR_GLOBAL
+++D=UINT	N=U30_MX2_Output_frequency_monitor	AT=ECAT://node#30/Output frequency monitor	G=VAR_GLOBAL
+++D=BYTE	N=U30_MX2_Sysmac_Error_Status	AT=ECAT://node#30/Sysmac Error Status	G=VAR_GLOBAL
+++D=BOOL	N=U30_MX2_Observation	AT=ECAT://node#30/Sysmac Error Status/Observation	G=VAR_GLOBAL
+++D=BOOL	N=U30_MX2_Minor_Fault	AT=ECAT://node#30/Sysmac Error Status/Minor Fault	G=VAR_GLOBAL
+++D=UINT	N=U30_MX2_d081_Fault_Monitor_1_Cause	AT=ECAT://node#30/d081 Fault Monitor 1 Cause	G=VAR_GLOBAL
+++D=UINT	N=U30_MX2_d081_Fault_Monitor_1_Inverter_Status	AT=ECAT://node#30/d081 Fault Monitor 1 Inverter Status	G=VAR_GLOBAL
+++D=WORD	N=U21_MX2_Command	AT=ECAT://node#21/Command	G=VAR_GLOBAL
+++D=UINT	N=U21_MX2_Frequency_reference	AT=ECAT://node#21/Frequency reference	G=VAR_GLOBAL
+++D=UDINT	N=U21_MX2_F002_1st_Acceleration_Time_1	AT=ECAT://node#21/F002 1st Acceleration Time 1	G=VAR_GLOBAL
+++D=UDINT	N=U21_MX2_F003_1st_Deceleration_Time_1	AT=ECAT://node#21/F003 1st Deceleration Time 1	G=VAR_GLOBAL
+++D=WORD	N=U21_MX2_Status	AT=ECAT://node#21/Status	G=VAR_GLOBAL
+++D=UINT	N=U21_MX2_Output_frequency_monitor	AT=ECAT://node#21/Output frequency monitor	G=VAR_GLOBAL
+++D=BYTE	N=U21_MX2_Sysmac_Error_Status	AT=ECAT://node#21/Sysmac Error Status	G=VAR_GLOBAL
+++D=UINT	N=U21_MX2_d081_Fault_Monitor_1_Cause	AT=ECAT://node#21/d081 Fault Monitor 1 Cause	G=VAR_GLOBAL
+++D=UINT	N=U21_MX2_d081_Fault_Monitor_1_Inverter_Status	AT=ECAT://node#21/d081 Fault Monitor 1 Inverter Status	G=VAR_GLOBAL
+++D=BOOL	N=U21_MX2_Observation	AT=ECAT://node#21/Sysmac Error Status/Observation	G=VAR_GLOBAL
+++D=BOOL	N=U21_MX2_Minor_Fault	AT=ECAT://node#21/Sysmac Error Status/Minor Fault	G=VAR_GLOBAL
+++D=WORD	N=U10_MX2_Command	AT=ECAT://node#10/Command	G=VAR_GLOBAL
+++D=UINT	N=U10_MX2_Frequency_reference	AT=ECAT://node#10/Frequency reference	G=VAR_GLOBAL
+++D=UDINT	N=U10_MX2_F002_1st_Acceleration_Time_1	AT=ECAT://node#10/F002 1st Acceleration Time 1	G=VAR_GLOBAL
+++D=UDINT	N=U10_MX2_F003_1st_Deceleration_Time_1	AT=ECAT://node#10/F003 1st Deceleration Time 1	G=VAR_GLOBAL
+++D=WORD	N=U10_MX2_Status	AT=ECAT://node#10/Status	G=VAR_GLOBAL
+++D=UINT	N=U10_MX2_Output_frequency_monitor	AT=ECAT://node#10/Output frequency monitor	G=VAR_GLOBAL
+++D=BYTE	N=U10_MX2_Sysmac_Error_Status	AT=ECAT://node#10/Sysmac Error Status	G=VAR_GLOBAL
+++D=BOOL	N=U10_MX2_Observation	AT=ECAT://node#10/Sysmac Error Status/Observation	G=VAR_GLOBAL
+++D=BOOL	N=U10_MX2_Minor_Fault	AT=ECAT://node#10/Sysmac Error Status/Minor Fault	G=VAR_GLOBAL
+++D=WORD	N=U20_MX2_Command	AT=ECAT://node#20/Command	G=VAR_GLOBAL
+++D=UINT	N=U20_MX2_Frequency_reference	AT=ECAT://node#20/Frequency reference	G=VAR_GLOBAL
+++D=UDINT	N=U20_MX2_F002_1st_Acceleration_Time_1	AT=ECAT://node#20/F002 1st Acceleration Time 1	G=VAR_GLOBAL
+++D=UDINT	N=U20_MX2_F003_1st_Deceleration_Time_1	AT=ECAT://node#20/F003 1st Deceleration Time 1	G=VAR_GLOBAL
+++D=WORD	N=U20_MX2_Status	AT=ECAT://node#20/Status	G=VAR_GLOBAL
+++D=UINT	N=U20_MX2_Output_frequency_monitor	AT=ECAT://node#20/Output frequency monitor	G=VAR_GLOBAL
+++D=BYTE	N=U20_MX2_Sysmac_Error_Status	AT=ECAT://node#20/Sysmac Error Status	G=VAR_GLOBAL
+++D=UINT	N=U20_MX2_d081_Fault_Monitor_1_Cause	AT=ECAT://node#20/d081 Fault Monitor 1 Cause	G=VAR_GLOBAL
+++D=UINT	N=U20_MX2_d081_Fault_Monitor_1_Inverter_Status	AT=ECAT://node#20/d081 Fault Monitor 1 Inverter Status	G=VAR_GLOBAL
+++D=BOOL	N=U20_MX2_Observation	AT=ECAT://node#20/Sysmac Error Status/Observation	G=VAR_GLOBAL
+++D=BOOL	N=U20_MX2_Minor_Fault	AT=ECAT://node#20/Sysmac Error Status/Minor Fault	G=VAR_GLOBAL
+++D=REAL	N=M10_RampDist	IV=70	G=VAR_GLOBAL	Com=Ramp Distance
+++D=REAL	N=L_M21_PosMax	R=1	IV=600	G=VAR_GLOBAL	Com=Max limit Belly Screw (mm)
+++D=UINT	N=U10_MX2_d002_Output_Current_Monitor	AT=ECAT://node#10/d002 Output Current Monitor	G=VAR_GLOBAL
+++D=UINT	N=U10_MX2_C021_Multi_function_Output_P1_EDM_Selection	G=VAR_GLOBAL
+++D=UINT	N=U10_MX2_C022_Multi_function_Output_P2_Selection	G=VAR_GLOBAL
+++D=UINT	N=U31_MX2_d002_Output_Current_Monitor	AT=ECAT://node#31/d002 Output Current Monitor	G=VAR_GLOBAL
+++D=UINT	N=U21_MX2_d002_Output_Current_Monitor	AT=ECAT://node#21/d002 Output Current Monitor	G=VAR_GLOBAL
+++D=UINT	N=U30_MX2_d002_Output_Current_Monitor	AT=ECAT://node#30/d002 Output Current Monitor	G=VAR_GLOBAL
+++D=UINT	N=U20_MX2_d002_Output_Current_Monitor	AT=ECAT://node#20/d002 Output Current Monitor	G=VAR_GLOBAL
+++D=UINT	N=Rep_CurConTot	G=VAR_GLOBAL	Com=Total Current consumption
+++D=UINT	N=Rep_CurConMax	G=VAR_GLOBAL	Com=Max Current consumption
+++D=BOOL	N=Rep_CurConMax_Res	G=VAR_GLOBAL	Com=Reset Max Current value
+++D=UINT	N=U10_MX2_d102_DC_Voltage_Monitor_1	G=VAR_GLOBAL
+++D=WORD	N=U31_MX2_Coil_Data_0	AT=ECAT://node#31/Coil Data 0	G=VAR_GLOBAL
+++D=UINT	N=U31_MX2_d102_DC_Voltage_Monitor_1	G=VAR_GLOBAL
+++D=WORD	N=U10_MX2_Coil_Data_0	AT=ECAT://node#10/Coil Data 0	G=VAR_GLOBAL
+++D=WORD	N=U21_MX2_Coil_Data_0	AT=ECAT://node#21/Coil Data 0	G=VAR_GLOBAL
+++D=UINT	N=U21_MX2_d102_DC_Voltage_Monitor	G=VAR_GLOBAL
+++D=WORD	N=U30_MX2_Coil_Data_0	AT=ECAT://node#30/Coil Data 0	G=VAR_GLOBAL
+++D=UINT	N=U30_MX2_d102_DC_Voltage_Monitor	G=VAR_GLOBAL
+++D=UINT	N=U20_MX2_d102_DC_Voltage_Monitor	G=VAR_GLOBAL
+++D=WORD	N=U20_MX2_Coil_Data_0	AT=ECAT://node#20/Coil Data 0	G=VAR_GLOBAL
+++D=BOOL	N=CMD_TestMode	G=VAR_GLOBAL	Com=Activate test Mode
+++D=BOOL	N=FB_TestMode	G=VAR_GLOBAL	Com=Test Mode active
+++D=REAL	N=L_Y36_Release	G=VAR_GLOBAL	Com=release pos mm
+++D=BOOL	N=CMD_SimulationOn	G=VAR_GLOBAL	Com=1 = Simulation Active
+++D=REAL	N=Sim_Neck_Max	R=1	IV=104	G=VAR_GLOBAL
+++D=REAL	N=Sim_Neck_Min	R=1	IV=30	G=VAR_GLOBAL
+++D=REAL	N=Sim_Laser_Max	R=1	IV=270	G=VAR_GLOBAL
+++D=REAL	N=Sim_Laser_Min	R=1	IV=50	G=VAR_GLOBAL
+++D=LREAL	N=Sim_Rand	G=VAR_GLOBAL	Com=Rand val for sim
+++D=TIME	N=Wash_Time	G=VAR_GLOBAL
+++D=TIME	N=Wash_Time_Remain	G=VAR_GLOBAL
+++D=REAL	N=Sim_Laser_Value	G=VAR_GLOBAL	Com=Simulated value
+++D=REAL	N=Sim_Neck_Value	G=VAR_GLOBAL	Com=Simulated value
+++D=LINT	N=Wash_Time_Del	R=1	IV=900	G=VAR_GLOBAL	Com=Wash Time in millisec
+++D=TIME	N=Wash_Time_Elapsed	G=VAR_GLOBAL
+++D=LINT	N=Wash_Tim_Rem_Sec	G=VAR_GLOBAL
+++D=TIME	N=L_Y35_Updel	G=VAR_GLOBAL
+++D=TIME	N=L_Y35_Dwndel	G=VAR_GLOBAL
+++D=BOOL	N=Y25_Ret_NoColl	G=VAR_GLOBAL	Com=Y25 out of collition. Fish and crib
+++D=INT	N=Sim_N_Fish	G=VAR_GLOBAL
+++D=BOOL	N=Sim_Cyclus_CMD	G=VAR_GLOBAL
+++D=INT	N=Sim_Cycl_Sec	G=VAR_GLOBAL
+++D=BOOL	N=ZT42_NewFish	G=VAR_GLOBAL
+++D=REAL	N=L_ZT42_NewFish1	R=1	G=VAR_GLOBAL
+++D=REAL	N=L_ZT42_NewFish2	R=1	IV=52	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=ZT42_Reg	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=Time_running_Today_array	R=1	G=VAR_GLOBAL
+++D=BOOL	N=ZT42_Rdy	G=VAR_GLOBAL	Com=Ready for new fish
+++D=REAL	N=Y35_Devitaion	G=VAR_GLOBAL
+++D=TIME	N=Y35_CalcPuls_Up	G=VAR_GLOBAL	Com=Calculated Pulslength Time
+++D=TIME	N=Y35_CalcPuls_Dwn	G=VAR_GLOBAL	Com=Calculated Pulslength Time
+++D=INT	N=Y35_PulsDuration	G=VAR_GLOBAL
+++D=BOOL	N=Y35_Activate_PulseUp	G=VAR_GLOBAL
+++D=BOOL	N=Y35_Activate_PulseDwn	G=VAR_GLOBAL
+++D=TIME	N=Y35_CalcPuls_T	G=VAR_GLOBAL	Com=Calculated Pulslength Time
+++D=REAL	N=M21_LastCutlength	R=1	G=VAR_GLOBAL
+++D=BOOL	N=fb_AirPress_Alarm2	G=VAR_GLOBAL
+++D=INT	N=Temp1_Ch1_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=Temp1_Ch2_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=Temp2_Ch1_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=Temp2_Ch2_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=N3_Ch1_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=N3_Ch2_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=N4_Ch1_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=N4_Ch2_Measured_Value_INT	G=VAR_GLOBAL
+++D=INT	N=Temp_M10_Front	G=VAR_GLOBAL	Com=Temperatur Transportør PT1000
+++D=INT	N=Temp_M31	G=VAR_GLOBAL	Com=Temperatur Hodeklype PT1000
+++D=INT	N=Temp_M21	G=VAR_GLOBAL	Com=Temperatur Bukskrue PT1000
+++D=INT	N=Temp_M30	G=VAR_GLOBAL	Com=Temperatur Hodesag PT1000
+++D=INT	N=Temp_M20	G=VAR_GLOBAL	Com=Temperatur Buksag PT1000
+++D=INT	N=Temp_Omgivelse	G=VAR_GLOBAL	Com=Temperatur Omgivelse lager PT1000
+++D=UINT	N=U25_Outputs_Controlword_6040_00	AT=ECAT://node#25/Outputs_Controlword_6040_00	G=VAR_GLOBAL
+++D=SINT	N=U25_Outputs_Modes_of_operation_6060_00	AT=ECAT://node#25/Outputs_Modes of operation_6060_00	G=VAR_GLOBAL
+++D=DINT	N=U25_Outputs_Target_position_607A_00	AT=ECAT://node#25/Outputs_Target position_607A_00	G=VAR_GLOBAL
+++D=UDINT	N=U25_Outputs_Profile_velocity_6081_00	AT=ECAT://node#25/Outputs_Profile velocity_6081_00	G=VAR_GLOBAL
+++D=DINT	N=U25_Outputs_Target_velocity_60FF_00	AT=ECAT://node#25/Outputs_Target velocity_60FF_00	G=VAR_GLOBAL
+++D=INT	N=U25_Outputs_Target_torque_6071_00	AT=ECAT://node#25/Outputs_Target torque_6071_00	G=VAR_GLOBAL
+++D=DINT	N=U25_Outputs_Velocity_offset_60B1_00	AT=ECAT://node#25/Outputs_Velocity offset_60B1_00	G=VAR_GLOBAL
+++D=INT	N=U25_Outputs_Torque_offset_60B2_00	AT=ECAT://node#25/Outputs_Torque offset_60B2_00	G=VAR_GLOBAL
+++D=UINT	N=U25_Inputs_Statusword_6041_00	AT=ECAT://node#25/Inputs_Statusword_6041_00	G=VAR_GLOBAL
+++D=SINT	N=U25_Inputs_Modes_of_operation_display_6061_00	AT=ECAT://node#25/Inputs_Modes of operation display_6061_00	G=VAR_GLOBAL
+++D=DINT	N=U25_Inputs_Position_actual_value_6064_00	AT=ECAT://node#25/Inputs_Position actual value_6064_00	G=VAR_GLOBAL
+++D=DINT	N=U25_Inputs_Velocity_actual_value_606C_00	AT=ECAT://node#25/Inputs_Velocity actual value_606C_00	G=VAR_GLOBAL
+++D=INT	N=U25_Inputs_Torque_actual_value_6077_00	AT=ECAT://node#25/Inputs_Torque actual value_6077_00	G=VAR_GLOBAL
+++D=DINT	N=Y25_Bact_Festo_Inputs_Position_actual_value_6064_00	G=VAR_GLOBAL
+++D=DINT	N=Y25_Bact_Festo_Outputs_Target_position_607A_00	G=VAR_GLOBAL
+++D=PTP_AXIS_REF_FESTO	N=U25_Axis	G=VAR_GLOBAL
+++D=sSCL	N=Y25_SP_Festo	R=1	IV=(X_INT := 0, X_REAL := 0.0, Y_Real := 0.0, Y_INT := 0, Y_Sim := 0.0, X0 := 225, Y0 := 3, X1 := 76, Y1 := 93, X2 := 0, Y2 := 0, X3 := 0.0, Y3 := 0.0, X_Max := 250, X_Min := 0, Y_Max := 96, Y_Min := 0, Offset := 0.0, Signal_Fault := False, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL
+++D=sSCL	N=U25_Actual_Pos_Scaled	R=1	IV=(X_INT := 0, X_REAL := 0.0, Y_Real := 0.0, Y_INT := 0, Y_Sim := 0.0, X0 := 93, Y0 := 76, X1 := 3, Y1 := 225, X2 := 0, Y2 := 0, X3 := 0.0, Y3 := 0.0, X_Max := 96, X_Min := 0, Y_Max := 250, Y_Min := 0, Offset := 0.0, Signal_Fault := False, Gain := 1, Scl_3P := 0)	G=VAR_GLOBAL
+++D=LINT	N=Time_running_Today_Sec	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Reset_Home_Pos	G=VAR_GLOBAL
+++D=BOOL	N=M10_Reset_Home_Pos	G=VAR_GLOBAL
+++D=LINT	N=Rep_cyclus_Total	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Y35_Hsaw_Error	G=VAR_GLOBAL
+++D=BOOL	N=Last_Fish_Active	G=VAR_GLOBAL
+++D=LINT	N=Time_running_Total_Sec	R=1	G=VAR_GLOBAL
+++D=LINT	N=Total_Errors	R=1	G=VAR_GLOBAL
+++D=BOOL	N=M10_CorrectionAutoRev	G=VAR_GLOBAL
+++D=BOOL	N=M10_CorrectionAutoForward	G=VAR_GLOBAL
+++D=BOOL	N=CorrectionActive	G=VAR_GLOBAL
+++D=LINT	N=L_ZT42_Newfish_Delay	R=1	IV=100	G=VAR_GLOBAL
+++D=LREAL	N=Time_running_Total	R=1	G=VAR_GLOBAL
+++D=LREAL	N=Time_running_Active_Total	R=1	G=VAR_GLOBAL
+++D=LREAL	N=Time_running_Today	R=1	G=VAR_GLOBAL
+++D=LINT	N=Time_running_Active_Total_Sec	R=1	G=VAR_GLOBAL
+++D=BOOL	N=EC_Reset_HMI	G=VAR_GLOBAL
+++D=REAL	N=M10_Lim_SpeedWashing_FWD	G=VAR_GLOBAL
+++D=REAL	N=U25_OffsetCurve_Variable_150_Height	R=1	IV=65	G=VAR_GLOBAL
+++D=BOOL	N=Sawblade_Change_HMI	R=1	IV=False	G=VAR_GLOBAL
+++D=BOOL	N=Sawblade_Change_Mode	R=1	IV=False	G=VAR_GLOBAL
+++D=REAL	N=M21_D_Lim_SpeedAuto_FWD_HMI	R=1	IV=50	G=VAR_GLOBAL
+++D=BOOL	N=Temporary_Safety_Deactivation_HMI	R=1	G=VAR_GLOBAL
+++D=REAL	N=Heightfish_Cheat_IF_Laser_malfunction	G=VAR_GLOBAL
+++D=BOOL	N=CMD_HScrew_En	R=1	IV=False	G=VAR_GLOBAL	Com=1 = Head Screw disabled
+++D=LINT	N=L_ZT42_Newfish_Delay_n	R=1	IV=100000000	G=VAR_GLOBAL
+++D=LINT	N=Roe_Clamp_Reverse_Delay	R=1	IV=130	G=VAR_GLOBAL
+++D=BOOL	N=Roe_Clamp_Activated	G=VAR_GLOBAL
+++D=REAL	N=ZT12B_Encoder_Limiter	G=VAR_GLOBAL
+++D=BOOL	N=M10_Ready_For_New_Fish	G=VAR_GLOBAL
+++D=BOOL	N=Fish_Timing_Started_Fastest_Scenario	G=VAR_GLOBAL
+++D=REAL	N=Rep_Avg_Time_Fish_Cycle	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Fish_Timing_Started_Operator	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=Time_Used_One_Fish_Operator_Array	R=1	G=VAR_GLOBAL
+++D=REAL	N=Rep_Avg_Time_Fish_Cycle_Operator	R=1	G=VAR_GLOBAL
+++D=REAL	N=Time_Used_Machine_Rolling_Average	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=Time_Used_One_Fish_Machine_Cycle_Array	R=1	G=VAR_GLOBAL
+++D=REAL	N=Time_Used_Operator_Rolling_Average	R=1	G=VAR_GLOBAL
+++D=REAL	N=U25_OffsetCurve_Variable_Medium_Height	R=1	IV=45	G=VAR_GLOBAL
+++D=REAL	N=U25_OffsetCurve_Variable_Low_Height	R=1	IV=30	G=VAR_GLOBAL
+++D=REAL	N=L_NewFish2	R=1	IV=52	G=VAR_GLOBAL
+++D=BOOL	N=Husoy	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Namdal	R=1	G=VAR_GLOBAL
+++D=INT	N=J09_Ch1_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch2_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch3_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch4_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch5_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch6_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch7_RdAI	G=VAR_GLOBAL
+++D=INT	N=J09_Ch8_RdAI	G=VAR_GLOBAL
+++D=WORD	N=J09_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch1_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch2_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch3_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch4_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch5_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch6_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch7_PkHdCmd	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch8_PkHdCmd	G=VAR_GLOBAL
+++D=BYTE	N=J09_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch1_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch2_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch3_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch4_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch5_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch6_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch7_SensErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch8_SensErr	G=VAR_GLOBAL
+++D=BYTE	N=J09_UnitErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_AveErr	G=VAR_GLOBAL
+++D=BYTE	N=J09_AdjCh	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjOfs	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjGain	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjDwn	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjUp	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjSet	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjClr	G=VAR_GLOBAL
+++D=INT	N=J09_AdjPV	G=VAR_GLOBAL
+++D=BYTE	N=J09_AdjUnitErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjAveErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjInErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjInNoErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjMemErr	G=VAR_GLOBAL
+++D=BOOL	N=J09_AdjMd	G=VAR_GLOBAL
+++D=WORD	N=J09_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch1_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch2_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch3_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch4_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch5_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch6_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch7_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=BOOL	N=J09_Ch8_InChUseCfg	R=1	G=VAR_GLOBAL
+++D=WORD	N=J09_InRngCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch1_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch2_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch3_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch4_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch5_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch6_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch7_AveCfg	R=1	G=VAR_GLOBAL
+++D=UINT	N=J09_Ch8_AveCfg	R=1	G=VAR_GLOBAL
+++D=BYTE	N=J09_MdCfg	R=1	G=VAR_GLOBAL
+++D=BYTE	N=J09_ResolutionCfg	R=1	G=VAR_GLOBAL
+++D=sSCL	N=AI_Soft7_Y25Offset_LaserB	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := -35, X1 := 150, Y1 := -45, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 0, Y_Min := -60, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=U25 Offset Laser B
+++D=sSCL	N=AI_Soft101_Y25Offset_LaserC	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := -35, X1 := 150, Y1 := -45, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 0, Y_Min := -60, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=U25 Offset Laser C
+++D=ARRAY[0..100] OF REAL	N=ZT40B_Reg	R=1	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=ZT40C_Reg	R=1	G=VAR_GLOBAL
+++D=REAL	N=ZT40B_Aux_Highest	G=VAR_GLOBAL	Com=Highest measured value for one measuring
+++D=REAL	N=ZT40C_Aux_Highest	G=VAR_GLOBAL	Com=Highest measured value for one measuring
+++D=REAL	N=ZT12A_Encoder_Limiter	G=VAR_GLOBAL
+++D=LINT	N=M10_Corrections_Total	R=1	G=VAR_GLOBAL
+++D=INT	N=M10_Corrections_Today	R=1	G=VAR_GLOBAL
+++D=BOOL	N=No_RoeClamp	R=1	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Fast_CON	R=1	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Water_ON	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Fish_Not_Detected_Water	G=VAR_GLOBAL
+++D=BOOL	N=Fast_Feeding_CMD	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Fast_Feeding_Mode	R=1	G=VAR_GLOBAL
+++D=BOOL	N=CMD_BellyCut_Disable	R=1	G=VAR_GLOBAL	Com=1 = Disabled
+++D=BOOL	N=CMD_Constant_Crib_Speed	R=1	G=VAR_GLOBAL	Com=Only Headcutting, no bellycut
+++D=REAL	N=Last_Measured_Neck_Height	R=1	G=VAR_GLOBAL
+++D=BOOL	N=M21_D_Auto_Enc_Reset_Preset	G=VAR_GLOBAL
+++D=BOOL	N=M21_D_Auto_Enc_Reset	G=VAR_GLOBAL
+++D=BOOL	N=M31_D_Auto_Enc_Reset	G=VAR_GLOBAL
+++D=BOOL	N=M31_D_Auto_Enc_Reset_Preset	G=VAR_GLOBAL
+++D=REAL	N=U25_Output_Target_Pos_FeedBackLimitPlus	G=VAR_GLOBAL
+++D=_sECAT_ID	N=U10_MX2_Node_location_information	IV=(NodeAdr := 10)	RO=1	Const=1	G=VAR_GLOBAL
+++D=REAL	N=U25_No_RoeClamp_Offset	G=VAR_GLOBAL
+++D=REAL	N=U21_No_RoeClamp_Belly_Position	G=VAR_GLOBAL
+++D=REAL	N=U25_No_RoeClamp_SP	G=VAR_GLOBAL
+++D=BOOL	N=M21_D_REV_SMALL_FiSH	G=VAR_GLOBAL
+++D=REAL	N=No_RoeClamp_Fish_HeightBreakpoint	G=VAR_GLOBAL
+++D=BOOL	N=BellyCut_NoRoe	G=VAR_GLOBAL
+++D=REAL	N=U25_No_RoeClamp_SP_Calc	G=VAR_GLOBAL
+++D=REAL	N=M21_D_No_RoeClamp	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF REAL	N=M21_D_No_RoeClamp_Reg	G=VAR_GLOBAL
+++D=REAL	N=L_M21_DB	G=VAR_GLOBAL
+++D=REAL	N=L_M21_DB_MAX	G=VAR_GLOBAL
+++D=REAL	N=L_M21_DB_MIN	G=VAR_GLOBAL
+++D=BOOL	N=Y44_CMD_Deactivated	G=VAR_GLOBAL
+++D=BOOL	N=Sto	R=1	G=VAR_GLOBAL
+++D=BOOL	N=FB_StartFail_Positioning	G=VAR_GLOBAL
+++D=REAL	N=M21_D_Lim_PosSP_NoRoe_Rev	G=VAR_GLOBAL
+++D=REAL	N=M21_D_Lim_PosSP_NoRoe_Fwd	G=VAR_GLOBAL
+++D=BOOL	N=U21_No_RoeClamp_Belly_Pos_Intarget	G=VAR_GLOBAL
+++D=REAL	N=Y25_No_Roe_Reverse_Pos	G=VAR_GLOBAL
+++D=REAL	N=M10_Pos_Sensor_Scaled_Real	G=VAR_GLOBAL
+++D=BOOL	N=Magnet_Pos_System_ON	R=1	G=VAR_GLOBAL
+++D=BOOL	N=M10_Big_Fish_Reduced_Speed_Over_Headsaw	G=VAR_GLOBAL
+++D=BOOL	N=ScreenSaver_ON	G=VAR_GLOBAL
+++D=BOOL	N=Major_Fault_To_HMI	G=VAR_GLOBAL
+++D=INT	N=U10_MX2_d012_Output_Torque_Monitor	AT=ECAT://node#10/d012 Output Torque Monitor	G=VAR_GLOBAL
+++D=INT	N=U20_MX2_d012_Output_Torque_Monitor	AT=ECAT://node#20/d012 Output Torque Monitor	G=VAR_GLOBAL
+++D=INT	N=U30_MX2_d012_Output_Torque_Monitor	AT=ECAT://node#30/d012 Output Torque Monitor	G=VAR_GLOBAL
+++D=INT	N=U21_MX2_d012_Output_Torque_Monitor	AT=ECAT://node#21/d012 Output Torque Monitor	G=VAR_GLOBAL
+++D=INT	N=U31_MX2_d012_Output_Torque_Monitor	AT=ECAT://node#31/d012 Output Torque Monitor	G=VAR_GLOBAL
+++D=BOOL	N=fb_BellyCutDone	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Collar_Open_En	R=1	Ord=8	G=VAR_GLOBAL	Com=1 = Open Collars
+++D=BOOL	N=M10_Pos_Sensor_Home	G=VAR_GLOBAL
+++D=BOOL	N=fb_GroundFault_Alarm	G=VAR_GLOBAL
+++D=BOOL	N=Vartdal	R=1	G=VAR_GLOBAL
+++D=BOOL	N=fb_Fuse4	G=VAR_GLOBAL	Com=Old F4 Fuse
+++D=BOOL	N=fb_Fuse4_1	G=VAR_GLOBAL	Com=F4.1 Encoder Fuse
+++D=BOOL	N=fb_Fuse4_4	G=VAR_GLOBAL	Com=Fuse 4.4 Prox Conveyor and head
+++D=BOOL	N=fb_Fuse4_5	G=VAR_GLOBAL	Com=Fuse 4.5 Belly System
+++D=BOOL	N=fb_Fuse4_2	G=VAR_GLOBAL	Com=Laser And Ultrasonic Fuse
+++D=BOOL	N=fb_Fuse4_3	G=VAR_GLOBAL	Com=Magnet Sensors Fuse
+++D=BOOL	N=fb_Fuse4_6	G=VAR_GLOBAL	Com=Fuse 4.6, Dig out, Operator buttons and Air Sensor
+++D=BOOL	N=fb_Fuse_Blown	Ord=1	G=VAR_GLOBAL
+++D=BOOL	N=Air_Delay_After_Safety	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Limit_Reached_Many_Times	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Limit_Override	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Limit_Override_YES	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Limit_Override_NO	G=VAR_GLOBAL
+++D=BOOL	N=ScreenSaver_Black_ON	G=VAR_GLOBAL
+++D=BOOL	N=Emg_Stop_Changed_Machine_WakeUp	G=VAR_GLOBAL
+++D=BOOL	N=Veidar	R=1	G=VAR_GLOBAL
+++D=REAL	N=Fish_Per_Min_Last_Min	G=VAR_GLOBAL
+++D=REAL	N=Fish_Per_Min_Today	G=VAR_GLOBAL
+++D=INT	N=Magnet_falls_off	G=VAR_GLOBAL
+++D=BOOL	N=Kjollefjord	G=VAR_GLOBAL
+++D=BOOL	N=fb_BellyCutAborted	G=VAR_GLOBAL
+++D=sSCL	N=AI_Soft_Locked_Sylinder_Roe_Clamp	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 70, Y0 := 200, X1 := 170, Y1 := 370, X2 := 240, Y2 := 420, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 450, Y_Min := 200, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Lock on Air sylinder Roe Clamp
+++D=sSCL	N=AI_Soft_Belly_Screw_Max	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 60, Y0 := 400, X1 := 295, Y1 := 600, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 999, X_Min := -999, Y_Max := 600, Y_Min := 400, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Lock on Air sylinder Roe Clamp
+++D=sSCL	N=AI_Soft_Spare_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 30, Y0 := 0, X1 := 50, Y1 := 0, X2 := 100, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 105, X_Min := 0, Y_Max := 50, Y_Min := -50, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL
+++D=BOOL	N=M10_CorrectionAutoFwd_Pos_Locked	Ord=4	G=VAR_GLOBAL
+++D=BOOL	N=M10_CorrectionAutoRev_Pos_Locked	Ord=3	G=VAR_GLOBAL
+++D=REAL	N=M10_CorrectionAutoFwd_Pos	Ord=2	G=VAR_GLOBAL
+++D=REAL	N=M10_CorrectionAutoRev_Pos	Ord=1	G=VAR_GLOBAL
+++D=BOOL	N=U25_MoveAbs_Busy	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Fast_Belly	R=1	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Loop_Video	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Messe_Movie	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Video_MainPage_Reset	G=VAR_GLOBAL
+++D=REAL	N=M10_Enc_Reset_Deviation_Magnet	Ord=1	G=VAR_GLOBAL
+++D=REAL	N=DeviationM10_M31	G=VAR_GLOBAL
+++D=BOOL	N=U21_Sawblade_Running	G=VAR_GLOBAL
+++D=INT	N=U21_MX2_d012_Output_Torque_Monitor_1	G=VAR_GLOBAL
+++D=BOOL	N=Temporary_Safety_Deactivation_Washing	G=VAR_GLOBAL
+++D=REAL	N=M21_BellyCut_NoRoe_CollarOpen_Headstart	R=1	IV=45	G=VAR_GLOBAL
+++D=REAL	N=L_Y25_M10_Headstart	R=1	IV=175	G=VAR_GLOBAL
+++D=BOOL	N=Y25_M10_Collition_Headstart	R=1	G=VAR_GLOBAL
+++D=sSCL	N=AI_Soft_Spare1_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 71, Y0 := 200, X1 := 150, Y1 := 200, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 300, X_Min := 60, Y_Max := 300, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 1
+++D=sSCL	N=AI_Soft_Spare2_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 2
+++D=sSCL	N=AI_Soft_Spare3_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 3
+++D=sSCL	N=AI_Soft_Spare4_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 4
+++D=sSCL	N=AI_Soft_Spare5_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 5
+++D=sSCL	N=AI_Soft_Spare6_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 6
+++D=sSCL	N=AI_Soft_Spare7_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 71, Y0 := 400, X1 := 150, Y1 := 400, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 300, X_Min := 60, Y_Max := 430, Y_Min := 400, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 7
+++D=sSCL	N=AI_Soft_Spare8_parameter	R=1	IV=(X_INT := 0, X_REAL := 0, Y_Real := 0, Y_INT := 0, Y_Sim := 0, X0 := 0, Y0 := 0, X1 := 0, Y1 := 0, X2 := 0, Y2 := 0, X3 := 0, Y3 := 0, X_Max := 0, X_Min := 0, Y_Max := 0, Y_Min := 0, Offset := 0, Signal_Fault := 0, Gain := 1, Scl_3P := False)	G=VAR_GLOBAL	Com=Spare parameters 8
+++D=REAL	N=Rep_Machine_Operator_Procent	G=VAR_GLOBAL
+++D=sMotorSettings	N=M10_HMI	R=1	IV=(Lim_Ramp_Dist_Fwd_Speed1 := 70, Lim_Ramp_Dist_Fwd_Speed2 := 150, Lim_Ramp_Dist_Rev_Speed1 := 70, Lim_Ramp_Dist_Rev_Speed2 := 150, Lim_SpeedAuto_FWD_Speed1 := 50, Lim_SpeedAuto_FWD_Speed2 := 70, Lim_SpeedAuto_Rev_Speed1 := 50, Lim_SpeedAuto_Rev_Speed2 := 70, Lim_Acceleration_Fwd_Speed1 := 0.60, Lim_Acceleration_Fwd_Speed2 := 0.60, Lim_Acceleration_Rev_Speed1 := 0.22, Lim_Acceleration_Rev_Speed2 := 0.22, Lim_Deceleration_Fwd_Speed1 := 0.035, Lim_Deceleration_Fwd_Speed2 := 0.22, Lim_Deceleration_Rev_Speed1 := 0.035, Lim_Deceleration_Rev_Speed2 := 0.22, Max_Current_Monitor := 0.0, Max_Torque_Monitor := 0.0, Max_at_MM := 0.0)	G=VAR_GLOBAL
+++D=sMotorSettings	N=M31_HMI	R=1	IV=(Lim_Ramp_Dist_Fwd_Speed1 := 30, Lim_Ramp_Dist_Fwd_Speed2 := 50, Lim_Ramp_Dist_Rev_Speed1 := 65, Lim_Ramp_Dist_Rev_Speed2 := 65, Lim_SpeedAuto_FWD_Speed1 := 18, Lim_SpeedAuto_FWD_Speed2 := 25, Lim_SpeedAuto_Rev_Speed1 := 36, Lim_SpeedAuto_Rev_Speed2 := 36, Lim_Acceleration_Fwd_Speed1 := 0.0, Lim_Acceleration_Fwd_Speed2 := 1.6, Lim_Acceleration_Rev_Speed1 := 1.1, Lim_Acceleration_Rev_Speed2 := 0.8, Lim_Deceleration_Fwd_Speed1 := 0.1, Lim_Deceleration_Fwd_Speed2 := 0.1, Lim_Deceleration_Rev_Speed1 := 0.1, Lim_Deceleration_Rev_Speed2 := 0.1, Max_Current_Monitor := 0.0, Max_Torque_Monitor := 0.0, Max_at_MM := 0.0)	G=VAR_GLOBAL
+++D=sMotorSettings	N=M21_HMI	R=1	IV=(Lim_Ramp_Dist_Fwd_Speed1 := 35, Lim_Ramp_Dist_Fwd_Speed2 := 35, Lim_Ramp_Dist_Rev_Speed1 := 35, Lim_Ramp_Dist_Rev_Speed2 := 75, Lim_SpeedAuto_FWD_Speed1 := 20, Lim_SpeedAuto_FWD_Speed2 := 20, Lim_SpeedAuto_Rev_Speed1 := 20, Lim_SpeedAuto_Rev_Speed2 := 28, Lim_Acceleration_Fwd_Speed1 := 0.75, Lim_Acceleration_Fwd_Speed2 := 0.75, Lim_Acceleration_Rev_Speed1 := 1.1, Lim_Acceleration_Rev_Speed2 := 0.65, Lim_Deceleration_Fwd_Speed1 := 0.3, Lim_Deceleration_Fwd_Speed2 := 0.3, Lim_Deceleration_Rev_Speed1 := 0.3, Lim_Deceleration_Rev_Speed2 := 0.3, Max_Current_Monitor := 0.0, Max_Torque_Monitor := 0.0, Max_at_MM := 0.0)	G=VAR_GLOBAL
+++D=INT	N=U31_MX2_d012_Output_Torque_Monitor_1	G=VAR_GLOBAL
+++D=sMotorSettings	N=M21_HMI_NoRoe	R=1	IV=(Lim_Ramp_Dist_Fwd_Speed1 := 20, Lim_Ramp_Dist_Fwd_Speed2 := 20, Lim_Ramp_Dist_Rev_Speed1 := 35, Lim_Ramp_Dist_Rev_Speed2 := 75, Lim_SpeedAuto_FWD_Speed1 := 10, Lim_SpeedAuto_FWD_Speed2 := 10, Lim_SpeedAuto_Rev_Speed1 := 20, Lim_SpeedAuto_Rev_Speed2 := 28, Lim_Acceleration_Fwd_Speed1 := 0.75, Lim_Acceleration_Fwd_Speed2 := 0.75, Lim_Acceleration_Rev_Speed1 := 1.1, Lim_Acceleration_Rev_Speed2 := 0.65, Lim_Deceleration_Fwd_Speed1 := 0.3, Lim_Deceleration_Fwd_Speed2 := 0.3, Lim_Deceleration_Rev_Speed1 := 0.3, Lim_Deceleration_Rev_Speed2 := 0.3, Max_Current_Monitor := 0.0, Max_Torque_Monitor := 0.0, Max_at_MM := 0.0)	G=VAR_GLOBAL
+++D=UINT	N=U10_MX2_d081_Fault_Monitor_1_Cause	AT=ECAT://node#10/d081 Fault Monitor 1 Cause	G=VAR_GLOBAL
+++D=UINT	N=U10_MX2_d081_Fault_Monitor_1_Inverter_Status	AT=ECAT://node#10/d081 Fault Monitor 1 Inverter Status	G=VAR_GLOBAL
+++D=STRING[256]	N=M10_AlarmFault	G=VAR_GLOBAL
+++D=STRING[256]	N=M10_AlarmStatus	G=VAR_GLOBAL
+++D=STRING[256]	N=M30_AlarmStatus	G=VAR_GLOBAL
+++D=STRING[256]	N=M20_AlarmStatus	G=VAR_GLOBAL
+++D=STRING[256]	N=M21_AlarmStatus	G=VAR_GLOBAL
+++D=STRING[256]	N=M31_AlarmStatus	G=VAR_GLOBAL
+++D=STRING[256]	N=M20_AlarmFault	G=VAR_GLOBAL
+++D=STRING[256]	N=M21_AlarmFault	G=VAR_GLOBAL
+++D=STRING[256]	N=M30_AlarmFault	G=VAR_GLOBAL
+++D=STRING[256]	N=M31_AlarmFault	G=VAR_GLOBAL
+++D=UINT	N=M20_Max_Current_Monitor	G=VAR_GLOBAL
+++D=UINT	N=M30_Max_Current_Monitor	G=VAR_GLOBAL
+++D=UINT	N=U31_MX2_d081_Fault_Monitor_1_Cause	AT=ECAT://node#31/d081 Fault Monitor 1 Cause	G=VAR_GLOBAL
+++D=UINT	N=U31_MX2_d081_Fault_Monitor_1_Inverter_Status	AT=ECAT://node#31/d081 Fault Monitor 1 Inverter Status	G=VAR_GLOBAL
+++D=INT	N=U20_MX2_d012_Output_Torque_Monitor_1	G=VAR_GLOBAL
+++D=sSCL	N=AI_Soft_Belly_Actuator_Offset_No_RoeClamp	R=1	IV=(X_INT := 0, X_REAL := 0.0, Y_Real := 0.0, Y_INT := 0, Y_Sim := 0.0, X0 := 60, Y0 := 0.0, X1 := 150, Y1 := 0.0, X2 := 250, Y2 := 0.0, X3 := 0.0, Y3 := 0.0, X_Max := 295, X_Min := 0.0, Y_Max := 100, Y_Min := -100, Offset := 0.0, Signal_Fault := False, Gain := 0.0, Scl_3P := False)	G=VAR_GLOBAL
+++D=REAL	N=L_M21_Headstart_Revers_Direct_CUT	R=1	IV=20	G=VAR_GLOBAL
+++D=REAL	N=L_Y25_Return_M21_NoRoe_Headstart	R=1	IV=35	G=VAR_GLOBAL
+++D=sSCL	N=AI_Soft_Belly_Screw_Revers_OpenCollar	R=1	IV=(X_INT := 0, X_REAL := 0.0, Y_Real := 0.0, Y_INT := 0, Y_Sim := 0.0, X0 := 60, Y0 := 150, X1 := 150, Y1 := 150, X2 := 250, Y2 := 130, X3 := 0.0, Y3 := 0.0, X_Max := 999, X_Min := -999, Y_Max := 180, Y_Min := 130, Offset := 0.0, Signal_Fault := False, Gain := 0.0, Scl_3P := False)	G=VAR_GLOBAL
+++D=STRING[256]	N=Machine_Number_On_Factory	R=1	G=VAR_GLOBAL
+++D=STRING[256]	N=Machine_Number	R=1	G=VAR_GLOBAL
+++D=STRING[256]	N=Machine_Main_Screen_Message	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Gear_Limit_And_Alarm	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Gear_Limit	G=VAR_GLOBAL
+++D=BOOL	N=U10_Torque_Gear_Limit_ONOFF_HMI	R=1	IV=True	G=VAR_GLOBAL
+++D=REAL	N=m10_Running_Int_Saved	R=1	G=VAR_GLOBAL
+++D=LINT	N=Rep_Cyclus_BellyScrew_Total	R=1	G=VAR_GLOBAL
+++D=LINT	N=Rep_Cyclus_Headscrew_Total	R=1	G=VAR_GLOBAL
+++D=BOOL	N=Door_Open_S105	G=VAR_GLOBAL
+++D=BOOL	N=Door_Open_S106	G=VAR_GLOBAL
+++D=BOOL	N=Door_Open_S107	G=VAR_GLOBAL
+++D=BOOL	N=Door_Open_S108	G=VAR_GLOBAL
+++D=BOOL	N=Door_Open_S109	G=VAR_GLOBAL
+++D=BOOL	N=CMD_Door_Adresses	G=VAR_GLOBAL
+++D=BOOL	N=Folla_Test	G=VAR_GLOBAL

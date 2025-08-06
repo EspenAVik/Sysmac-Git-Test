@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="4000" ExecutionPriority="16" CycleTimeOverDetection="Warning" TimeOutValue="20000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="Aktuator" InstanceName="Aktuator" IniFileTrackingId="e43494c3b04842daa6eff45d6357f17e" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Drives" InstanceName="Drives" IniFileTrackingId="7f50ca87fb0d44eeab228fc8023a5c8c" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="422cbefb-f7f8-4045-ab88-a53268b77a8f" />
+    <RefreshUnitId RefreshUnitId="9fdd22fc-a816-4833-aa98-b738a1ea9bc4" />
+    <RefreshUnitId RefreshUnitId="a9358def-9292-44de-be7f-604acf3cfeed" />
+    <RefreshUnitId RefreshUnitId="7b0902e1-7bdd-4f6e-b061-38f261e63732" />
+    <RefreshUnitId RefreshUnitId="b5cc2029-ee05-43a4-934a-5ec3388e1dab" />
+    <RefreshUnitId RefreshUnitId="4a52a79e-5699-4839-af79-54ceb1adcab1" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Datentypen" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="DT_FHPP" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the whole FHPP data" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="48" OffsetType="NJ">
+      <DataType Name="IN" BaseType="DT_FHPP_DATA_IN" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OUT" BaseType="DT_FHPP_DATA_OUT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FHPP_DATA_IN" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the FHPP data from controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="10" OffsetType="NJ">
+      <DataType Name="SCON" BaseType="DT_SCON" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SPOS" BaseType="DT_SPOS" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Byte3" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ActValue1" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ActValue2" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_SCON" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the SCON data (input byte 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="3" OffsetType="User">
+      <DataType Name="ENABLED" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OPEN" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="1" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WARN" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FAULT" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="3" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="VLOAD" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FCT" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OPM1" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OPM2" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_SPOS" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the SPOS data  (input byte 2)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="2" OffsetType="User">
+      <DataType Name="HALT" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ACK" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="1" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MC" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TEACH" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="3" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MOV" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DEV" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="STILL" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="REF" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FHPP_DATA_OUT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the FHPP data to controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="9" OffsetType="NJ">
+      <DataType Name="CCON" BaseType="DT_CCON" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CPOS" BaseType="DT_CPOS" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Byte3" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SetValue1" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SetValue2" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_CCON" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the CCON data (output byte 1)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="1" OffsetType="User">
+      <DataType Name="ENABLE" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="STOP" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="1" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BRAKE" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RESET" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="3" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="res" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LOCK" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OPM1" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OPM2" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_CPOS" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the CPOS data (output byte 2)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="User">
+      <DataType Name="HALT" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="START" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="1" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="HOM" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="JOGP" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="3" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="JOGN" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TEACH" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CLEAR" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="res" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FPC" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the whole FPC data" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="47" OffsetType="NJ">
+      <DataType Name="IN" BaseType="DT_FPC_DATA" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OUT" BaseType="DT_FPC_DATA" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FPC_DATA" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the FPC data (input and output)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="8" OffsetType="NJ">
+      <DataType Name="ModeAK" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IND" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ParID" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Value" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FHPP_PLUS" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the whole FHPP+ data" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="46" OffsetType="NJ">
+      <DataType Name="IN" BaseType="DT_FHPP_PLUS_OBJECT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OUT" BaseType="DT_FHPP_PLUS_OBJECT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FHPP_PLUS_OBJECT" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure with the single FHPP+ objects" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="7" OffsetType="NJ">
+      <DataType Name="Object1" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object2" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object3" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object4" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object5" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object6" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object7" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object8" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object9" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Object10" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_DEVICE_TYPE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enumeration for the type of the controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="CMMO_ST" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="10" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EMCA_EC" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="20" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CMMP_AS" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="30" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CMMS_AS" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="40" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CMMS_ST" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="50" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CMMD_AS" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="60" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FML_REF" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the parameter to control and parametrize the motorcontroller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="112" OffsetType="NJ">
+      <DataType Name="FHPP" BaseType="DT_FHPP" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="FHPP data" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FPC" BaseType="DT_FPC" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="FPC data" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FHPP_PLUS" BaseType="DT_FHPP_PLUS" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="FHPP+ data" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Modbus" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="modbus is using" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="HighByteFirst" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="byteorder (TRUE := big endian)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FPC_active" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="FestoParameterChannel (FPC) in use" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeviceType" BaseType="E_FML_DEVICE_TYPE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="type of the controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MemberID" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="current member-ID" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MemberIDmax" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="maximum member-ID" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Done" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="execution done" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Err" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="fault occured" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PNU" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="number of the parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Subindex" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="subindex of the parameter to exchange" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Value" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="value of the parameter to exchange" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReqID" BaseType="E_FML_FPC_REQ_ID" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FPCC_Packet" BaseType="DT_FML_FPC_FILE_TRANSFER" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="file transfer packet control" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FPCC_Modus" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="modus of parameter control" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ActPNU" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="actual number of the parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ActSubindex" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="actual subindex of the paramter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ActValue" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="read value of the parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RespID" BaseType="E_FML_FPC_RESP_ID" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FPCS_Packet" BaseType="DT_FML_FPC_FILE_TRANSFER" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="file transfer packet status" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FPCS_Modus" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="modus of parameter channel status " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FML_FPC_FILE_TRANSFER" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the date for the file transfer" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="45" OffsetType="NJ">
+      <DataType Name="Control" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="BitSequenceNr" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Data" BaseType="ARRAY[1..6] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_FPC_REQ_ID" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enumeration for FML_FPC_Modus (request)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_FPC_REQ_none" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_read" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_word" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_dword" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_read_file" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_file" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_read_array" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_array_word" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="7" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_array_dword" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="8" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_read_array_elements" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="9" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_reseved0" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="10" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_byte" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="11" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_write_array_byte" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_read_lower_limit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="13" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_REQ_upper_limit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="14" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_FPC_RESP_ID" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enumeration for FML_FPC_Modus (response)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_FPC_RESP_none" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_word_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_dword_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_file_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_word_array_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_dword_array_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_error" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="7" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_read_array_elements" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="9" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_reseved0" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="10" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_byte_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="11" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_RESP_byte_array_done" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="12" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FML_PRM_DESCRIPTION" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="111" OffsetType="NJ">
+      <DataType Name="PNU" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="number of the parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Subindex" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="subindex of the parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AccessNo" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0 = read  /  1 = write" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Value" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="value of the parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_FPC_MODUS" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enumeration for the transmission mode" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_FPC_MODUS_PNU_11BIT" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="transmit PNU with 11 bit" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_MODUS_PNU_16BIT" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="transmit PNU with 16 bit" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_MODUS_DATA_OBJECT" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="transmitt internal data objects" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_MODUS_CAN" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="transmit CAN objects" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_MODUS_ParameterFile" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="transmit parameter file" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_MODUS_FirmwareUpdate" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="transmit firmware file" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FML_PRM_DIAGMESSAGE" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="structure of the diagnostic message from motorcontroller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="110" OffsetType="NJ">
+      <DataType Name="DiagEvent" BaseType="E_FML_DIAG_EVENT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="event of message (PNU 200 / PNU 210)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DiagMsgNumber" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="message number (PNU 201 / PNU 211)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DiagTimeStamp" BaseType="DWORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="timestamp of the message (PNU 202 / PNU 212)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DiagMsgDescription" BaseType="STRING[80]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="description of the diagnostic message " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_DIAG_EVENT" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enumeration for FML diagnostic event of the motorcontroller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_DIAG_EVENT_none_error" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_error_comes" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_error_gone" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_error_quit" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_overflow_timestamp" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_warning_comes" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_warning_gone" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_start_up_event" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="7" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_configuration_event" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="8" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_DIAG_EVENT_information" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="9" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="DT_FML_STATUS" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="data structure for ErrorHandler to transfer a parameter file (in FPC_FILE_ARRAY)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="109" OffsetType="NJ">
+      <DataType Name="Err" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="error bit" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cat" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="status category" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ID" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="status ID" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Msg" BaseType="STRING[80]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="status message" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_FPC_STATUS_CATEGORY" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_STATUS_CATEGORY_no_category" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_CATEGORY_function_block" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_CATEGORY_reserved" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_CATEGORY_parameter_transfer" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_STATUS_ID_FB" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enumeration for the status of the function block" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_STATUS_ID_FB_no_error" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="function block finished without an error" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_init_active" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="initialization of the function block is activ" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_busy" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="function block tansfers some information to controller" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_other_fb_active" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="10" Comment="execution is not possible because another fb is active" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_timeout" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="20" Comment="timeout of the function block (no response from the controller)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_wrong_device" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="30" Comment="execution is not possible for this device" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_wrong_access_value" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="40" Comment="wrong value for access in FPC_MULTI " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_pointer_to_zero" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="50" Comment="no input either SizeOf or adress of parameter" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_pointer_wrong_size" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="51" Comment="wrong size of parameter size has to by n*Size of DT_FML_PRM_DESCRIPTION" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FB_fhpp_plus_value_not_valid" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="60" Comment="wrong value for FHPP+ data mapping in function block 'FML_Read' or 'FML_Write'" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_FPC_STATUS_ID_FILE_TRANSFER" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_STATUS_ID_FILE_no_error" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1000" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_wrong_sequ" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1001" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_time_out_pack" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1002" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_wrong_pack" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1003" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_false_inst" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1004" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_read_err" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1005" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_write_err" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1006" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_volumne_err" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1007" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_par_file_err" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1008" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_fault_receipt" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1009" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_time_out" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1010" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_direction_err" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1019" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_size_err" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1021" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_STATUS_ID_FILE_incomplete" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1022" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="E_FML_FILE_TRANSFER_CONTROL" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="FML_FPC_FILE_TRANSFER_active" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_FILE_TRANSFER_start" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_FILE_TRANSFER_stop" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_FILE_TRANSFER_error" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FML_FPC_FILE_TRANSFER_reserved" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

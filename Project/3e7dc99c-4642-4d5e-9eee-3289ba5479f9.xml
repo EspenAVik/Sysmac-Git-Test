@@ -1,0 +1,29 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=bInit	IV=False	G=VAR	Com=status of inizialisation of the FB
+++D=INT	N=lMemberID	G=VAR	Com=local member ID of the FB
+++D=INT	N=StepNo	G=VAR	Com=local step number
+++D=ARRAY[0..2] OF INT	N=awPNU	IV=[200, 201, 202]	G=VAR	Com=numbers of PNUs with the diagnostic informations
+++D=INT	N=ixPNU	G=VAR	Com=index in awPNU
+++D=DINT	N=diValue	G=VAR	Com=save read results
+++D=INT	N=iSI	G=VAR	Com=save read subindex
+++D=INT	N=max_iSI	G=VAR	Com=max number of the dignistic messages (depends on device)
+++D=STRING[80]	N=sEventBuffer	G=VAR	Com=description of the diagnostic message
+++D=INT	N=maxDiagBuffElements	IV=200	Const=1	G=VAR	Com=maximal number of diagnosis messages (CMMO and EMCA)
+++D=ARRAY[0..1] OF BYTE	N=BufferForDiagEvent	G=VAR	Com=buffer array to write a value into DiagBuff[..].DiagEvent
+++D=TON	N=TONInst	G=VAR	Com=timer instance to monitor a timeout of the function block
+++D=BOOL	N=TimeStart	G=VAR	Com=variable to start the timer instance
+++D=TIME	N=TimeoutTime	IV=T#3s	Const=1	G=VAR	Com=timeout time
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=BOOL	N=Execute	Ord=3	G=VAR_INPUT	Com=perform data exchange
+++D=BOOL	N=Done	Ord=4	G=VAR_OUTPUT	Com=execution done
+++D=BOOL	N=Error	Ord=5	G=VAR_OUTPUT	Com=transmission fault
+++D=DT_FML_STATUS	N=Status	Ord=6	G=VAR_OUTPUT	Com=structure with the status information of the function block and FPC
+++D=INT	N=ValidEntries	Ord=7	G=VAR_OUTPUT	Com=number of the most actual error of the motorcontroller
+++D=INT	N=ParamNo	Ord=8	G=VAR_OUTPUT	Com=number of current reading parameter
+++D=ARRAY[1..200] OF DT_FML_PRM_DIAGMESSAGE	N=DiagBuff	Ord=9	G=VAR_OUTPUT	Com=buffer with the diagnsis messages from motorcontroller
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

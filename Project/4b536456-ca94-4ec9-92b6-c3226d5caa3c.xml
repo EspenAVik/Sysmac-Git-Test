@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=i	G=VAR
+++D=USINT	N=j	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=1	G=VAR_IN_OUT	Com=reference to the axis
+++D=USINT	N=NumberOfItems	Ord=2	G=VAR_INPUT	Com=number of items which should be deleted
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=DeleteMotionJob	G=RETURN

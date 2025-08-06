@@ -1,0 +1,37 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=tmp_freq_in_real	G=VAR
+++D=UINT	N=tmp_freq_in_int	G=VAR
+++D=REAL	N=tmp_freq_out_real	G=VAR
+++D=UINT	N=tmp_freq_out_int	G=VAR
+++D=REAL	N=tmp_acc_real	G=VAR
+++D=INT	N=tmp_acc_int	G=VAR
+++D=REAL	N=tmp_dec_real	G=VAR
+++D=INT	N=tmp_dec_int	G=VAR
+++D=INV00x_MX2\uWORD_BOOL_MX2	N=tmp_Command	G=VAR
+++D=INV00x_MX2\uWORD_BOOL_MX2	N=tmp_Status	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=WORD	N=Command	Ord=1	G=VAR_IN_OUT	Com=$tInverter Command word
+++D=UINT	N=Frequency_Reference	Ord=2	G=VAR_IN_OUT	Com=$tSpecify the frequency in increments of 0.01 Hz 
+++D=UINT	N=Output_Frequency_Monitor	Ord=3	G=VAR_INPUT	Com=$tDisplays the output frequency in increments of 0.01 Hz 
+++D=UDINT	N=F002_1st_Acceleration	Ord=4	G=VAR_IN_OUT
+++D=UDINT	N=F003_1st_Deceleration	Ord=5	G=VAR_IN_OUT
+++D=WORD	N=Status	Ord=6	G=VAR_IN_OUT	Com=$tInverter Status word
+++D=BOOL	N=During_Fwd	Ord=7	G=VAR_OUTPUT	Com=$t0: Stopped/ during reverse operation 1: During forward operation
+++D=BOOL	N=During_Rev	Ord=8	G=VAR_OUTPUT	Com=$t0: Stopped/ during forward operation 1: During reverse operation
+++D=BOOL	N=Fault	Ord=9	G=VAR_OUTPUT	Com=$t0: No error or trip onccurred for the unit 1: Error or trip has occurred for the he unit
+++D=BOOL	N=Warning	Ord=10	G=VAR_OUTPUT	Com=$t0: No waring onccurred for the unit 1: Warining occurred for the unit
+++D=BOOL	N=Remote	Ord=11	G=VAR_OUTPUT	Com=$t0: Local (Operations from EtherCAT are disabled) 1: Remote (Operations from EtherCAT are enabled)
+++D=BOOL	N=Freq_Match	Ord=12	G=VAR_OUTPUT	Com=$t0: During acceleration/deceleration 1: Frequency matched
+++D=BOOL	N=Connection_Error	Ord=13	G=VAR_OUTPUT	Com=$tConnection error between the Optional Unit and inverter
+++D=BOOL	N=Enable	Ord=14	G=VAR_INPUT	Com=Enables the Functionblock$tEnable the Functionblock
+++D=BOOL	N=Fwd	Ord=15	G=VAR_INPUT	Com=$t0: Stop, 1: Forward command
+++D=BOOL	N=Rev	Ord=16	G=VAR_INPUT	Com=$t0: Stop, 1: Reverse command
+++D=BOOL	N=Fault_Reset	Ord=17	G=VAR_INPUT	Com=$tResets an error or trip for the unit
+++D=REAL	N=Frequency_in	Ord=18	G=VAR_INPUT	Com=$tSpecify the set point frequency in 0.01 Hz 
+++D=REAL	N=Acceleration	Ord=19	G=VAR_INPUT	Com=$tSpecify the Acceleration set point in seconds
+++D=REAL	N=Deceleration	Ord=20	G=VAR_INPUT	Com=$tSpecify the Acceleration set point in seconds
+++D=REAL	N=Frequency_out	Ord=21	G=VAR_OUTPUT	Com=$tShows the frequency in 0.01 Hz 
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

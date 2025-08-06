@@ -1,0 +1,16 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DWORD	N=BufferDWORD	IV=0	Ord=7	G=VAR
+++D=DWORD	N=BufferFilledWith_0000_FF00	IV=65280	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=PTP_AXIS_REF_FESTO	N=Axis	Ord=1	G=VAR_IN_OUT
+++D=DWORD	N=SiUnitPosition	Ord=2	G=VAR_INPUT
+++D=DWORD	N=SiUnitVelocity	Ord=3	G=VAR_INPUT
+++D=DWORD	N=SiUnitAcceleration	Ord=4	G=VAR_INPUT
+++D=DWORD	N=SiUnitJerk	Ord=5	G=VAR_INPUT
+++D=DWORD	N=MotorRatedTorqueInNm	Ord=6	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=BuildFactorgroup	G=RETURN

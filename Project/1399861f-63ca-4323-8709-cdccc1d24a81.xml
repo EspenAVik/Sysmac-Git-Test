@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>INV00x_MX2_ECT</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.8</Version>
+      <Revision>1</Revision>
+      <LibraryId>8cb38c6f-08d2-4e58-b228-a17c1c5a1e82</LibraryId>
+      <Author>Tomas Dunér</Author>
+      <Company>Omron Electronics</Company>
+      <DateCreated>2013-12-23T09:11:54.8777315+01:00</DateCreated>
+      <DateModified>2018-08-04T07:02:10.2440295+02:00</DateModified>
+      <Comment>Functionblocks that can be used for controlling 3G3MX2 with Omron NJ controller over EtherCAT communication. Demo are avalibe inside the library.</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>INV000_MX2_Alarm</PublicName>
+        <PublicName>INV001_MX2_ECT</PublicName>
+        <PublicName>INV002_MX2_ECT</PublicName>
+        <PublicName>INV003_MX2_ECT</PublicName>
+        <PublicName>INV010_MX2_ExternalTrip</PublicName>
+        <PublicName>INV011_MX2_Intelligent_inputs</PublicName>
+        <PublicName>INV012_MX2_Analog_inputs</PublicName>
+        <PublicName>INV00x_MX2\uWORD_BOOL_MX2</PublicName>
+        <PublicName>INV00x_MX2\uBYTE_BOOL_MX2</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ501-1500</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>5</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.05</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.5" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>54e26619-4db0-4559-b26d-2adc04d97c61</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Teknisk\Software\Sysmac\Library\INV00x_MX2_ECT.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>2</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

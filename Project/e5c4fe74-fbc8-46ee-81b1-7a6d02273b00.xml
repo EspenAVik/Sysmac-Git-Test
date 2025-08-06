@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=PowerTag	G=VAR
+++D=ARRAY[0..1,0..19] OF WORD	N=MBUSTable	G=VAR	Com=Modbus Data Table
+++D=OEN\General\Sequencer	N=FB_TableSeq	G=VAR
+++D=INT	N=i	G=VAR
+++D=MTCP_Client_Connect	N=Acti9_Connect	G=VAR
+++D=INT	N=TableStep	G=VAR
+++D=BYTE	N=NodeNo	G=VAR
+++D=ARRAY[0..127] OF WORD	N=Acti9Read	G=VAR
+++D=ARRAY[0..39] OF BYTE	N=ByteArray	G=VAR
+++D=ULINT	N=OutputLINT	G=VAR
+++D=MTCP_Client_Fn03	N=FB_Acti9_Read	G=VAR
+++D=INT	N=CountOut	G=VAR
+++D=ARRAY[0..127] OF WORD	N=Acti9SDMaster	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Connected	Ord=0	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=OEN\Modbus\Acti9\sActi9	N=SmartLink	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=Connect	Ord=3	G=VAR_INPUT
+++D=STRING[16]	N=IPAddress	Ord=4	G=VAR_INPUT
+++D=WORD	N=ErrorID	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=_EIP_EtnOnlineSta	Const=1	G=VAR_EXTERNAL

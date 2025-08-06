@@ -1,0 +1,10 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..3] OF BYTE	N=BufferForSwapping	G=VAR	Com=buffer for byte swapping of the second value
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=FB_EN	IV=True	Ord=0	G=VAR_INPUT	Com=EN Bit for using the FB in ladder (input has no function)
+++D=BOOL	N=FB_ENO	Ord=1	G=VAR_OUTPUT	Com=ENO Bit for using the FB in ladder (output allways true)
+++D=DT_FML_REF	N=FML_REF	Ord=2	G=VAR_IN_OUT	Com=structure of the parameter to control and parametrize the motorcontroller
+++D=ARRAY[0..7] OF BYTE	N=FHPP_Source	Ord=3	G=VAR_INPUT	Com=FHPP data from the controller
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="Signal_Treatment" InstanceName="Signal_Treatment" IniFileTrackingId="e939a731d40b412281d528d6e128086d" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="4b0e7808-c907-4802-8b36-7a50f36f3dd2" />
+    <RefreshUnitId RefreshUnitId="bec99ab2-0406-4cad-985c-42a3921aea92" />
+    <RefreshUnitId RefreshUnitId="cbb53d08-3643-43b6-97c9-b538957cfac1" />
+    <RefreshUnitId RefreshUnitId="3ef5086a-b372-42b0-ad6b-d5e0edfcf48a" />
+    <RefreshUnitId RefreshUnitId="9a3bfcdb-2535-4647-85ce-65a48351f874" />
+    <RefreshUnitId RefreshUnitId="818502fa-b40f-4f0d-8703-fb198bce876e" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

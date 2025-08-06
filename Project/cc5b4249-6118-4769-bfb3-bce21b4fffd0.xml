@@ -1,0 +1,9 @@
+﻿{"CLs":[{"__type":"LD","Var":"EN"},{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"In1","Ix":2,"Type":"ANY_BIT","Var":"Input_Byte"},{"__type":"PRM","Arg":"In2","Ix":3,"Type":"ANY_BIT","Var":"Invert_Mask"}],"Ix":5,"Name":"XOR","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"","Ix":4,"Type":"ANY_BIT","Var":"InputByteAs.Byt"}],"X":1,"PL":true},{"__type":"ST","Ix":1,"Var":"TxByteTo8bit","X":2}],"LRI":6,"RRI":7,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[0]"},{"__type":"ST","Ix":1,"Var":"Bit_00","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[1]"},{"__type":"ST","Ix":1,"Var":"Bit_01","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[2]"},{"__type":"ST","Ix":1,"Var":"Bit_02","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[3]"},{"__type":"ST","Ix":1,"Var":"Bit_03","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[4]"},{"__type":"ST","Ix":1,"Var":"Bit_04","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[5]"},{"__type":"ST","Ix":1,"Var":"Bit_05","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[6]"},{"__type":"ST","Ix":1,"Var":"Bit_06","X":1}],"LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"InputByteAs.Bit[7]"},{"__type":"ST","Ix":1,"Var":"Bit_07","X":1}],"LRI":2,"RRI":3,"VLs":[]}
